@@ -1,0 +1,1 @@
+export { default } from "file:///C:/Users/jpequ/Documents/dev/classhub-monorepo/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"
