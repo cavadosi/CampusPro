@@ -1,2 +1,0 @@
-# classhub-monorepo 
-
