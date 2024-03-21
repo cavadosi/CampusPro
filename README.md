@@ -61,8 +61,7 @@ yarn dev
 # bun
 bun run dev
 ```
-```bash 
-```
+
 ## Production
 
 Build the application for production:
