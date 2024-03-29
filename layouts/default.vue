@@ -27,7 +27,7 @@
                   </div>
                 </TransitionChild>
                 <!-- Sidebar component, swap this element with another sidebar if you like -->
-                <div class="flex grow flex-col gap-y-5 overflow-y-auto bg-gray-900 px-6 pb-4 ring-1 ring-white/10">
+                <div class="flex grow flex-col gap-y-5 overflow-y-auto bg-primary px-6 pb-4 ring-1 ring-white/10">
                   <div class="flex h-16 shrink-0 items-center">
                     <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company" />
                   </div>
@@ -72,7 +72,7 @@
       <!-- Static sidebar for desktop -->
       <div class="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col">
         <!-- Sidebar component, swap this element with another sidebar if you like -->
-        <div class="flex grow flex-col gap-y-5 overflow-y-auto bg-gray-900 px-6 pb-4">
+        <div class="flex grow flex-col gap-y-5 overflow-y-auto bg-primary px-6 pb-4">
           <div class="flex h-16 shrink-0 items-center">
             <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company" />
           </div>
@@ -89,7 +89,7 @@
                 </ul>
               </li>
               <li>
-                <div class="text-xs font-semibold leading-6 text-gray-400">Your teams</div>
+                <div class="text-xs font-semibold leading-6 text-gray-400">Tus Clases</div>
                 <ul role="list" class="-mx-2 mt-2 space-y-1">
                   <li v-for="team in teams" :key="team.name">
                     <a :href="team.href" :class="[team.current ? 'bg-gray-800 text-white' : 'text-gray-400 hover:text-white hover:bg-gray-800', 'group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold']">
@@ -157,8 +157,8 @@
           </div>
         </div>
   
-        <main class="py-10">
-          <div class="px-4 sm:px-6 lg:px-8">
+        <main class="py-2 bg-background overflow-clip h-screen">
+          <div class="px-2 ">
             <!-- Your content -->
             <slot />
           </div>
@@ -194,17 +194,19 @@
 //   import { ChevronDownIcon, MagnifyingGlassIcon } from '@heroicons/vue/20/solid'
   
   const navigation = [
-    { name: 'Dashboard', href: '#', current: true },
-    { name: 'Team', href: '#', current: false },
-    { name: 'Projects', href: '#',  current: false },
-    { name: 'Calendar', href: '#',  current: false },
-    { name: 'Documents', href: '#',  current: false },
+    { name: 'Bandeja de entrada', href: '#', current: true },
+    { name: 'Overview', href: '#',  current: false },
+    { name: 'Tareas', href: '#',  current: false },
+    { name: 'Calendario', href: '#',  current: false },
+    { name: 'Calificaciones', href: '#', current: false },
+    { name: 'Roadmap', href: '#',  current: false },
     // { name: 'Reports', href: '#', icon: ChartPieIcon, current: false },
   ]
   const teams = [
-    { id: 1, name: 'Heroicons', href: '#', initial: 'H', current: false },
-    { id: 2, name: 'Tailwind Labs', href: '#', initial: 'T', current: false },
-    { id: 3, name: 'Workcation', href: '#', initial: 'W', current: false },
+    { id: 1, name: 'Clase uno', href: '#', initial: 'H', current: false },
+    { id: 2, name: 'Clase dos', href: '#', initial: 'T', current: false },
+    { id: 3, name: 'Clase tres', href: '#', initial: 'W', current: false },
+    { id: 4, name: 'Clase cuatro', href: '#', initial: 'A', current: false },
   ]
   const userNavigation = [
     { name: 'Your profile', href: '#' },

@@ -1,6 +1,6 @@
 <template>
-	<div class="">
-		Hello World uesjhfsehuvhsg suhdshgushug uehsu
+	<div class=" bg-slate-400">
+		Hello World uesjhfsehuvhsg suhdshgushug 
 	</div>
 </template>
 
