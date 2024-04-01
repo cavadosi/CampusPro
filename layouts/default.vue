@@ -194,12 +194,12 @@
 //   import { ChevronDownIcon, MagnifyingGlassIcon } from '@heroicons/vue/20/solid'
   
   const navigation = [
-    { name: 'Bandeja de entrada', href: '#', current: true },
-    { name: 'Overview', href: '#',  current: false },
-    { name: 'Tareas', href: '#',  current: false },
-    { name: 'Calendario', href: '#',  current: false },
-    { name: 'Calificaciones', href: '#', current: false },
-    { name: 'Roadmap', href: '#',  current: false },
+    { name: 'Overview', href: '/',  current: false },
+    { name: 'Bandeja de entrada', href: '/inbox', current: true },
+    { name: 'Tareas', href: '/tasks',  current: false },
+    { name: 'Calendario', href: '/calendar',  current: false },
+    { name: 'Calificaciones', href: '/grades', current: false },
+    { name: 'Roadmap', href: '/roadmap',  current: false },
     // { name: 'Reports', href: '#', icon: ChartPieIcon, current: false },
   ]
   const teams = [

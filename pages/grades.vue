@@ -1,6 +1,6 @@
 <template>
 	<div >
-		This is the ./index or overview route test
+		This is the ./grades route test
 	</div>
 </template>
 
