@@ -5,14 +5,14 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#CAE8E7",
+          DEFAULT: "#BEE9E8",
         },
         secondary: {
-          DEFAULT: "#7EB3C7",
+          DEFAULT: "#62B6CB",
         },
-        accent: { DEFAULT: "#79A7CF" },
-        lightaccent: { DEFAULT: "d3e8fd" },
-        darkaccent: { DEFAULT: "#2D4963" },
+        accent: { DEFAULT: "#5FA8D3" },
+        lightaccent: { DEFAULT: "#CAE9FF" },
+        darkaccent: { DEFAULT: "#1B4965" },
         background: { DEFAULT: "#EFEFEF" },
 
       },
