@@ -15,7 +15,7 @@ To open this project on your local machine, follow these steps:
 2. Use the following command to clone the repository to your local machine:
 
 ```bash 
-git clone <https://github.com/cavadosi/classhub-monorepo.git>
+git clone https://github.com/cavadosi/classhub-monorepo.git
 ```
 
 3. You're all set! Now the project is on your machine, and you can start working on it.
