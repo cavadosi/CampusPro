@@ -69,7 +69,7 @@
                         <li v-for="item in navigation" :key="item.name">
                           <NuxtLink
                             :to="item.href"
-                            class="text-darkaccent hover:text-lightaccent hover:bg-darkaccent group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold"
+                            class="text-darkaccent hover:text-lightaccent hover:bg-darkaccent/80 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold"
                           >
                             <component
                               :is="item.icon"
@@ -150,7 +150,7 @@
                 <li v-for="item in navigation" :key="item.name">
                   <NuxtLink
                     :to="item.href"
-                    class="my-link text-darkaccent hover:text-lightaccent hover:bg-darkaccent flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold"
+                    class="my-link text-darkaccent hover:text-lightaccent hover:bg-darkaccent/80 flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold"
                   >
                     <component
                       :is="item.icon"
