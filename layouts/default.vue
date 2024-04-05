@@ -1,14 +1,15 @@
 <template>
-  <Sidebar :navigation="navigation" :elements="classes" :userNavigation="userNavigation">
+  <Sidebar
+    :navigation="navigation"
+    :elements="classes"
+    :userNavigation="userNavigation"
+  >
     <!-- Your content -->
     <slot />
   </Sidebar>
-
 </template>
 
-
 <script setup>
-
 const navigation = [
   { name: "Overview", href: "/" },
   { name: "Bandeja de entrada", href: "/inbox" },
@@ -28,5 +29,4 @@ const userNavigation = [
   { name: "Your profile", href: "#" },
   { name: "Sign out", href: "#" },
 ];
-
 </script>
