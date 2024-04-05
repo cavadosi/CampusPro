@@ -20,7 +20,7 @@ body {
 	position: relative;
 	z-index: 1;
 }
-
+   
 body::before {
 	content: '';
 	position: absolute;

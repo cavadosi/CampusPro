@@ -73,7 +73,7 @@
                           >
                             <component
                               :is="item.icon"
-                              class="h-6 w-6 shrink-0"
+                              class="h-6 w-6 shrink-0 text-black"
                               aria-hidden="true"
                             />
                             {{ item.name }}

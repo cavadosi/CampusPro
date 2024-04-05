@@ -5,19 +5,21 @@
     :userNavigation="userNavigation"
   >
     <!-- Your content -->
-    <slot />
+    <routerView />
   </Sidebar>
 </template>
 
 <script setup>
+import NewsIcon from '~icons/fluent/news-24-regular';
+
+
 const navigation = [
-  { name: "Overview", href: "/" },
-  { name: "Bandeja de entrada", href: "/inbox" },
-  { name: "Tareas", href: "/tasks" },
-  { name: "Calendario", href: "/calendar" },
-  { name: "Calificaciones", href: "/grades" },
-  { name: "Roadmap", href: "/roadmap" },
-  // { name: 'Reports', href: '#', icon: ChartPieIcon, current: false },
+  { name: "Overview", href: "/", icon: NewsIcon },
+  { name: "Bandeja de entrada", href: "/inbox", icon: NewsIcon },
+  { name: "Tareas", href: "/tasks", icon: NewsIcon },
+  { name: "Calendario", href: "/calendar", icon: NewsIcon },
+  { name: "Calificaciones", href: "/grades", icon: NewsIcon },
+  { name: "Roadmap", href: "/roadmap", icon: NewsIcon },
 ];
 const classes = [
   { id: 1, name: "Clase uno", href: "#", initial: "H", current: false },
