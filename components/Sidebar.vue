@@ -47,7 +47,7 @@
                     @click="sidebarOpen = false"
                   >
                     <span class="sr-only">Close sidebar</span>
-                    <XMarkIcon class="h-6 w-6 text-white" aria-hidden="true" />
+                    <IconHeroicons:x-mark-solid class="h-8 w-8 text-white" aria-hidden="true" />
                   </button>
                 </div>
               </TransitionChild>
@@ -112,7 +112,7 @@
                         href="#"
                         class="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-400 hover:bg-gray-800 hover:text-white"
                       >
-                        <Cog6ToothIcon
+                        <IconHeroicons:cog-6-tooth-20-solid
                           class="h-6 w-6 shrink-0"
                           aria-hidden="true"
                         />
@@ -191,7 +191,7 @@
                 href="#"
                 class="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-400 hover:bg-gray-800 hover:text-white"
               >
-                <Cog6ToothIcon class="h-6 w-6 shrink-0" aria-hidden="true" />
+                <IconHeroicons:cog-6-tooth-20-solid class="h-6 w-6 shrink-0" aria-hidden="true" />
                 Settings
               </a>
             </li>
@@ -210,7 +210,7 @@
           @click="sidebarOpen = true"
         >
           <span class="sr-only">Open sidebar</span>
-          <Bars3Icon class="h-6 w-6" aria-hidden="true" />
+          <IconHeroicons:bars-3 class="h-6 w-6" aria-hidden="true" />
         </button>
 
         <!-- Separator -->
@@ -219,7 +219,7 @@
         <div class="flex flex-1 gap-x-4 self-stretch lg:gap-x-6">
           <form class="relative flex flex-1" action="#" method="GET">
             <label for="search-field" class="sr-only">Search</label>
-            <MagnifyingGlassIcon
+            <IconHeroicons:magnifying-glass-20-solid
               class="pointer-events-none absolute ml-2 inset-y-0 left-0 h-full w-5 text-gray-400"
               aria-hidden="true"
             />
@@ -237,7 +237,8 @@
               class="-m-2.5 p-2.5 text-gray-400 hover:text-gray-500"
             >
               <span class="sr-only">View notifications</span>
-              <BellIcon class="h-6 w-6" aria-hidden="true" />
+              <IconMaterial-symbols:notifications-outline-rounded class="h-6 w-6" aria-hidden="true"/>
+              
             </button>
 
             <!-- Separator -->
@@ -261,7 +262,7 @@
                     aria-hidden="true"
                     >Tom Cook</span
                   >
-                  <ChevronDownIcon
+                  <IconHeroicons:chevron-down
                     class="ml-2 h-5 w-5 text-gray-400"
                     aria-hidden="true"
                   />
@@ -327,36 +328,22 @@ import {
   TransitionChild,
   TransitionRoot,
 } from "@headlessui/vue";
-import {
-  Bars3Icon,
-  BellIcon,
-  CalendarIcon,
-  ChartPieIcon,
-  Cog6ToothIcon,
-  DocumentDuplicateIcon,
-  FolderIcon,
-  HomeIcon,
-  UsersIcon,
-  XMarkIcon,
-} from "@heroicons/vue/24/outline";
-import { ChevronDownIcon, MagnifyingGlassIcon } from "@heroicons/vue/20/solid";
 
 
 const props = defineProps({
-	navigation: {
-		type: Object,
-		require: true
-	},
-	elements: {
-		type: Object,
-		require: true
-	},
-	userNavigation: {
-		type: Object,
-		
-	}
+  navigation: {
+    type: Object,
+    require: true,
+  },
+  elements: {
+    type: Object,
+    require: true,
+  },
+  userNavigation: {
+    type: Object,
+  },
 });
 
-const {navigation, elements, userNavigation} = toRefs(props);
+const { navigation, elements, userNavigation } = toRefs(props);
 const sidebarOpen = ref(false);
 </script>
