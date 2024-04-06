@@ -2,7 +2,7 @@
   <div >
     <div class="relative isolate pt-14">
       <div
-        class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+        class="absolute inset-x-0 -z-10 transform-gpu overflow-hidden blur-3xl"
         aria-hidden="true"
       >
         <div
