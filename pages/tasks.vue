@@ -18,7 +18,7 @@
         <div class="flex bg-lightaccent rounded-md h-36">
           <div class="flex justify-between w-full mx-4 my-2">
             <h2 class="">Card1</h2>
-            <h2 class="">Todo</h2>
+            <h2 class="">Class</h2>
           </div>
         </div>
         <div class="flex bg-lightaccent rounded-md h-36">
@@ -60,7 +60,7 @@
 
 <style scoped>
 .scrollbar {
-  scrollbar-color: #71B0DC #EFEFEF;
+  scrollbar-color: #71b0dc #efefef;
   scrollbar-width: auto;
 }
 </style>

@@ -10,8 +10,7 @@
 </template>
 
 <script setup>
-import NewsIcon from '~icons/fluent/news-24-regular';
-
+import NewsIcon from "~icons/fluent/news-24-regular";
 
 const navigation = [
   { name: "Overview", href: "/", icon: NewsIcon },
@@ -32,3 +31,5 @@ const userNavigation = [
   { name: "Sign out", href: "#" },
 ];
 </script>
+
+<style scoped></style>
