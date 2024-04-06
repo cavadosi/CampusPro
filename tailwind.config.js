@@ -14,7 +14,7 @@ export default {
         lightaccent: { DEFAULT: "#ADDDFF" },
         darkaccent: { DEFAULT: "#20435D" },
         background: { DEFAULT: "#EFEFEF" },
-        lightbackground: { DEFAULT: "#D8EFFF" },
+        lightbackground: { DEFAULT: "#C9E8FF" },
         
 
       },

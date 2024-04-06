@@ -5,7 +5,7 @@
     :userNavigation="userNavigation"
   >
     <!-- Your content -->
-    <routerView />
+    <NuxtPage />
   </Sidebar>
 </template>
 
