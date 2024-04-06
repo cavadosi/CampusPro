@@ -12,7 +12,6 @@ html {
 }
 
 body {
-  background-color: #cae8e7;
   min-height: 100%;
   margin: 0;
   position: relative;

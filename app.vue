@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  background-color: #cae8e7;
+  background-color: #C9E8FF;
   min-height: 100%;
   margin: 0;
   position: relative;
