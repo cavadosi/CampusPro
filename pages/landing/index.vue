@@ -101,7 +101,6 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
 
 definePageMeta({
   layout: "landing",
@@ -114,7 +113,6 @@ const navigation = [
   { name: "Company", href: "#" },
 ];
 
-const mobileMenuOpen = ref(false);
 </script>
 
 <style scoped></style>
