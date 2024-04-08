@@ -21,10 +21,10 @@ const navigation = [
   { name: "Roadmap", href: "/roadmap", icon: NewsIcon },
 ];
 const classes = [
-  { id: 1, name: "Clase uno", href: "#", initial: "H", current: false },
-  { id: 2, name: "Clase dos", href: "#", initial: "T", current: false },
-  { id: 3, name: "Clase tres", href: "#", initial: "W", current: false },
-  { id: 4, name: "Clase cuatro", href: "#", initial: "A", current: false },
+  { name: "Clase uno", href: "#", initial: "H"},
+  { name: "Clase dos", href: "#", initial: "T" },
+  { name: "Clase tres", href: "#", initial: "W" },
+  { name: "Clase cuatro", href: "#", initial: "A"  },
 ];
 const userNavigation = [
   { name: "Your profile", href: "#" },
