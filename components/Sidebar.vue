@@ -56,7 +56,7 @@
               </TransitionChild>
               <!-- Sidebar component, swap this element with another sidebar if you like -->
               <div
-                class="flex grow flex-col gap-y-5 overflow-y-auto bg-lightaccent px-6 pb-4 ring-1 ring-white/10"
+                class="flex grow flex-col gap-y-5 overflow-y-auto bg-secondary px-6 pb-4"
               >
                 <div class="flex h-16 shrink-0 items-center">
                   <Favicon class="h-10 w-auto" />
@@ -68,11 +68,11 @@
                         <li v-for="item in navigation" :key="item.name">
                           <NuxtLink
                             :to="item.href"
-                            class="my-link text-darkaccent hover:text-secondary hover:bg-primary/80 flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold"
+                            class="my-link text-darkaccent hover:text-secondary hover:bg-primary flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold"
                           >
                             <component
                               :is="item.icon"
-                              class="h-6 w-6 shrink-0 text"
+                              class="h-6 w-6 shrink-0"
                               aria-hidden="true"
                             />
                             {{ item.name }}
@@ -81,10 +81,8 @@
                       </ul>
                     </li>
                     <li>
-                      <div
-                        class="text-xs font-semibold leading-6 text-gray-400"
-                      >
-                        Your classes
+                      <div class="text-xs font-semibold leading-6 text-primary">
+                        Tus Clases
                       </div>
                       <ul role="list" class="-mx-2 mt-2 space-y-1">
                         <li
@@ -94,10 +92,10 @@
                         >
                           <a
                             :href="element.href"
-                            class="my-link text-darkaccent hover:text-secondary hover:bg-primary/80 flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold"
+                            class="my-link text-darkaccent hover:text-secondary hover:bg-primary flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold"
                           >
                             <span
-                              class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-darkaccent bg-darkaccent text-[0.625rem] font-medium text-secondary"
+                              class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-darkaccent bg-primary text-[0.625rem] font-medium text-secondary"
                               >{{ element.initial }}</span
                             >
                             <span class="truncate">{{ element.name }}</span>
@@ -108,7 +106,7 @@
                     <li class="mt-auto">
                       <a
                         href="#"
-                        class="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-400 hover:bg-gray-800 hover:text-white"
+                        class="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 my-link text-darkaccent hover:text-secondary hover:bg-primary"
                       >
                         <IconHeroicons:cog-6-tooth-20-solid
                           class="h-6 w-6 shrink-0"
@@ -144,7 +142,7 @@
                 <li v-for="item in navigation" :key="item.name">
                   <NuxtLink
                     :to="item.href"
-                    class="my-link text-darkaccent hover:text-secondary hover:bg-primary/80 flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold"
+                    class="my-link text-darkaccent hover:text-secondary hover:bg-primary flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold"
                   >
                     <component
                       :is="item.icon"
@@ -157,17 +155,17 @@
               </ul>
             </li>
             <li>
-              <div class="text-xs font-semibold leading-6 text-accent">
+              <div class="text-xs font-semibold leading-6 text-primary">
                 Tus Clases
               </div>
               <ul role="list" class="-mx-2 mt-2 space-y-1">
                 <li v-for="element in elements" :key="elements.name" class>
                   <a
                     :href="element.href"
-                    class="my-link text-darkaccent hover:text-secondary hover:bg-primary/80 flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold"
+                    class="my-link text-darkaccent hover:text-secondary hover:bg-primary flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold"
                   >
                     <span
-                      class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-darkaccent bg-darkaccent text-[0.625rem] font-medium text-secondary"
+                      class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-darkaccent bg-primary text-[0.625rem] font-medium text-secondary"
                       >{{ element.initial }}</span
                     >
                     <span class="truncate">{{ element.name }}</span>
@@ -178,7 +176,7 @@
             <li class="mt-auto">
               <a
                 href="#"
-                class="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-400 hover:bg-gray-800 hover:text-white"
+                class="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 my-link text-darkaccent hover:text-secondary hover:bg-primary"
               >
                 <IconHeroicons:cog-6-tooth-20-solid
                   class="h-6 w-6 shrink-0"
