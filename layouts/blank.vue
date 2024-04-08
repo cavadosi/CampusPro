@@ -1,20 +1,20 @@
 <template>
-  <Html class="h-full">
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
-  </Html>
+    <NuxtPage/>
 </template>
+
+
+<script setup>
+</script>
 
 <style>
 html {
   height: 100%;
-  overflow: hidden;
+  overflow: auto;
 }
 
 body {
-  background-color: #C9E8FF;
   min-height: 100%;
+  background-color: white;
   margin: 0;
   position: relative;
   z-index: 1;
