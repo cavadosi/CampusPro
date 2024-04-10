@@ -1,8 +1,8 @@
 <template>
-    <div v-if="type == columnType" class="flex bg-lightaccent rounded-md h-36">
+    <div class="flex bg-lightaccent rounded-md h-36">
           <div class="flex justify-between w-full mx-4 my-2">
             <h2 class="">{{ title }}</h2>
-            <h2 class="">{{ type }}</h2>
+            <h2 class="">{{ columnType }}</h2>
           </div>
         </div>
 </template>
@@ -16,10 +16,6 @@ const props = defineProps({
     type: String,
     default: ''
   },
-  type: {
-    type: String,
-    default: ''
-  },
   columnType: {
     type: String,
     default: '', 
@@ -27,6 +23,6 @@ const props = defineProps({
 
 });
 
-const { title, type, columnType } = toRefs(props);
+const { title, columnType } = toRefs(props);
 
 </script>
