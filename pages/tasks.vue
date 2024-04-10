@@ -47,7 +47,7 @@ const columns = ["TODO", "IN PROGRESS", "DONE", "CANCELLED"];
 
 <style scoped>
 .scrollbar {
-  scrollbar-color: #71b0dc #efefef;
+  scrollbar-color: #71b0dc #FFFFFF;
   scrollbar-width: auto;
 }
 </style>
