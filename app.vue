@@ -9,7 +9,7 @@
 <style>
 html {
   height: 100%;
-  overflow: hidden;
+  overflow: clip;
 }
 
 body {
