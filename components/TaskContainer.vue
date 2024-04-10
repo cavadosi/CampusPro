@@ -38,7 +38,4 @@ const props = defineProps({
 
 const { columnType, tasks } = toRefs(props);
 
-// Debugging: Log props to console to verify values
-console.log(columnType.value); // Check if columnType is defined and has a value
-console.log(tasks.value); // Check if tasks array is defined and contains data
 </script>
