@@ -292,8 +292,9 @@
         </div>
       </div>
 
-      <main class="py-2 bg-background overflow-clip h-screen">
-        <div class="px-2">
+      <main class="pl-1 p-2 flex max-w-full w-screen max-h-full h-[calc(100vh-64px)] bg-secondary ">
+        <!-- TODO: calc height tailwind -->
+        <div class="px-2 bg-background overflow-clip max-w-full w-screen max-h-full h-full rounded-md">
           <!-- Your content -->
           <slot />
         </div>
