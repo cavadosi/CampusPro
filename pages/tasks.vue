@@ -15,48 +15,36 @@
         class="flex-col items-center justify-center space-y-4 min-w-80 w-80 text-start bg-slate-100"
       >
         <!-- Card -->
-        <div class="flex bg-lightaccent rounded-md h-36">
-          <div class="flex justify-between w-full mx-4 my-2">
-            <h2 class="">Card1</h2>
-            <h2 class="">Class</h2>
-          </div>
-        </div>
-        <div class="flex bg-lightaccent rounded-md h-36">
-          <div class="flex justify-between w-full mx-4 my-2">
-            <h2 class="">Card1</h2>
-            <h2 class="">Todo</h2>
-          </div>
-        </div>
-        <div class="flex bg-lightaccent rounded-md h-36">
-          <div class="flex justify-between w-full mx-4 my-2">
-            <h2 class="">Card1</h2>
-            <h2 class="">Todo</h2>
-          </div>
-        </div>
-        <div class="flex bg-lightaccent rounded-md h-36">
-          <div class="flex justify-between w-full mx-4 my-2">
-            <h2 class="">Card1</h2>
-            <h2 class="">Todo</h2>
-          </div>
-        </div>
-        <div class="flex bg-lightaccent rounded-md h-36">
-          <div class="flex justify-between w-full mx-4 my-2">
-            <h2 class="">Card1</h2>
-            <h2 class="">Todo</h2>
-          </div>
-        </div>
-        <div class="flex bg-lightaccent rounded-md h-36">
-          <div class="flex justify-between w-full mx-4 my-2">
-            <h2 class="">Card1</h2>
-            <h2 class="">Todo</h2>
-          </div>
-        </div>
+        <TaskCard v-for="task in tasks" :title="task.title" :type="task.type"/>
       </div>
     </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+
+const tasks = [
+{title: "Card1", type: "TODO"},
+{title: "Card2", type: "TODO"},
+{title: "Card3", type: "TODO"},
+{title: "Card4", type: "TODO"},
+{title: "Card5", type: "TODO"},
+{title: "Card6", type: "TODO"},
+{title: "Card7", type: "TODO"},
+{title: "Card8", type: "IN PROGRESS"},
+{title: "Card9", type: "IN PROGRESS"},
+{title: "Card10", type: "IN PROGRESS"},
+{title: "Card11", type: "IN PROGRESS"},
+{title: "Card12", type: "IN PROGRESS"},
+{title: "Card13", type: "IN PROGRESS"},
+
+
+]
+
+
+
+
+</script>
 
 <style scoped>
 .scrollbar {
