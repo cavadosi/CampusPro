@@ -24,7 +24,7 @@
 
         <div class="mt-10">
           <div>
-            <form @submit.prevent="handleSubmit" class="space-y-6">
+            <form onsubmit="handleSubmit" class="space-y-6">
               <div>
                 <label
                   for="email"
@@ -86,7 +86,7 @@
               </div>
 
               <div>
-                <button onclick="handleSubmit"
+                <button 
                   type="submit"
                   class="flex w-full justify-center rounded-md bg-primary px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
@@ -120,10 +120,8 @@ const handleSubmit = async (event) => {
     email: formData.get('email'),
     password: formData.get('password'),
   };
-  console.log(userData)
   try {
     const response = await axios.post('http://localhost:3001', userData)
-    .then(response => console.log(response)); // Hacer algo con la respuesta si es necesario
   } catch (error) {
     console.log(`Error en la solicitud: (${error})`);
   }
