@@ -274,7 +274,7 @@
 
       
       <main class=" flex max-w-full w-screen max-h-full h-[calc(100vh-64px)] bg-secondary ">
-        <div class="px-2 bg-background overflow-clip max-w-full w-screen max-h-full h-full border-t lg:border-t-0 lg:border-l border-slate-300 lg:border-primary overflow-x-auto scrollbar">
+        <div class="px-2 bg-background max-w-full w-full max-h-full h-full border-t lg:border-t-0 lg:border-l border-slate-300 lg:border-primary overflow-x-auto overflow-y-clip scrollbar">
           <!-- Your content -->
           <slot />
         </div>
@@ -291,7 +291,6 @@
 .scrollbar {
   scrollbar-color: #185987 rgba(255, 255, 255, 0);
   scrollbar-width: thin;
-  scrollbar-arrow-color: rgba(255, 255, 255, 0);
 }
 
 </style>
