@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-row items-start justify-start gap-x-4 h-full scrollbar  bg-background m-2"
+    class="flex flex-row items-start justify-start gap-x-2 h-full bg-background m-2 mt-0"
   >
     <!-- Card container -->
     <TaskContainer
@@ -14,6 +14,27 @@
 <script setup>
 const tasks = {
   TODO: [
+    { title: "Card1" },
+    { title: "Card1" },
+    { title: "Card1" },
+    { title: "Card2" },
+    { title: "Card2" },
+    { title: "Card2" },
+    { title: "Card3" },
+    { title: "Card1" },
+    { title: "Card1" },
+    { title: "Card1" },
+    { title: "Card2" },
+    { title: "Card2" },
+    { title: "Card2" },
+    { title: "Card3" },
+    { title: "Card1" },
+    { title: "Card1" },
+    { title: "Card1" },
+    { title: "Card2" },
+    { title: "Card2" },
+    { title: "Card2" },
+    { title: "Card3" },
     { title: "Card1" },
     { title: "Card1" },
     { title: "Card1" },

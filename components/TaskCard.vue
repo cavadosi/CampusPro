@@ -1,6 +1,6 @@
 <template>
-    <div class="flex bg-lightaccent rounded-md h-36">
-          <div class="flex justify-between w-full mx-4 my-2">
+    <div class="flex bg-white rounded-md h-32">
+          <div class="flex justify-between w-full mx-4">
             <h2 class="">{{ title }}</h2>
             <h2 class="">{{ columnType }}</h2>
           </div>

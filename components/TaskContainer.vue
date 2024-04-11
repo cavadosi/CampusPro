@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-slate-100 rounded-md px-1 my-5">
+  <div class="bg-slate-100 rounded-md px-1 mt-1 pb-2">
     <div
-      class="flex-col items-center justify-center min-w-fit text-start px-5 py-4 "
+      class="flex-col items-center justify-center min-w-fit text-start px-2 pt-4 "
     >
       <!-- Container title -->
       <div class="flex items-center justify-between mb-4">
@@ -9,7 +9,7 @@
         <h1>...</h1>
       </div>
       <div
-        class="flex-col items-center justify-center space-y-4 min-w-80 w-80 text-start overflow-y-scroll scrollbar"
+        class="flex-col items-center justify-center space-y-2 max-w-80 w-60 md:w-80 max-h-full h-screen text-start overflow-y-auto scrollbar"
       >
         <!-- Card -->
         <TaskCard
