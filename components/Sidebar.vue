@@ -290,7 +290,8 @@
 
 .scrollbar {
   scrollbar-color: #185987 rgba(255, 255, 255, 0);
-  scrollbar-width: auto;
+  scrollbar-width: thin;
+  scrollbar-arrow-color: rgba(255, 255, 255, 0);
 }
 
 </style>
