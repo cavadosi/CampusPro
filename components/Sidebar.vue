@@ -66,17 +66,7 @@
                     <li>
                       <ul role="list" class="-mx-2 space-y-1">
                         <li v-for="item in navigation" :key="item.name">
-                          <NuxtLink
-                            :to="item.href"
-                            class="my-link text-darkaccent hover:text-secondary hover:bg-primary flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold"
-                          >
-                            <component
-                              :is="item.icon"
-                              class="h-6 w-6 shrink-0"
-                              aria-hidden="true"
-                            />
-                            {{ item.name }}
-                          </NuxtLink>
+                          <NavigationTitle :href="item.href" :icon="item.icon" :name="item.name"/>
                         </li>
                       </ul>
                     </li>
@@ -140,17 +130,7 @@
             <li>
               <ul role="list" class="-mx-2 space-y-1">
                 <li v-for="item in navigation" :key="item.name">
-                  <NuxtLink
-                    :to="item.href"
-                    class="my-link text-darkaccent hover:text-secondary hover:bg-primary flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold"
-                  >
-                    <component
-                      :is="item.icon"
-                      class="h-6 w-6 shrink-0"
-                      aria-hidden="true"
-                    />
-                    {{ item.name }}
-                  </NuxtLink>
+                  <NavigationTitle :href="item.href" :icon="item.icon" :name="item.name"/>
                 </li>
               </ul>
             </li>
