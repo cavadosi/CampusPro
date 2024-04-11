@@ -14,7 +14,7 @@
           <p class="mt-2 text-sm leading-6 text-gray-500">
             Not a member?
             {{ " " }}
-            <a href="#" class="font-semibold text-primary hover:text-indigo-500"
+            <a href="#" class="font-semibold text-primary hover:text-primary-300"
               >Sign up</a
             >
           </p>
@@ -77,7 +77,7 @@
                 <div class="text-sm leading-6">
                   <a
                     href="#"
-                    class="font-semibold text-primary hover:text-indigo-500"
+                    class="font-semibold text-primary hover:text-primary-300"
                     >Forgot password?</a
                   >
                 </div>
@@ -86,7 +86,7 @@
               <div>
                 <button
                   type="submit"
-                  class="flex w-full justify-center rounded-md bg-primary px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  class="flex w-full justify-center rounded-md bg-primary px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-primary-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   Sign in
                 </button>

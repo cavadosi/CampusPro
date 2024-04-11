@@ -82,7 +82,7 @@
                         >
                           <a
                             :href="element.href"
-                            class="my-link text-darkaccent hover:text-secondary hover:bg-primary flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold"
+                            class="my-link text-darkaccent hover:text-secondary hover:bg-primary-300 flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold"
                           >
                             <span
                               class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-darkaccent bg-primary text-[0.625rem] font-medium text-secondary"
@@ -96,7 +96,7 @@
                     <li class="mt-auto">
                       <a
                         href="#"
-                        class="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 my-link text-darkaccent hover:text-secondary hover:bg-primary"
+                        class="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 my-link text-darkaccent hover:text-secondary hover:bg-primary-300"
                       >
                         <IconHeroicons:cog-6-tooth-20-solid
                           class="h-6 w-6 shrink-0"
@@ -142,7 +142,7 @@
                 <li v-for="element in elements" :key="elements.name" class>
                   <a
                     :href="element.href"
-                    class="my-link text-darkaccent hover:text-secondary hover:bg-primary flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold"
+                    class="my-link text-darkaccent hover:text-secondary hover:bg-primary-300 flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold"
                   >
                     <span
                       class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-darkaccent bg-primary text-[0.625rem] font-medium text-secondary"
@@ -156,7 +156,7 @@
             <li class="mt-auto">
               <a
                 href="#"
-                class="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 my-link text-darkaccent hover:text-secondary hover:bg-primary"
+                class="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 my-link text-darkaccent hover:text-secondary hover:bg-primary-300"
               >
                 <IconHeroicons:cog-6-tooth-20-solid
                   class="h-6 w-6 shrink-0"
@@ -285,7 +285,7 @@
 
 <style scoped>
 .my-link.router-link-exact-active {
-  @apply bg-primary text-secondary;
+  @apply bg-primary text-secondary ;
 }
 
 .scrollbar {
