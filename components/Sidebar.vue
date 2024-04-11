@@ -58,7 +58,7 @@
               <div
                 class="flex grow flex-col gap-y-5 overflow-y-auto bg-secondary px-6 pb-4"
               >
-                <div class="flex h-16 shrink-0 items-center">
+                <div class="flex h-16 shrink-0 items-center ">
                   <Favicon class="h-10 w-auto" />
                 </div>
                 <nav class="flex flex-1 flex-col">
@@ -172,7 +172,7 @@
 
     <div class="lg:pl-72">
       <div
-        class="sticky top-0 z-40 flex h-16 shrink-0 items-center gap-x-4  bg-white px-4 shadow-sm sm:gap-x-6 sm:px-6 lg:px-8 "
+        class="sticky top-0 z-40 flex h-16 shrink-0 items-center gap-x-4  bg-white border-l border-primary px-4 shadow-sm sm:gap-x-6 sm:px-6 lg:px-8 "
       >
         <button
           type="button"
@@ -273,8 +273,8 @@
       </div>
 
       
-      <main class="py-2 pr-1 flex max-w-full w-screen max-h-full h-[calc(100vh-64px)] bg-secondary ">
-        <div class="px-2 bg-background overflow-clip max-w-full w-screen max-h-full h-full border border-primary rounded-md overflow-x-auto scrollbar">
+      <main class=" flex max-w-full w-screen max-h-full h-[calc(100vh-64px)] bg-secondary ">
+        <div class="px-2 bg-background overflow-clip max-w-full w-screen max-h-full h-full border-t lg:border-t-0 lg:border-l border-slate-300 lg:border-primary overflow-x-auto scrollbar">
           <!-- Your content -->
           <slot />
         </div>
