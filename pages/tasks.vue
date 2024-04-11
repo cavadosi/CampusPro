@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-row items-start justify-start gap-x-4 h-full overflow-x-auto overflow-y-clip scrollbar  bg-background m-2"
+    class="flex flex-row items-start justify-start gap-x-4 h-full scrollbar  bg-background m-2"
   >
     <!-- Card container -->
     <TaskContainer
@@ -54,8 +54,5 @@ const tasks = {
 </script>
 
 <style scoped>
-.scrollbar {
-  scrollbar-color: #71b0dc rgb(241 245 249);
-  scrollbar-width: auto;
-}
+
 </style>

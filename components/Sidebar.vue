@@ -130,7 +130,7 @@
     >
       <!-- Sidebar component, swap this element with another sidebar if you like -->
       <div
-        class="flex grow flex-col gap-y-5 overflow-y-auto bg-secondary px-6 pb-4"
+        class="flex grow flex-col gap-y-5 overflow-y-auto bg-secondary px-6 pb-4 "
       >
         <div class="flex h-16 shrink-0 items-center">
           <Favicon class="h-10 w-auto" />
@@ -192,7 +192,7 @@
 
     <div class="lg:pl-72">
       <div
-        class="sticky top-0 z-40 flex h-16 shrink-0 items-center gap-x-4 border-b border-gray-200 bg-white px-4 shadow-sm sm:gap-x-6 sm:px-6 lg:px-8"
+        class="sticky top-0 z-40 flex h-16 shrink-0 items-center gap-x-4  bg-white px-4 shadow-sm sm:gap-x-6 sm:px-6 lg:px-8 "
       >
         <button
           type="button"
@@ -204,7 +204,7 @@
         </button>
 
         <!-- Separator -->
-        <div class="h-6 w-px bg-gray-900/10 lg:hidden" aria-hidden="true" />
+        <div class="h-6 w-px bg-gray-900/10 lg:hidden " aria-hidden="true" />
 
         <div class="flex flex-1 gap-x-4 self-stretch lg:gap-x-6">
           <form class="relative flex flex-1" action="#" method="GET">
@@ -292,9 +292,9 @@
         </div>
       </div>
 
-      <main class="pl-1 p-2 flex max-w-full w-screen max-h-full h-[calc(100vh-64px)] bg-secondary ">
-        <!-- TODO: calc height tailwind -->
-        <div class="px-2 bg-background overflow-clip max-w-full w-screen max-h-full h-full rounded-md">
+      
+      <main class="py-2 pr-1 flex max-w-full w-screen max-h-full h-[calc(100vh-64px)] bg-secondary ">
+        <div class="px-2 bg-background overflow-clip max-w-full w-screen max-h-full h-full border border-primary rounded-md overflow-x-auto scrollbar">
           <!-- Your content -->
           <slot />
         </div>
@@ -307,6 +307,12 @@
 .my-link.router-link-exact-active {
   @apply bg-primary text-secondary;
 }
+
+.scrollbar {
+  scrollbar-color: #185987 rgba(255, 255, 255, 0);
+  scrollbar-width:thin;
+}
+
 </style>
 
 <script setup>
