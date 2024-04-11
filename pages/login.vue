@@ -14,7 +14,9 @@
           <p class="mt-2 text-sm leading-6 text-gray-500">
             Not a member?
             {{ " " }}
-            <a href="#" class="font-semibold text-primary hover:text-indigo-500"
+            <a
+              href="#"
+              class="font-semibold text-primary hover:text-indigo-500"
               >Sign up</a
             >
           </p>
@@ -22,7 +24,7 @@
 
         <div class="mt-10">
           <div>
-            <form action="#" method="POST" class="space-y-6">
+            <form @submit.prevent="handleSubmit" class="space-y-6">
               <div>
                 <label
                   for="email"
@@ -84,7 +86,7 @@
               </div>
 
               <div>
-                <button
+                <button onclick="handleSubmit"
                   type="submit"
                   class="flex w-full justify-center rounded-md bg-primary px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
@@ -107,7 +109,29 @@
 </template>
 
 <script setup>
+import axios from 'axios';
+
+const handleSubmit = async (event) => {
+  event.preventDefault();
+
+  const formData = new FormData(event.target);
+
+  const userData = {
+    email: formData.get('email'),
+    password: formData.get('password'),
+  };
+  console.log(userData)
+  try {
+    const response = await axios.post('https://campusprob-43ea2325dc3f.herokuapp.com/api/login', userData)
+    .then(response => console.log(response)); // Hacer algo con la respuesta si es necesario
+  } catch (error) {
+    console.log(`Error en la solicitud: (${error})`);
+  }
+};
+
 definePageMeta({
-  layout: "blank",
+  layout: 'blank',
 });
 </script>
+
+<style scoped></style>
