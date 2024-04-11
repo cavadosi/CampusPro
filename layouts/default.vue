@@ -10,15 +10,21 @@
 </template>
 
 <script setup>
-import NewsIcon from "~icons/fluent/news-24-regular";
+import GridIcon from "~icons/fluent/grid-24-filled";
+import InboxIcon from "~icons/octicon/inbox-24";
+import ClipboardIcon from "~icons/fluent/clipboard-task-list-rtl-24-regular";
+import CalendarIcon from "~icons/ph/calendar-dots";
+import ExamIcon from "~icons/ph/exam";
+import RoadmapIcon from "~icons/streamline/arrow-roadmap";
+
 
 const navigation = [
-  { name: "Overview", href: "/", icon: NewsIcon },
-  { name: "Bandeja de entrada", href: "/inbox", icon: NewsIcon },
-  { name: "Tareas", href: "/tasks", icon: NewsIcon },
-  { name: "Calendario", href: "/calendar", icon: NewsIcon },
-  { name: "Calificaciones", href: "/grades", icon: NewsIcon },
-  { name: "Roadmap", href: "/roadmap", icon: NewsIcon },
+  { name: "Overview", href: "/", icon: GridIcon },
+  { name: "Bandeja de entrada", href: "/inbox", icon: InboxIcon },
+  { name: "Tareas", href: "/tasks", icon: ClipboardIcon },
+  { name: "Calendario", href: "/calendar", icon: CalendarIcon },
+  { name: "Calificaciones", href: "/grades", icon: ExamIcon },
+  { name: "Roadmap", href: "/roadmap", icon: RoadmapIcon },
 ];
 const classes = [
   { name: "Clase uno", href: "#", initial: "H"},
