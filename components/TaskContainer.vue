@@ -6,7 +6,7 @@
       class="flex flex-col items-center justify-center space-y-2 max-w-80 w-80 h-full rounded-md"
     >
       <!-- title -->
-      <div class="flex items-center justify-between w-80">
+      <div class="flex items-center justify-between w-full">
         <h1>{{ columnType }}</h1>
         <h1>...</h1>
       </div>
