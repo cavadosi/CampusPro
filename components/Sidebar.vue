@@ -285,7 +285,7 @@
 
 <style scoped>
 .my-link.router-link-exact-active {
-  @apply bg-primary text-secondary ;
+  @apply border-l-8 hover:shadow-md border-y border-e shadow-md border-darkaccent text-darkaccent;
 }
 
 .scrollbar {

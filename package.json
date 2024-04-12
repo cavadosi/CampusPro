@@ -10,11 +10,11 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "axios": "^1.6.8",
     "vue": "^3.4.19",
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
+    "axios": "^1.6.8",
     "@headlessui/vue": "^1.7.19",
     "@iconify/json": "^2.2.197",
     "@nuxtjs/tailwindcss": "^6.11.4",
