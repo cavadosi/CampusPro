@@ -22,7 +22,8 @@
 
         <div class="mt-10">
           <div>
-            <form action="#" method="POST" class="space-y-6">
+           
+            <form @submit.prevent="handleSubmit" class="space-y-6">
               <div>
                 <label
                   for="email"
@@ -107,7 +108,34 @@
 </template>
 
 <script setup>
-definePageMeta({
-  layout: "blank",
-});
+import axios from 'axios';
+
+  const handleSubmit = async (event) => {
+  event.preventDefault();
+
+  const formData = new FormData(event.target);
+
+  const userData = {
+    email: formData.get('email'),
+    password: formData.get('password'),
+  };
+  try {
+  const response = await axios.post('https://campusprob-43ea2325dc3f.herokuapp.com/api/login', userData);
+  const data = response.data;
+
+  console.log(response.status)
+
+  const { redirectURL, token } = data
+
+  if (response.status == 200){
+    console.log("Token-->" + token)
+    console.log("200 -->" + redirectURL);
+    window.location.href = redirectURL;
+  }
+  } catch (error) {
+  console.log(`Error en la solicitud: (${error})`); 
+  }
+  };
+
+  definePageMeta({ layout: "blank"});
 </script>
