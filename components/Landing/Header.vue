@@ -45,7 +45,7 @@
             >
               <div class="p-4">
                 <div
-                  v-for="item in products"
+                  v-for="item in Navlinks"
                   :key="item.name"
                   class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
                 >
@@ -201,45 +201,45 @@ import {
 
 import NewsIcon from '~icons/fluent/news-24-regular';
 
-const products = [
+const Navlinks = [
   {
-    name: "Analytics",
+    name: "Key features",
+    description: "Get a better understanding of our product",
+    href: "#",
+    icon: NewsIcon,
+  },
+  {
+    name: "How It Works",
     description: "Get a better understanding of your traffic",
     href: "#",
     icon: NewsIcon,
   },
   {
-    name: "Analytics",
+    name: "Benefits for Students",
     description: "Get a better understanding of your traffic",
     href: "#",
     icon: NewsIcon,
   },
   {
-    name: "Analytics",
+    name: "Benefits for Teachers",
     description: "Get a better understanding of your traffic",
     href: "#",
     icon: NewsIcon,
   },
   {
-    name: "Analytics",
+    name: "Showcase",
     description: "Get a better understanding of your traffic",
     href: "#",
     icon: NewsIcon,
   },
   {
-    name: "Analytics",
+    name: "FAQs (Frequently Asked Questions)",
     description: "Get a better understanding of your traffic",
     href: "#",
     icon: NewsIcon,
   },
   {
-    name: "Analytics",
-    description: "Get a better understanding of your traffic",
-    href: "#",
-    icon: NewsIcon,
-  },
-  {
-    name: "Analytics",
+    name: "Registration or Contact Form",
     description: "Get a better understanding of your traffic",
     href: "#",
     icon: NewsIcon,
