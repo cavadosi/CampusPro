@@ -240,7 +240,7 @@ const Navlinks = [
   },
   {
     name: "Registration or Contact Form",
-    description: "Get a better understanding of your traffic",
+    description: "Get a ",
     href: "#",
     icon: NewsIcon,
   },
