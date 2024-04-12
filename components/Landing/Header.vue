@@ -240,7 +240,7 @@ const Navlinks = [
   },
   {
     name: "Registration or Contact Form",
-    description: "Get a ",
+    description: "Get aasdjkkhdskjadhsjkdhajksdhasdkashdkjah ",
     href: "#",
     icon: NewsIcon,
   },
