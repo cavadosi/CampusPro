@@ -20,10 +20,10 @@ import RoadmapIcon from "~icons/streamline/arrow-roadmap";
 
 const navigation = [
   { name: "Overview", href: "/", icon: GridIcon },
-  { name: "Bandeja de entrada", href: "/inbox", icon: InboxIcon },
-  { name: "Tareas", href: "/tasks", icon: ClipboardIcon },
+  { name: "Inbox", href: "/inbox", icon: InboxIcon },
+  { name: "Tasks", href: "/tasks", icon: ClipboardIcon },
   { name: "Calendario", href: "/calendar", icon: CalendarIcon },
-  { name: "Calificaciones", href: "/grades", icon: ExamIcon },
+  { name: "Grades", href: "/grades", icon: ExamIcon },
   { name: "Roadmap", href: "/roadmap", icon: RoadmapIcon },
 ];
 const classes = [
