@@ -1,6 +1,8 @@
 <template>
     <LandingHeader />
+    
     <NuxtPage />
+    
 </template>
 
 <script setup></script>

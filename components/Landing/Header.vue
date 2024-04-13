@@ -5,10 +5,10 @@
       aria-label="Global"
     >
       <div class="flex lg:flex-1">
-        <a href="#" class="-m-1.5 p-1.5">
-          <span class="sr-only">Your Company</span>
+        <NuxtLink href="/landing" class="-m-1.5 p-1.5">
+          <span class="sr-only">CampusPro</span>
           <Favicon class=" h-10 w-auto "/>
-        </a>
+        </NuxtLink>
       </div>
       <div class="flex lg:hidden">
         <button
@@ -23,7 +23,7 @@
       <PopoverGroup class="hidden lg:flex lg:gap-x-12">
         <Popover class="relative">
           <PopoverButton
-            class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900"
+            class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 px-1"
           >
             Product
             <IconHeroicons:chevron-down-solid
@@ -45,7 +45,7 @@
             >
               <div class="p-4">
                 <div
-                  v-for="item in Navlinks"
+                  v-for="item in product"
                   :key="item.name"
                   class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
                 >
@@ -54,18 +54,18 @@
                   >
                     <component
                       :is="item.icon"
-                      class="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                      class="h-6 w-6 text-primary group-hover:text-primary-300"
                       aria-hidden="true"
                     />
                   </div>
                   <div class="flex-auto">
-                    <a
+                    <NuxtLink
                       :href="item.href"
                       class="block font-semibold text-gray-900"
                     >
                       {{ item.name }}
                       <span class="absolute inset-0" />
-                    </a>
+                    </NuxtLink>
                     <p class="mt-1 text-gray-600">{{ item.description }}</p>
                   </div>
                 </div>
@@ -73,7 +73,7 @@
               <div
                 class="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50"
               >
-                <a
+                <NuxtLink
                   v-for="item in callsToAction"
                   :key="item.name"
                   :href="item.href"
@@ -85,25 +85,22 @@
                     aria-hidden="true"
                   />
                   {{ item.name }}
-                </a>
+                </NuxtLink>
               </div>
             </PopoverPanel>
           </transition>
         </Popover>
 
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
-          >Features</a
+        <NuxtLink href="/landing/pricing" class="text-sm font-semibold leading-6 text-gray-900 -ml-2 px-1"
+          >Pricing</NuxtLink
         >
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
-          >Marketplace</a
-        >
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
-          >Company</a
+        <NuxtLink href="/landing/about-us" class="text-sm font-semibold leading-6 text-gray-900 px-1"
+          >About us</NuxtLink
         >
       </PopoverGroup>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
-          >Log in <span aria-hidden="true">&rarr;</span></a
+        <NuxtLink href="/login" class="text-sm font-semibold leading-6 text-gray-900"
+          >Log in <span aria-hidden="true">&rarr;</span></NuxtLink
         >
       </div>
     </nav>
@@ -118,10 +115,10 @@
         class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
       >
         <div class="flex items-center justify-between">
-          <a href="#" class="-m-1.5 p-1.5">
+          <NuxtLink href="/landing" class="-m-1.5 p-1.5">
             <span class="sr-only">Your Company</span>
             <Favicon class="h-10 w-auto"/>
-          </a>
+          </NuxtLink>
           <button
             type="button"
             class="-m-2.5 rounded-md p-2.5 text-gray-700"
@@ -146,7 +143,7 @@
                 </DisclosureButton>
                 <DisclosurePanel class="mt-2 space-y-2">
                   <DisclosureButton
-                    v-for="item in [...products, ...callsToAction]"
+                    v-for="item in [...product, ...callsToAction]"
                     :key="item.name"
                     as="a"
                     :href="item.href"
@@ -155,27 +152,22 @@
                   >
                 </DisclosurePanel>
               </Disclosure>
-              <a
-                href="#"
+              <NuxtLink
+                href="/landing/pricing"
                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >Features</a
+                >Pricing</NuxtLink
               >
-              <a
-                href="#"
+              <NuxtLink
+                href="/landing/about-us"
                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >Marketplace</a
-              >
-              <a
-                href="#"
-                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >Company</a
+                >About us</NuxtLink
               >
             </div>
             <div class="py-6">
-              <a
-                href="#"
+              <NuxtLink
+                href="/login"
                 class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >Log in</a
+                >Log in</NuxtLink
               >
             </div>
           </div>
@@ -201,47 +193,47 @@ import {
 
 import NewsIcon from '~icons/fluent/news-24-regular';
 
-const Navlinks = [
+const product = [
   {
     name: "Key features",
     description: "Get a better understanding of our product",
-    href: "#KeyFeatures",
+    href: "/landing#KeyFeatures",
     icon: NewsIcon,
   },
   {
     name: "How It Works",
     description: "Get a better understanding of your traffic",
-    href: "#HowItWorks",
+    href: "/landing#HowItWorks",
     icon: NewsIcon,
   },
   {
     name: "Benefits for Students",
     description: "Get a better understanding of your traffic",
-    href: "#BenefitsForStudents",
+    href: "/landing#BenefitsForStudents",
     icon: NewsIcon,
   },
   {
     name: "Benefits for Teachers",
     description: "Get a better understanding of your traffic",
-    href: "#BenefitsForTeachers",
+    href: "/landing#BenefitsForTeachers",
     icon: NewsIcon,
   },
   {
     name: "Showcase",
     description: "Get a better understanding of your traffic",
-    href: "#Showcase",
+    href: "/landing#Showcase",
     icon: NewsIcon,
   },
   {
     name: "FAQs (Frequently Asked Questions)",
     description: "Get a better understanding of your traffic",
-    href: "#FAQ",
+    href: "/landing#FAQ",
     icon: NewsIcon,
   },
   {
     name: "Contact us",
     description: "Get aasdjkkhdskjadhsjkdhajksdhasdkashdkjah ",
-    href: "#ContactUs",
+    href: "/landing#ContactUs",
     icon: NewsIcon,
   },
   
