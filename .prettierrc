@@ -1,0 +1,11 @@
+{
+	"singleQuote": true,
+	"printWidth": 300,
+	"editor.formatOnSave": true,
+	"tabWidth": 4,
+	"requireConfig": false,
+	"useTabs": true,
+	"trailingComma": "none",
+	"semi": true,
+	"prettier.htmlWhitespaceSensitivity": "ignore"
+}

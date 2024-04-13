@@ -56,31 +56,25 @@
               </TransitionChild>
               <!-- Sidebar component, swap this element with another sidebar if you like -->
               <div
-                class="flex grow flex-col gap-y-5 overflow-y-auto bg-secondary px-6 pb-4"
+                class="flex grow flex-col gap-y-5 overflow-y-auto bg-secondary pb-4"
               >
-                <div class="flex h-16 shrink-0 items-center">
+                <div class="flex h-16 shrink-0 items-center px-4">
                   <Favicon class="h-10 w-auto" />
                 </div>
                 <nav class="flex flex-1 flex-col">
                   <ul role="list" class="flex flex-1 flex-col gap-y-7">
                     <li>
-                      <ul role="list" class="-mx-2 space-y-1">
+                      <ul role="list" class="space-y-1">
                         <li v-for="item in navigation" :key="item.name">
-                          <NuxtLink
-                            :to="item.href"
-                            class="my-link text-darkaccent hover:text-secondary hover:bg-primary flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold"
-                          >
-                            <component
-                              :is="item.icon"
-                              class="h-6 w-6 shrink-0"
-                              aria-hidden="true"
-                            />
-                            {{ item.name }}
-                          </NuxtLink>
+                          <NavigationTitle
+                            :href="item.href"
+                            :icon="item.icon"
+                            :name="item.name"
+                          />
                         </li>
                       </ul>
                     </li>
-                    <li>
+                    <li class="px-4">
                       <div class="text-xs font-semibold leading-6 text-primary">
                         Tus Clases
                       </div>
@@ -92,7 +86,7 @@
                         >
                           <a
                             :href="element.href"
-                            class="my-link text-darkaccent hover:text-secondary hover:bg-primary flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold"
+                            class="my-link text-darkaccent hover:text-secondary hover:bg-primary-300 flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold"
                           >
                             <span
                               class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-darkaccent bg-primary text-[0.625rem] font-medium text-secondary"
@@ -103,10 +97,10 @@
                         </li>
                       </ul>
                     </li>
-                    <li class="mt-auto">
+                    <li class="mt-auto px-4">
                       <a
                         href="#"
-                        class="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 my-link text-darkaccent hover:text-secondary hover:bg-primary"
+                        class="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 my-link text-darkaccent hover:text-secondary hover:bg-primary-300"
                       >
                         <IconHeroicons:cog-6-tooth-20-solid
                           class="h-6 w-6 shrink-0"
@@ -129,40 +123,32 @@
       class="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col"
     >
       <!-- Sidebar component, swap this element with another sidebar if you like -->
-      <div
-        class="flex grow flex-col gap-y-5 overflow-y-auto bg-secondary px-6 pb-4 "
-      >
-        <div class="flex h-16 shrink-0 items-center">
+      <div class="flex grow flex-col gap-y-5 overflow-y-auto  bg-secondary pb-4">
+        <div class="flex h-16 shrink-0 items-center px-4">
           <Favicon class="h-10 w-auto" />
         </div>
         <nav class="flex flex-1 flex-col">
           <ul role="list" class="flex flex-1 flex-col gap-y-7">
             <li>
-              <ul role="list" class="-mx-2 space-y-1">
+              <ul role="list" class="space-y-1">
                 <li v-for="item in navigation" :key="item.name">
-                  <NuxtLink
-                    :to="item.href"
-                    class="my-link text-darkaccent hover:text-secondary hover:bg-primary flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold"
-                  >
-                    <component
-                      :is="item.icon"
-                      class="h-6 w-6 shrink-0"
-                      aria-hidden="true"
-                    />
-                    {{ item.name }}
-                  </NuxtLink>
+                  <NavigationTitle
+                    :href="item.href"
+                    :icon="item.icon"
+                    :name="item.name"
+                  />
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="px-4">
               <div class="text-xs font-semibold leading-6 text-primary">
                 Tus Clases
               </div>
-              <ul role="list" class="-mx-2 mt-2 space-y-1">
+              <ul role="list" class="-mx-2 mt-2 space-y-1 ">
                 <li v-for="element in elements" :key="elements.name" class>
                   <a
                     :href="element.href"
-                    class="my-link text-darkaccent hover:text-secondary hover:bg-primary flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold"
+                    class="my-link text-darkaccent hover:text-secondary hover:bg-primary-300 flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold"
                   >
                     <span
                       class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-darkaccent bg-primary text-[0.625rem] font-medium text-secondary"
@@ -173,10 +159,10 @@
                 </li>
               </ul>
             </li>
-            <li class="mt-auto">
+            <li class="mt-auto px-4">
               <a
                 href="#"
-                class="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 my-link text-darkaccent hover:text-secondary hover:bg-primary"
+                class="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 my-link text-darkaccent hover:text-secondary hover:bg-primary-300"
               >
                 <IconHeroicons:cog-6-tooth-20-solid
                   class="h-6 w-6 shrink-0"
@@ -192,7 +178,7 @@
 
     <div class="lg:pl-72">
       <div
-        class="sticky top-0 z-40 flex h-16 shrink-0 items-center gap-x-4  bg-white px-4 shadow-sm sm:gap-x-6 sm:px-6 lg:px-8 "
+        class="sticky top-0 z-40 flex h-16 shrink-0 items-center gap-x-4 bg-white border-l border-primary px-4 shadow-sm sm:gap-x-6 sm:px-6 lg:px-8"
       >
         <button
           type="button"
@@ -204,7 +190,7 @@
         </button>
 
         <!-- Separator -->
-        <div class="h-6 w-px bg-gray-900/10 lg:hidden " aria-hidden="true" />
+        <div class="h-6 w-px bg-gray-900/10 lg:hidden" aria-hidden="true" />
 
         <div class="flex flex-1 gap-x-4 self-stretch lg:gap-x-6">
           <form class="relative flex flex-1" action="#" method="GET">
@@ -292,9 +278,12 @@
         </div>
       </div>
 
-      
-      <main class="py-2 pr-1 flex max-w-full w-screen max-h-full h-[calc(100vh-64px)] bg-secondary ">
-        <div class="px-2 bg-background overflow-clip max-w-full w-screen max-h-full h-full border border-primary rounded-md overflow-x-auto scrollbar">
+      <main
+        class="flex max-w-full w-screen max-h-full h-[calc(100vh-64px)] bg-secondary"
+      >
+        <div
+          class="px-2 bg-background max-w-full w-full max-h-full h-full border-t lg:border-t-0 lg:border-l border-slate-300 lg:border-primary overflow-x-auto overflow-y-clip scrollbar"
+        >
           <!-- Your content -->
           <slot />
         </div>
@@ -305,14 +294,13 @@
 
 <style scoped>
 .my-link.router-link-exact-active {
-  @apply bg-primary text-secondary;
+  @apply border-l-8 hover:shadow-md border-y shadow-md border-darkaccent text-darkaccent;
 }
 
 .scrollbar {
   scrollbar-color: #185987 rgba(255, 255, 255, 0);
-  scrollbar-width:thin;
+  scrollbar-width: thin;
 }
-
 </style>
 
 <script setup>

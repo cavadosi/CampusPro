@@ -79,7 +79,7 @@
                 <div class="text-sm leading-6">
                   <a
                     href="#"
-                    class="font-semibold text-primary hover:text-indigo-500"
+                    class="font-semibold text-primary hover:text-primary-300"
                     >Forgot password?</a
                   >
                 </div>
@@ -88,7 +88,7 @@
               <div>
                 <button 
                   type="submit"
-                  class="flex w-full justify-center rounded-md bg-primary px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  class="flex w-full justify-center rounded-md bg-primary px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-primary-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   Sign in
                 </button>
@@ -121,16 +121,25 @@ const handleSubmit = async (event) => {
     password: formData.get('password'),
   };
   try {
-    const response = await axios.post('https://campusprob-43ea2325dc3f.herokuapp.com/api/login', userData)
-    .then(response => console.log(response)); // Hacer algo con la respuesta si es necesario
-  } catch (error) {
-    console.log(`Error en la solicitud: (${error})`);
-  }
-};
 
-definePageMeta({
-  layout: 'blank',
-});
+  const response = await axios.post('https://campusprob-43ea2325dc3f.herokuapp.com/api/login', userData);
+  const data = response.data;
+
+  console.log(response.status)
+
+  const { redirectURL, token } = data
+
+  if (response.status == 200){
+    console.log("Token-->" + token)
+    console.log("200 -->" + redirectURL);
+    window.location.href = redirectURL;
+  }
+  } catch (error) {
+  console.log(`Error en la solicitud: (${error})`); 
+  }
+  };
+
+  definePageMeta({ layout: "blank"});
 </script>
 
 <style scoped></style>

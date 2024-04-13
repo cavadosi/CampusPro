@@ -14,12 +14,12 @@ import NewsIcon from "~icons/fluent/news-24-regular";
 import axios from 'axios';
 
 const navigation = [
-  { name: "Overview", href: "/", icon: NewsIcon },
-  { name: "Bandeja de entrada", href: "/inbox", icon: NewsIcon },
-  { name: "Tareas", href: "/tasks", icon: NewsIcon },
-  { name: "Calendario", href: "/calendar", icon: NewsIcon },
-  { name: "Calificaciones", href: "/grades", icon: NewsIcon },
-  { name: "Roadmap", href: "/roadmap", icon: NewsIcon },
+  { name: "Overview", href: "/", icon: GridIcon },
+  { name: "Inbox", href: "/inbox", icon: InboxIcon },
+  { name: "Tasks", href: "/tasks", icon: ClipboardIcon },
+  { name: "Calendario", href: "/calendar", icon: CalendarIcon },
+  { name: "Grades", href: "/grades", icon: ExamIcon },
+  { name: "Roadmap", href: "/roadmap", icon: RoadmapIcon },
 ];
 const classes = [
   { name: "Clase uno", href: "#", initial: "H"},
