@@ -120,26 +120,24 @@ const handleSubmit = async (event) => {
     email: formData.get('email'),
     password: formData.get('password'),
   };
+
   try {
+    const response = await axios.post('https://campusprob-43ea2325dc3f.herokuapp.com/api/login', userData);
 
-  const response = await axios.post('https://campusprob-43ea2325dc3f.herokuapp.com/api/login', userData);
-  const data = response.data;
+    const { redirectURL, token } = response.data;
 
-  console.log(response.status)
-
-  const { redirectURL, token } = data
-
-  if (response.status == 200){
-    console.log("Token-->" + token)
-    console.log("200 -->" + redirectURL);
-    window.location.href = redirectURL;
-  }
+    if (response.status === 200) {
+      document.cookie = `Token=${token}; path=/; SameSite=None; Secure; HttpOnly=true`; // Asegurarse del httponly
+      window.location.href = redirectURL;
+    } else if (response.status === 401) {
+      alert("Correo o contraseña incorrectos.");
+    }
   } catch (error) {
-  console.log(`Error en la solicitud: (${error})`); 
+    alert(`Error en la solicitud: (${error})`); 
   }
-  };
+};
 
-  definePageMeta({ layout: "blank"});
+definePageMeta({ layout: "blank"});
 </script>
 
 <style scoped></style>
