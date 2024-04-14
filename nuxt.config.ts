@@ -3,6 +3,7 @@ import UnpluginComponentsVite from "unplugin-vue-components/vite";
 import IconsResolver from "unplugin-icons/resolver";
 
 export default defineNuxtConfig({
+
   devtools: { enabled: true },
   imports: {
     dirs: ["stores"],
@@ -19,6 +20,8 @@ export default defineNuxtConfig({
         ],
       }),
     ],
+
+
     // server: {
     // 	proxy: {
     // 		'/api': {
