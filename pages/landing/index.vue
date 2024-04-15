@@ -25,16 +25,35 @@
 				</div>
 				<div class="mx-auto space-y-16 max-w-7xl px-6 lg:px-8 mt-20">
 					<!-- Key features section -->
-					<section id="KeyFeatures" class="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4"></section>
-					<!-- How it works section -->
+					<section id="KeyFeatures" class="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
+						<div class="bg-white py-24 sm:py-32">
+							<div class="mx-auto max-w-7xl px-6 lg:px-8">
+								<div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+									<div>
+										<h2 class="text-base font-semibold leading-7 text-primary">Everything you need</h2>
+										<p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">All-in-one platform</p>
+										<p class="mt-6 text-base leading-7 text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
+									</div>
+									<dl class="col-span-2 grid grid-cols-1 gap-x-8 gap-y-10 text-base leading-7 text-gray-600 sm:grid-cols-2 lg:gap-y-16">
+										<div v-for="feature in features" :key="feature.name" class="relative pl-9">
+											<dt class="font-semibold text-gray-900">
+												<IconHeroicons:check class="absolute left-0 top-1 h-5 w-5 text-primary-300" aria-hidden="true" />
+												{{ feature.name }}
+											</dt>
+											<dd class="mt-2">{{ feature.description }}</dd>
+										</div>
+									</dl>
+								</div>
+							</div>
+						</div>
+					</section>
 
+					<!-- How it works section -->
 					<section id="HowItWorks" class="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4"></section>
 					<!-- Benefits for students section -->
-					<section id="BenefitsForStudents" class="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4"></section>
-					<!-- Benefits for teachers section -->
-					<section id="BenefitsForTeachers" class="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4"></section>
-					<!-- Showcase section -->
+					<section id="Benefits" class="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4"></section>
 
+					<!-- Showcase section -->
 					<section id="Showcase" class="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
 						<div class="bg-white pt-8 lg:pt-12">
 							<div class="mx-auto max-w-7xl px-6 lg:px-8">
@@ -138,6 +157,31 @@
 <script setup>
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue';
 
+const features = [
+	{
+		name: 'Invite team members',
+		description: 'Rerum repellat labore necessitatibus reprehenderit molestiae praesentium.'
+	},
+	{ name: 'List view', description: 'Corporis asperiores ea nulla temporibus asperiores non tempore assumenda aut.' },
+	{
+		name: 'Keyboard shortcuts',
+		description: 'In sit qui aliquid deleniti et. Ad nobis sunt omnis. Quo sapiente dicta laboriosam.'
+	},
+	{
+		name: 'Calendars',
+		description: 'Sed rerum sunt dignissimos ullam. Iusto iure occaecati voluptate eligendi fugiat sequi.'
+	},
+	{ name: 'Notifications', description: 'Quos inventore harum enim nesciunt. Aut repellat rerum omnis adipisci.' },
+	{ name: 'Boards', description: 'Quae sit sunt excepturi fugit veniam voluptatem ipsum commodi.' },
+	{
+		name: 'Reporting',
+		description: 'Eos laudantium repellat sed architecto earum unde incidunt. Illum sit dolores voluptatem.'
+	},
+	{
+		name: 'Mobile app',
+		description: 'Nulla est saepe accusamus nostrum est est. Fugit voluptatum omnis quidem voluptatem.'
+	}
+];
 const stats = [
 	{ label: 'Founded', value: '2021' },
 	{ label: 'Employees', value: '37' },
