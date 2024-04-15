@@ -131,9 +131,9 @@ const product = [
 		icon: NewsIcon
 	},
 	{
-		name: 'Contact us',
+		name: 'CTA',
 		description: 'Get aasdjkkhdskjadhsjkdhajksdhasdkashdkjah ',
-		href: '/landing#ContactUs',
+		href: '/landing#CTA',
 		icon: NewsIcon
 	}
 ];
