@@ -77,31 +77,30 @@
 import axios from 'axios';
 
 const handleSubmit = async (event) => {
-	event.preventDefault();
+  event.preventDefault();
 
-	const formData = new FormData(event.target);
+  const formData = new FormData(event.target);
 
-	const userData = {
-		email: formData.get('email'),
-		password: formData.get('password')
-	};
-	try {
-		const response = await axios.post('https://campusprob-43ea2325dc3f.herokuapp.com/api/login', userData);
-		const data = response.data;
+  const userData = {
+    email: formData.get('email'),
+    password: formData.get('password'),
+  };
 
-		console.log(response.status);
+  try {
+    const response = await axios.post('https://campusprob-43ea2325dc3f.herokuapp.com/api/login', userData);
 
-		const { redirectURL, token } = data;
+    const { redirectURL, token } = response.data;
 
-		if (response.status == 200) {
-			console.log('Token-->' + token);
-			console.log('200 -->' + redirectURL);
-			window.location.href = redirectURL;
-		}
-	} catch (error) {
-		console.log(`Error en la solicitud: (${error})`);
-	}
+    if (response.status === 200) {
+    //   document.cookie = `Token= ${token}; path=/; SameSite=None; Secure; HttpOnly=true`; // Asegurarse del httponly
+    //   window.location.href = redirectURL;
+    } else if (response.status === 401) {
+      alert("Correo o contraseña incorrectos.");
+    }
+  } catch (error) {
+    alert(`Error en la solicitud: (${error})`); 
+  }
 };
 
-definePageMeta({ layout: 'blank' });
+definePageMeta({ layout: "blank"});
 </script>
