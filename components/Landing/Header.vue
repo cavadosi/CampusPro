@@ -16,7 +16,7 @@
 			<PopoverGroup class="hidden lg:flex lg:gap-x-12">
 				<Popover class="relative">
 					<PopoverButton class="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 pl-0.5">
-						<span>Solutions</span>
+						<span>Product</span>
 						<IconHeroicons:chevron-down class="h-5 w-5" aria-hidden="true" />
 					</PopoverButton>
 
@@ -44,18 +44,10 @@
 										</div>
 									</div>
 								</div>
-								<div class="bg-gray-50 px-8 py-6">
-									<div class="flex items-center gap-x-3">
-										<h3 class="text-sm font-semibold leading-6 text-gray-900">Enterprise</h3>
-										<p class="rounded-full bg-indigo-600/10 px-2.5 py-1.5 text-xs font-semibold text-primary">New</p>
-									</div>
-									<p class="mt-2 text-sm leading-6 text-gray-600">Empower your entire team with even more advanced tools.</p>
-								</div>
 							</div>
 						</PopoverPanel>
 					</transition>
 				</Popover>
-
 				<NuxtLink href="/landing/pricing" class="text-sm font-semibold leading-6 text-gray-900 -ml-2 px-1">Pricing</NuxtLink>
 				<NuxtLink href="/landing/about-us" class="text-sm font-semibold leading-6 text-gray-900 px-1">About us</NuxtLink>
 			</PopoverGroup>
