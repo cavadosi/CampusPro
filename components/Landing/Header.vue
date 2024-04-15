@@ -138,7 +138,7 @@ const product = [
 	{
 		name: 'Contact us',
 		description: 'Get in touch for further details',
-		href: '/landing#ContactUs',
+		href: '/landing#CTA',
 		icon: ContactIcon
 	}
 ];
