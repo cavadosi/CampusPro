@@ -34,7 +34,54 @@
 					<!-- Benefits for teachers section -->
 					<section id="BenefitsForTeachers" class="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4"></section>
 					<!-- Showcase section -->
-					<section id="Showcase" class="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4"></section>
+
+					<section id="Showcase" class="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
+						<div class="bg-white pt-8 lg:pt-12">
+							<div class="mx-auto max-w-7xl px-6 lg:px-8">
+								<div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
+									<p class="text-base font-semibold leading-7 text-primary-300">Deploy faster</p>
+									<h1 class="mt-2 text-3xl font-bold tracking-tight text-black sm:text-4xl">A better workflow</h1>
+									<div class="mt-10 grid max-w-xl grid-cols-1 gap-8 text-base leading-7 text-gray-600 lg:max-w-none lg:grid-cols-2">
+										<div>
+											<p>
+												Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit. Faucibus commodo massa rhoncus,
+												volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id.
+											</p>
+											<p class="mt-8">Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac adipiscing egestas.</p>
+										</div>
+										<div>
+											<p>Erat pellentesque dictumst ligula porttitor risus eget et eget. Ultricies tellus felis id dignissim eget. Est augue maecenas risus nulla ultrices congue nunc tortor. Enim et nesciunt doloremque nesciunt voluptate.</p>
+											<p class="mt-8">
+												Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac adipiscing egestas. Iaculis convallis ac tempor
+												et ut. Ac lorem vel integer orci.
+											</p>
+										</div>
+									</div>
+									<dl class="mt-16 grid grid-cols-1 gap-x-8 gap-y-12 sm:mt-20 sm:grid-cols-2 sm:gap-y-16 lg:mt-28 lg:grid-cols-4">
+										<div v-for="(stat, statIdx) in stats" :key="statIdx" class="flex flex-col-reverse gap-y-3 border-l border-gray/70 pl-6">
+											<dt class="text-base leading-7 text-slate-500">{{ stat.label }}</dt>
+											<dd class="text-3xl font-semibold tracking-tight text-black">{{ stat.value }}</dd>
+										</div>
+									</dl>
+								</div>
+							</div>
+						</div>
+
+						<div class="bg-white py-24 sm:py-32">
+							<div class="mx-auto max-w-7xl px-6 lg:px-8">
+								<div class="mx-auto max-w-2xl lg:max-w-none">
+									<h2 class="text-lg font-semibold leading-8 text-gray-900">Trusted by the world’s most innovative teams</h2>
+									<div class="mx-auto mt-10 grid grid-cols-4 items-start gap-x-8 gap-y-10 sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:grid-cols-5">
+										<img class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1" src="https://tailwindui.com/img/logos/transistor-logo-gray-900.svg" alt="Transistor" width="158" height="48" />
+										<img class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1" src="https://tailwindui.com/img/logos/reform-logo-gray-900.svg" alt="Reform" width="158" height="48" />
+										<img class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1" src="https://tailwindui.com/img/logos/tuple-logo-gray-900.svg" alt="Tuple" width="158" height="48" />
+										<img class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1" src="https://tailwindui.com/img/logos/savvycal-logo-gray-900.svg" alt="SavvyCal" width="158" height="48" />
+										<img class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1" src="https://tailwindui.com/img/logos/statamic-logo-gray-900.svg" alt="Statamic" width="158" height="48" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
 					<!-- FAQ section -->
 					<section id="FAQ" class="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4"></section>
 					<!-- CTA section -->
@@ -65,6 +112,12 @@
 </template>
 
 <script setup>
+const stats = [
+	{ label: 'Founded', value: '2021' },
+	{ label: 'Employees', value: '37' },
+	{ label: 'Countries', value: '12' },
+	{ label: 'Raised', value: '$25M' }
+];
 definePageMeta({
 	layout: 'landing'
 });
