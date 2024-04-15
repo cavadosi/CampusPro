@@ -97,49 +97,54 @@
 import { ref } from 'vue';
 import { Dialog, DialogPanel, Disclosure, DisclosureButton, DisclosurePanel, Popover, PopoverButton, PopoverGroup, PopoverPanel } from '@headlessui/vue';
 
-import NewsIcon from '~icons/fluent/news-24-regular';
+import TipsIcon from '~icons/material-symbols/tips-and-updates-outline-rounded';
+import SystemIcon from '~icons/tdesign/system-coordinate';
+import GraphIcon from '~icons/streamline/money-graph-bar-increase-up-product-performance-increase-arrow-graph-business-chart';
+import PresentationIcon from '~icons/ph/presentation-bold';
+import FAQsIcon from '~icons/mdi/comment-question-outline';
+import ContactIcon from '~icons/ic/outline-contacts';
 
 const product = [
 	{
 		name: 'Key features',
-		description: 'Get a better understanding of our product',
+		description: 'The essential traits of our product that set us apart from others',
 		href: '/landing#KeyFeatures',
-		icon: NewsIcon
+		icon: TipsIcon
 	},
 	{
 		name: 'How It Works',
-		description: 'Get a better understanding of your traffic',
+		description: 'Discover how our unique system works',
 		href: '/landing#HowItWorks',
-		icon: NewsIcon
+		icon: SystemIcon
 	},
 	{
 		name: 'Benefits for Students/Teachers',
-		description: 'Get a better understanding of your traffic',
+		description: 'Find out how Campus Pro enhances efficiency and organization',
 		href: '/landing#BenefitsForStudents',
-		icon: NewsIcon
+		icon: GraphIcon
 	},
 	{
 		name: 'Showcase',
-		description: 'Get a better understanding of your traffic',
+		description: 'A visual demonstration of our software',
 		href: '/landing#Showcase',
-		icon: NewsIcon
+		icon: PresentationIcon
 	},
 	{
 		name: 'FAQs (Frequently Asked Questions)',
-		description: 'Get a better understanding of your traffic',
+		description: 'Find quick answers in our FAQs',
 		href: '/landing#FAQ',
-		icon: NewsIcon
+		icon: FAQsIcon
 	},
 	{
 		name: 'Contact us',
-		description: 'Get aasdjkkhdskjadhsjkdhajksdhasdkashdkjah ',
+		description: 'Get in touch for further details',
 		href: '/landing#ContactUs',
-		icon: NewsIcon
+		icon: ContactIcon
 	}
 ];
 const callsToAction = [
-	{ name: 'Watch demo', href: '#', icon: NewsIcon },
-	{ name: 'Contact sales', href: '#', icon: NewsIcon }
+	{ name: 'Watch demo', href: '#', icon: TipsIcon },
+	{ name: 'Contact sales', href: '#', icon: TipsIcon }
 ];
 
 const mobileMenuOpen = ref(false);
