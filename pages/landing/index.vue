@@ -13,8 +13,9 @@
 						<h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Taking <span class="text-accent">learning</span> to the next level</h1>
 						<p class="mt-6 text-lg leading-8 text-gray-600">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
 						<div class="mt-10 flex items-center justify-center gap-x-6">
-							<a href="#" class="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-primary-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
-							<a href="#" class="text-sm font-semibold leading-6 text-gray-900">Learn more <span aria-hidden="true">→</span></a>
+							<ButtonGradient link="#" text="Get started" />
+
+							<NuxtLink href="#" class="text-sm font-semibold leading-6 text-gray-900">Learn more <span aria-hidden="true">→</span></NuxtLink>
 						</div>
 					</div>
 					<div class="mt-16 flow-root sm:mt-24">
@@ -207,13 +208,12 @@
 
 					<!-- CTA section -->
 					<section id="CTA">
-						<div class="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
+						<div class="px-6 py-16 sm:px-6 sm:py-20 lg:px-8">
 							<div class="mx-auto max-w-2xl text-center">
 								<h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Boost your productivity.<br />Start using our app today.</h2>
 								<p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-600">Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim id veniam aliqua proident excepteur commodo do ea.</p>
 								<div class="mt-10 flex items-center justify-center gap-x-6">
-									<a href="#" class="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-primary-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Get started</a>
-									<a href="#" class="text-sm font-semibold leading-6 text-gray-900">Learn more <span aria-hidden="true">→</span></a>
+									<ButtonGradient link="#" text="Get started" />
 								</div>
 							</div>
 						</div>

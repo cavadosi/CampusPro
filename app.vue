@@ -13,7 +13,7 @@ html {
 }
 
 body {
-	background: url('/public/gggrain.svg') no-repeat center center fixed;
+	background: url('/public/background.svg') no-repeat center center fixed;
 	background-size: cover;
 	min-height: 100%;
 	margin: 0;
