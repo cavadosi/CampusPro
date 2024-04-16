@@ -105,21 +105,17 @@
 				<!-- Separator -->
 				<div class="h-6 w-px bg-gray-900/10 lg:hidden" aria-hidden="true" />
 
-				<div class="flex flex-1 gap-x-4 self-stretch lg:gap-x-6">
-					<form class="relative flex flex-1" action="#" method="GET">
-						<label for="search-field" class="sr-only">Search</label>
-						<IconHeroicons:magnifying-glass-20-solid class="pointer-events-none absolute ml-2 inset-y-0 left-0 h-full w-5 text-gray-400" aria-hidden="true" />
-						<input id="search-field" class="block h-full w-full border-0 py-0 pl-10 pr-0 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm" placeholder="Search..." type="search" name="search" />
-					</form>
-					<div class="flex items-center gap-x-4 lg:gap-x-6">
+				<div class="flex flex-1 gap-x-4 items-center justify-end lg:gap-x-6 my-2">
+					<InputSpotlight />
+
+					<div class="flex items-center gap-x-2 lg:gap-x-4">
+						<!-- Separator -->
+						<div class="hidden lg:block lg:h-6 lg:w-px lg:bg-gray-900/10" aria-hidden="true" />
+
 						<button type="button" class="-m-2.5 p-2.5 text-gray-400 hover:text-gray-500">
 							<span class="sr-only">View notifications</span>
 							<IconMaterial-symbols:notifications-outline-rounded class="h-6 w-6" aria-hidden="true" />
 						</button>
-
-						<!-- Separator -->
-						<div class="hidden lg:block lg:h-6 lg:w-px lg:bg-gray-900/10" aria-hidden="true" />
-
 						<!-- Profile dropdown -->
 						<Menu as="div" class="relative">
 							<MenuButton class="-m-1.5 flex items-center p-1.5">
