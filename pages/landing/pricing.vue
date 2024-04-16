@@ -1,6 +1,6 @@
 <template>
 	<div class="isolate overflow-hidden">
-		<div class="flow-root lg:bg-white pb-16 pt-24 sm:pt-32 lg:pb-0">
+		<div class="flow-root pb-16 pt-24 sm:pt-32 lg:pb-0">
 			<div class="mx-auto max-w-7xl px-6 lg:px-8">
 				<div class="relative z-10">
 					<h2 class="mx-auto max-w-4xl text-center text-5xl font-bold tracking-tight text-black">Simple pricing, no commitment</h2>

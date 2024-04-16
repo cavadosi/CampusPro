@@ -96,7 +96,7 @@
 		</div>
 
 		<div class="lg:pl-72">
-			<div class="sticky top-0 z-40 flex h-16 shrink-0 items-center gap-x-4 bg-white border-l border-primary px-4 shadow-sm sm:gap-x-6 sm:px-6 lg:px-8">
+			<div class="sticky top-0 z-40 flex h-16 shrink-0 items-center gap-x-4 bg-white border-l border-primary shadow-sm px-4 sm:gap-x-6 sm:px-6 lg:px-8">
 				<button type="button" class="-m-2.5 p-2.5 text-gray-700 lg:hidden" @click="sidebarOpen = true">
 					<span class="sr-only">Open sidebar</span>
 					<IconHeroicons:bars-3 class="h-6 w-6" aria-hidden="true" />
@@ -149,8 +149,8 @@
 				</div>
 			</div>
 
-			<main class="flex max-w-full w-screen max-h-full h-[calc(100vh-64px)] bg-secondary">
-				<div class="px-2 bg-background max-w-full w-full max-h-full h-full border-t lg:border-t-0 lg:border-l border-slate-300 lg:border-primary overflow-x-auto overflow-y-clip scrollbar">
+			<main class="flex max-w-full w-screen max-h-full h-[calc(100vh-64px)]">
+				<div class="px-2 max-w-full w-full max-h-full h-full border-t lg:border-t-0 lg:border-l border-slate-500 lg:border-primary overflow-x-auto overflow-y-clip scrollbar">
 					<!-- Your content -->
 					<slot />
 				</div>
@@ -162,11 +162,6 @@
 <style scoped>
 .my-link.router-link-exact-active {
 	@apply border-l-8 hover:shadow-md border-y shadow-md border-darkaccent text-darkaccent;
-}
-
-.scrollbar {
-	scrollbar-color: #185987 rgba(255, 255, 255, 0);
-	scrollbar-width: thin;
 }
 </style>
 

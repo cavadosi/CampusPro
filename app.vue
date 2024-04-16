@@ -1,5 +1,5 @@
 <template>
-	<Html class="h-full">
+	<Html class="h-full scrollbar overflow-x-auto">
 		<NuxtLayout>
 			<NuxtPage />
 		</NuxtLayout>
@@ -13,7 +13,8 @@ html {
 }
 
 body {
-	background-color: #ffffff;
+	background: url('/public/gggrain.svg') no-repeat center center fixed;
+	background-size: cover;
 	min-height: 100%;
 	margin: 0;
 	position: relative;
@@ -29,5 +30,10 @@ body::before {
 	height: 100%;
 	z-index: -1;
 	background-size: cover;
+}
+
+.scrollbar {
+	scrollbar-color: #185987 rgba(0, 0, 0, 0);
+	scrollbar-width: thin;
 }
 </style>
