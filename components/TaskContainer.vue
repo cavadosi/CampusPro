@@ -9,7 +9,7 @@
 				<h1>...</h1>
 			</div>
 			<!-- task container -->
-			<div class="flex-grow w-full overflow-y-auto">
+			<div class="flex-grow w-full overflow-y-auto scrollbar">
 				<div class="flex-col space-y-2 mr-2">
 					<TaskCard v-for="task in tasks" :title="task.title" :columnType="columnType" />
 				</div>
