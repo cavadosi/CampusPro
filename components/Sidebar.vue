@@ -18,7 +18,7 @@
 								</div>
 							</TransitionChild>
 							<!-- Sidebar component, swap this element with another sidebar if you like -->
-							<div class="flex grow flex-col gap-y-5 overflow-y-auto bg-secondary pb-4">
+							<div class="flex grow flex-col gap-y-5 overflow-y-auto bg-white pb-4">
 								<div class="flex h-16 shrink-0 items-center px-4">
 									<Favicon class="h-10 w-auto" />
 								</div>
@@ -60,7 +60,7 @@
 		<!-- Static sidebar for desktop -->
 		<div class="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col">
 			<!-- Sidebar component, swap this element with another sidebar if you like -->
-			<div class="flex grow flex-col gap-y-5 overflow-y-auto bg-white pb-4">
+			<div class="flex grow flex-col gap-y-5 overflow-y-auto bg-white pb-4 border-r border-primary">
 				<div class="flex h-16 shrink-0 items-center px-4">
 					<Favicon class="h-10 w-auto" />
 				</div>
@@ -96,7 +96,7 @@
 		</div>
 
 		<div class="lg:pl-72">
-			<div class="sticky top-0 z-40 flex h-16 shrink-0 items-center gap-x-4 bg-white border-l border-primary shadow-sm px-4 sm:gap-x-6 sm:px-6 lg:px-8">
+			<div class="sticky top-0 z-40 flex h-16 shrink-0 items-center gap-x-4 bg-white border-b border-slate-300 shadow-sm px-4 sm:gap-x-6 sm:px-6 lg:px-8">
 				<button type="button" class="-m-2.5 p-2.5 text-gray-700 lg:hidden" @click="sidebarOpen = true">
 					<span class="sr-only">Open sidebar</span>
 					<IconHeroicons:bars-3 class="h-6 w-6" aria-hidden="true" />
@@ -146,7 +146,7 @@
 			</div>
 
 			<main class="flex max-w-full w-screen max-h-full h-[calc(100vh-64px)]">
-				<div class="px-2 max-w-full w-full max-h-full h-full border-t lg:border-t-0 lg:border-l border-slate-500 lg:border-primary overflow-x-auto overflow-y-clip scrollbar">
+				<div class="px-2 max-w-full w-full max-h-full h-full overflow-x-auto overflow-y-clip scrollbar">
 					<!-- Your content -->
 					<slot />
 				</div>
