@@ -32,8 +32,20 @@ body::before {
 	background-size: cover;
 }
 
-.scrollbar {
+/*.scrollbar {
 	scrollbar-color: #185987 rgba(0, 0, 0, 0);
 	scrollbar-width: thin;
+}*/
+
+/* Scrollbar mejorado por el pro Andres */
+.scrollbar::-webkit-scrollbar {
+	height: 5px;
+	width: 5px;
+	background: rgb(255, 255, 255, 0);
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+	background: #185987;
+	border-radius: 50px;
 }
 </style>
