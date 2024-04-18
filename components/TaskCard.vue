@@ -10,7 +10,9 @@
 				<h2 class="text-primary">{{ title }}</h2>
 			</div>
 			<!-- Pill component -->
-			<div class="">pills</div>
+			<div class="flex flex-wrap gap-x-1.5 gap-y-1 mt-6">
+				<TaskPill v-for="item in props.pills" :content="item" class="" />
+			</div>
 		</div>
 	</div>
 </template>
@@ -24,6 +26,10 @@ const props = defineProps({
 	columnType: {
 		type: String,
 		default: ''
+	},
+	pills: {
+		type: Object,
+		default: {}
 	}
 });
 

@@ -7,10 +7,214 @@
 
 <script setup>
 const tasks = {
-	TODO: [{ title: 'Card1' }, { title: 'Card1' }, { title: 'Card1' }, { title: 'Card2' }],
-	INPROGRESS: [{ title: 'Card1' }, { title: 'Card1' }, { title: 'Card1' }, { title: 'Card2' }, { title: 'Card2' }, { title: 'Card2' }, { title: 'Card3' }, { title: 'Card1' }, { title: 'Card1' }, { title: 'Card1' }, { title: 'Card2' }, { title: 'Card2' }, { title: 'Card2' }, { title: 'Card3' }],
-	DONE: [{ title: 'Card1' }, { title: 'Card1' }, { title: 'Card1' }, { title: 'Card2' }, { title: 'Card2' }, { title: 'Card2' }, { title: 'Card3' }],
-	CANCELLED: [{ title: 'Card1' }, { title: 'Card1' }, { title: 'Card1' }, { title: 'Card2' }, { title: 'Card2' }, { title: 'Card2' }, { title: 'Card3' }]
+	TODO: [
+		{
+			title: 'Card1',
+			pills: {
+				unit: 'UF1',
+				date: '20-5-2024',
+				unit1: 'UF1',
+				date2: '20-5-2024',
+				unit3: 'UF1',
+				date4: '20-5-2024'
+			}
+		},
+		{
+			title: 'Card1',
+			pills: {
+				unit: 'UF1',
+				date: '20-5-2024'
+			}
+		},
+		{
+			title: 'Card1',
+			pills: {
+				unit: 'UF1',
+				date: '20-5-2024'
+			}
+		},
+		{
+			title: 'Card1',
+			pills: {
+				unit: 'UF1',
+				date: '20-5-2024'
+			}
+		}
+	],
+	INPROGRESS: [
+		{
+			title: 'Card1',
+			pills: {
+				unit: 'UF1',
+				date: '20-5-2024'
+			}
+		},
+		{
+			title: 'Card1',
+			pills: {
+				unit: 'UF1',
+				date: '20-5-2024'
+			}
+		},
+		{
+			title: 'Card1',
+			pills: {
+				unit: 'UF1',
+				date: '20-5-2024'
+			}
+		},
+		{
+			title: 'Card1',
+			pills: {
+				unit: 'UF1',
+				date: '20-5-2024'
+			}
+		},
+		{
+			title: 'Card1',
+			pills: {
+				unit: 'UF1',
+				date: '20-5-2024'
+			}
+		},
+		{
+			title: 'Card1',
+			pills: {
+				unit: 'UF1',
+				date: '20-5-2024'
+			}
+		},
+		{
+			title: 'Card1',
+			pills: {
+				unit: 'UF1',
+				date: '20-5-2024'
+			}
+		},
+		{
+			title: 'Card1',
+			pills: {
+				unit: 'UF1',
+				date: '20-5-2024'
+			}
+		}
+	],
+	DONE: [
+		{
+			title: 'Card1',
+			pills: {
+				unit: 'UF1',
+				date: '20-5-2024'
+			}
+		},
+		{
+			title: 'Card1',
+			pills: {
+				unit: 'UF1',
+				date: '20-5-2024'
+			}
+		},
+		{
+			title: 'Card1',
+			pills: {
+				unit: 'UF1',
+				date: '20-5-2024'
+			}
+		},
+		{
+			title: 'Card1',
+			pills: {
+				unit: 'UF1',
+				date: '20-5-2024'
+			}
+		},
+		{
+			title: 'Card1',
+			pills: {
+				unit: 'UF1',
+				date: '20-5-2024'
+			}
+		},
+		{
+			title: 'Card1',
+			pills: {
+				unit: 'UF1',
+				date: '20-5-2024'
+			}
+		},
+		{
+			title: 'Card1',
+			pills: {
+				unit: 'UF1',
+				date: '20-5-2024'
+			}
+		},
+		{
+			title: 'Card1',
+			pills: {
+				unit: 'UF1',
+				date: '20-5-2024'
+			}
+		},
+		{
+			title: 'Card1',
+			pills: {
+				unit: 'UF1',
+				date: '20-5-2024'
+			}
+		},
+		{
+			title: 'Card1',
+			pills: {
+				unit: 'UF1',
+				date: '20-5-2024'
+			}
+		},
+		{
+			title: 'Card1',
+			pills: {
+				unit: 'UF1',
+				date: '20-5-2024'
+			}
+		},
+		{
+			title: 'Card1',
+			pills: {
+				unit: 'UF1',
+				date: '20-5-2024'
+			}
+		}
+	],
+	CANCELLED: [
+		{
+			title: 'Card1',
+			pills: {
+				unit: 'UF1',
+				date: '20-5-2024'
+			}
+		},
+		{
+			title: 'Card1',
+			pills: {
+				unit: 'UF1',
+				date: '20-5-2024'
+			}
+		},
+		{
+			title: 'Card1',
+			pills: {
+				unit: 'UF1',
+				date: '20-5-2024'
+			}
+		},
+		{
+			title: 'Card1',
+			pills: {
+				unit: 'UF1',
+				date: '20-5-2024'
+			}
+		}
+	]
 };
 </script>
 

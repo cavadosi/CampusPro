@@ -11,7 +11,7 @@
 			<!-- task container -->
 			<div class="flex-grow w-full overflow-y-auto scrollbar">
 				<div class="flex-col space-y-2 mr-2">
-					<TaskCard v-for="task in tasks" :title="task.title" :columnType="columnType" />
+					<TaskCard v-for="task in tasks" :title="task.title" :pills="task.pills" :columnType="columnType" />
 				</div>
 			</div>
 		</div>
@@ -25,8 +25,8 @@ const props = defineProps({
 		default: '' // Default value for columnType (if not provided)
 	},
 	tasks: {
-		type: Array,
-		default: () => [] // Default value for tasks (an empty array)
+		type: Object,
+		default: {}
 	}
 });
 
