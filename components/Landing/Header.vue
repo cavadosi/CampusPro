@@ -120,7 +120,7 @@ const product = [
 	{
 		name: 'Benefits for Students/Teachers',
 		description: 'Find out how Campus Pro enhances efficiency and organization',
-		href: '/landing#BenefitsForStudents',
+		href: '/landing#Benefits',
 		icon: GraphIcon
 	},
 	{
