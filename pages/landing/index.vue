@@ -10,17 +10,17 @@
 			<div class="py-24 sm:py-32 lg:pb-40">
 				<div class="mx-auto max-w-7xl px-6 lg:px-8">
 					<div class="mx-auto max-w-2xl text-center">
-						<h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Taking <span class="text-accent">learning</span> to the next level</h1>
-						<p class="mt-6 text-lg leading-8 text-gray-600">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
+						<h1 class="text-4xl font-bold tracking-tight text-tbase sm:text-6xl">Taking <span class="text-accent">learning</span> to the next level</h1>
+						<p class="mt-6 text-lg leading-8 text-tlight">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
 						<div class="mt-10 flex items-center justify-center gap-x-6">
 							<ButtonGradient link="#" text="Get started" />
 
-							<NuxtLink href="#" class="text-sm font-semibold leading-6 text-gray-900">Learn more <span aria-hidden="true">→</span></NuxtLink>
+							<NuxtLink href="#" class="text-sm font-semibold leading-6 text-tbase">Learn more <span aria-hidden="true">→</span></NuxtLink>
 						</div>
 					</div>
 					<div class="mt-16 flow-root sm:mt-24">
-						<div class="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
-							<img src="https://tailwindui.com/img/component-images/project-app-screenshot.png" alt="App screenshot" width="2432" height="1442" class="rounded-md shadow-2xl ring-1 ring-gray-900/10" />
+						<div class="-m-2 rounded-xl bg-tbase/5 p-2 ring-1 ring-inset ring-tbase/10 lg:-m-4 lg:rounded-2xl lg:p-4">
+							<img src="https://tailwindui.com/img/component-images/project-app-screenshot.png" alt="App screenshot" width="2432" height="1442" class="rounded-md shadow-2xl ring-1 ring-tbase/10" />
 						</div>
 					</div>
 				</div>
@@ -31,12 +31,12 @@
 							<div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
 								<div>
 									<h2 class="text-base font-semibold leading-7 text-primary">Everything you need</h2>
-									<p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">All-in-one platform</p>
-									<p class="mt-6 text-base leading-7 text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
+									<p class="mt-2 text-3xl font-bold tracking-tight text-tbase sm:text-4xl">All-in-one platform</p>
+									<p class="mt-6 text-base leading-7 text-tlight">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
 								</div>
-								<dl class="col-span-2 grid grid-cols-1 gap-x-8 gap-y-10 text-base leading-7 text-gray-600 sm:grid-cols-2 lg:gap-y-16">
+								<dl class="col-span-2 grid grid-cols-1 gap-x-8 gap-y-10 text-base leading-7 text-tlight sm:grid-cols-2 lg:gap-y-16">
 									<div v-for="feature in features" :key="feature.name" class="relative pl-9">
-										<dt class="font-semibold text-gray-900">
+										<dt class="font-semibold text-tbase">
 											<IconHeroicons:check class="absolute left-0 top-1 h-5 w-5 text-primary-300" aria-hidden="true" />
 											{{ feature.name }}
 										</dt>
@@ -54,11 +54,11 @@
 								<div class="px-6 lg:px-0 lg:pr-4 lg:pt-4">
 									<div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
 										<h2 class="text-base font-semibold leading-7 text-primary">Deploy faster</h2>
-										<p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">A better workflow</p>
-										<p class="mt-6 text-lg leading-8 text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
-										<dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
+										<p class="mt-2 text-3xl font-bold tracking-tight text-tbase sm:text-4xl">A better workflow</p>
+										<p class="mt-6 text-lg leading-8 text-tlight">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
+										<dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-tlight lg:max-w-none">
 											<div v-for="feature in usage" :key="feature.name" class="relative pl-9">
-												<dt class="inline font-semibold text-gray-900">
+												<dt class="inline font-semibold text-tbase">
 													<component :is="feature.icon" class="absolute left-1 top-1 h-5 w-5 text-accent" aria-hidden="true" />
 													{{ feature.name }}
 												</dt>
@@ -74,7 +74,7 @@
 										<div class="mx-auto max-w-2xl sm:mx-0 sm:max-w-none">
 											<img src="https://tailwindui.com/img/component-images/project-app-screenshot.png" alt="Product screenshot" width="2432" height="1442" class="-mb-12 w-[57rem] max-w-none rounded-tl-xl bg-gray-800 ring-1 ring-white/10" />
 										</div>
-										<div class="pointer-events-none absolute inset-0 ring-1 ring-inset ring-black/10 sm:rounded-3xl" aria-hidden="true" />
+										<div class="pointer-events-none absolute inset-0 ring-1 ring-inset ring-tbase/10 sm:rounded-3xl" aria-hidden="true" />
 									</div>
 								</div>
 							</div>
@@ -98,33 +98,33 @@
 						<div class="mx-auto max-w-7xl px-6 lg:px-8">
 							<div class="mx-auto max-w-xl text-center">
 								<h2 class="text-lg font-semibold leading-8 tracking-tight text-primary">Testimonials</h2>
-								<p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">We have worked with thousands of amazing people</p>
+								<p class="mt-2 text-3xl font-bold tracking-tight text-tbase sm:text-4xl">We have worked with thousands of amazing people</p>
 							</div>
-							<div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
-								<figure class="rounded-2xl bg-white shadow-lg ring-1 ring-gray-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
-									<blockquote class="p-6 text-lg font-semibold leading-7 tracking-tight text-gray-900 sm:p-12 sm:text-xl sm:leading-8">
+							<div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-tbase sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
+								<figure class="rounded-2xl bg-bg shadow-lg ring-1 ring-tbase/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
+									<blockquote class="p-6 text-lg font-semibold leading-7 tracking-tight text-tbase sm:p-12 sm:text-xl sm:leading-8">
 										<p>{{ `“${featuredTestimonial.body}”` }}</p>
 									</blockquote>
-									<figcaption class="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-gray-900/10 px-6 py-4 sm:flex-nowrap">
-										<img class="h-10 w-10 flex-none rounded-full bg-gray-50" :src="featuredTestimonial.author.imageUrl" alt="" />
+									<figcaption class="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-tbase/10 px-6 py-4 sm:flex-nowrap">
+										<img class="h-10 w-10 flex-none rounded-full bg-bg" :src="featuredTestimonial.author.imageUrl" alt="" />
 										<div class="flex-auto">
 											<div class="font-semibold">{{ featuredTestimonial.author.name }}</div>
-											<div class="text-gray-600">{{ `@${featuredTestimonial.author.handle}` }}</div>
+											<div class="text-tlight">{{ `@${featuredTestimonial.author.handle}` }}</div>
 										</div>
 										<img class="h-10 w-auto flex-none" :src="featuredTestimonial.author.logoUrl" alt="" />
 									</figcaption>
 								</figure>
 								<div v-for="(columnGroup, columnGroupIdx) in testimonials" :key="columnGroupIdx" class="space-y-8 xl:contents xl:space-y-0">
 									<div v-for="(column, columnIdx) in columnGroup" :key="columnIdx" :class="[(columnGroupIdx === 0 && columnIdx === 0) || (columnGroupIdx === testimonials.length - 1 && columnIdx === columnGroup.length - 1) ? 'xl:row-span-2' : 'xl:row-start-1', 'space-y-8']">
-										<figure v-for="testimonial in column" :key="testimonial.author.handle" class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
-											<blockquote class="text-gray-900">
+										<figure v-for="testimonial in column" :key="testimonial.author.handle" class="rounded-2xl bg-bg p-6 shadow-lg ring-1 ring-tbase/5">
+											<blockquote class="text-tbase">
 												<p>{{ `“${testimonial.body}”` }}</p>
 											</blockquote>
 											<figcaption class="mt-6 flex items-center gap-x-4">
-												<img class="h-10 w-10 rounded-full bg-gray-50" :src="testimonial.author.imageUrl" alt="" />
+												<img class="h-10 w-10 rounded-full bg-bg" :src="testimonial.author.imageUrl" alt="" />
 												<div>
 													<div class="font-semibold">{{ testimonial.author.name }}</div>
-													<div class="text-gray-600">{{ `@${testimonial.author.handle}` }}</div>
+													<div class="text-tlight">{{ `@${testimonial.author.handle}` }}</div>
 												</div>
 											</figcaption>
 										</figure>
@@ -139,8 +139,8 @@
 							<div class="mx-auto max-w-7xl px-6 lg:px-8">
 								<div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
 									<p class="text-base font-semibold leading-7 text-primary-300">Deploy faster</p>
-									<h1 class="mt-2 text-3xl font-bold tracking-tight text-black sm:text-4xl">A better workflow</h1>
-									<div class="mt-10 grid max-w-xl grid-cols-1 gap-8 text-base leading-7 text-gray-600 lg:max-w-none lg:grid-cols-2">
+									<h1 class="mt-2 text-3xl font-bold tracking-tight text-tbase sm:text-4xl">A better workflow</h1>
+									<div class="mt-10 grid max-w-xl grid-cols-1 gap-8 text-base leading-7 text-tlight lg:max-w-none lg:grid-cols-2">
 										<div>
 											<p>
 												Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit. Faucibus commodo massa rhoncus,
@@ -159,7 +159,7 @@
 									<dl class="mt-16 grid grid-cols-1 gap-x-8 gap-y-12 sm:mt-20 sm:grid-cols-2 sm:gap-y-16 lg:mt-28 lg:grid-cols-4">
 										<div v-for="(stat, statIdx) in stats" :key="statIdx" class="flex flex-col-reverse gap-y-3 border-l border-gray/70 pl-6">
 											<dt class="text-base leading-7 text-slate-500">{{ stat.label }}</dt>
-											<dd class="text-3xl font-semibold tracking-tight text-black">{{ stat.value }}</dd>
+											<dd class="text-3xl font-semibold tracking-tight text-tbase">{{ stat.value }}</dd>
 										</div>
 									</dl>
 								</div>
@@ -169,7 +169,7 @@
 						<div class="py-24 sm:py-32">
 							<div class="mx-auto max-w-7xl px-6 lg:px-8">
 								<div class="mx-auto max-w-2xl lg:max-w-none">
-									<h2 class="text-lg font-semibold leading-8 text-gray-900">Trusted by the world’s most innovative teams</h2>
+									<h2 class="text-lg font-semibold leading-8 text-tbase">Trusted by the world’s most innovative teams</h2>
 									<div class="mx-auto mt-10 grid grid-cols-4 items-start gap-x-8 gap-y-10 sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:grid-cols-5">
 										<img class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1" src="https://tailwindui.com/img/logos/transistor-logo-gray-900.svg" alt="Transistor" width="158" height="48" />
 										<img class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1" src="https://tailwindui.com/img/logos/reform-logo-gray-900.svg" alt="Reform" width="158" height="48" />
@@ -184,12 +184,12 @@
 					<!-- FAQ section -->
 					<section id="FAQ">
 						<div class="mx-auto max-w-7xl px-6 py-12 sm:py-16 lg:px-8 lg:py-20">
-							<div class="mx-auto max-w-4xl divide-y divide-gray-900/10">
-								<h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900">Frequently asked questions</h2>
-								<dl class="mt-10 space-y-6 divide-y divide-gray-900/10">
+							<div class="mx-auto max-w-4xl divide-y divide-tbase/10">
+								<h2 class="text-2xl font-bold leading-10 tracking-tight text-tbase">Frequently asked questions</h2>
+								<dl class="mt-10 space-y-6 divide-y divide-tbase/10">
 									<Disclosure as="div" v-for="faq in faqs" :key="faq.question" class="pt-6" v-slot="{ open }">
 										<dt>
-											<DisclosureButton class="flex w-full items-start justify-between text-left text-gray-900">
+											<DisclosureButton class="flex w-full items-start justify-between text-left text-tbase">
 												<span class="text-base font-semibold leading-7">{{ faq.question }}</span>
 												<span class="ml-6 flex h-7 items-center">
 													<IconHeroicons:plus-20-solid v-if="!open" class="h-6 w-6" aria-hidden="true" />
@@ -198,7 +198,7 @@
 											</DisclosureButton>
 										</dt>
 										<DisclosurePanel as="dd" class="mt-2 pr-12">
-											<p class="text-base leading-7 text-gray-600">{{ faq.answer }}</p>
+											<p class="text-base leading-7 text-tlight">{{ faq.answer }}</p>
 										</DisclosurePanel>
 									</Disclosure>
 								</dl>
@@ -210,8 +210,8 @@
 					<section id="CTA">
 						<div class="px-6 py-16 sm:px-6 sm:py-20 lg:px-8">
 							<div class="mx-auto max-w-2xl text-center">
-								<h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Boost your productivity.<br />Start using our app today.</h2>
-								<p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-600">Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim id veniam aliqua proident excepteur commodo do ea.</p>
+								<h2 class="text-3xl font-bold tracking-tight text-tbase sm:text-4xl">Boost your productivity.<br />Start using our app today.</h2>
+								<p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-tlight">Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim id veniam aliqua proident excepteur commodo do ea.</p>
 								<div class="mt-10 flex items-center justify-center gap-x-6">
 									<ButtonGradient link="#" text="Get started" />
 								</div>
