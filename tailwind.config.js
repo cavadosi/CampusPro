@@ -23,11 +23,11 @@ export default {
 				accent: { DEFAULT: 'hsl(var(--color-accent) / <alpha-value>)' },
 				lightaccent: { DEFAULT: 'hsl(var(--color-lightaccent) / <alpha-value>)' },
 				darkaccent: { DEFAULT: 'hsl(var(--color-darkaccent) / <alpha-value>)' },
-				background: { DEFAULT: 'hsl(var(--color-background) / <alpha-value>)' },
 				lightbackground: { DEFAULT: 'hsl(var(--color-lightbackground) / <alpha-value>)' },
 				tbase: 'hsl(var(--color-tbase) / <alpha-value>)',
 				tlight: 'hsl(var(--color-tlight) / <alpha-value>)',
-				bg: 'hsl(var(--color-bg) / <alpha-value>)'
+				bg: 'hsl(var(--color-bg) / <alpha-value>)',
+				bglight: 'hsl(var(--color-bglight) / <alpha-value>)'
 			}
 		}
 	}

@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="bg-transparent dark:bg-bg">
 		<div class="relative isolate pt-14">
 			<div class="absolute inset-x-0 -z-10 transform-gpu overflow-hidden blur-3xl" aria-hidden="true">
 				<div
@@ -101,7 +101,7 @@
 								<p class="mt-2 text-3xl font-bold tracking-tight text-tbase sm:text-4xl">We have worked with thousands of amazing people</p>
 							</div>
 							<div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-tbase sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
-								<figure class="rounded-2xl bg-bg shadow-lg ring-1 ring-tbase/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
+								<figure class="rounded-2xl bg-bglight/30 shadow-lg ring-1 ring-tbase/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
 									<blockquote class="p-6 text-lg font-semibold leading-7 tracking-tight text-tbase sm:p-12 sm:text-xl sm:leading-8">
 										<p>{{ `“${featuredTestimonial.body}”` }}</p>
 									</blockquote>
@@ -116,7 +116,7 @@
 								</figure>
 								<div v-for="(columnGroup, columnGroupIdx) in testimonials" :key="columnGroupIdx" class="space-y-8 xl:contents xl:space-y-0">
 									<div v-for="(column, columnIdx) in columnGroup" :key="columnIdx" :class="[(columnGroupIdx === 0 && columnIdx === 0) || (columnGroupIdx === testimonials.length - 1 && columnIdx === columnGroup.length - 1) ? 'xl:row-span-2' : 'xl:row-start-1', 'space-y-8']">
-										<figure v-for="testimonial in column" :key="testimonial.author.handle" class="rounded-2xl bg-bg p-6 shadow-lg ring-1 ring-tbase/5">
+										<figure v-for="testimonial in column" :key="testimonial.author.handle" class="rounded-2xl bg-bglight/30 p-6 shadow-lg ring-1 ring-tbase/5">
 											<blockquote class="text-tbase">
 												<p>{{ `“${testimonial.body}”` }}</p>
 											</blockquote>
@@ -157,8 +157,8 @@
 										</div>
 									</div>
 									<dl class="mt-16 grid grid-cols-1 gap-x-8 gap-y-12 sm:mt-20 sm:grid-cols-2 sm:gap-y-16 lg:mt-28 lg:grid-cols-4">
-										<div v-for="(stat, statIdx) in stats" :key="statIdx" class="flex flex-col-reverse gap-y-3 border-l border-gray/70 pl-6">
-											<dt class="text-base leading-7 text-slate-500">{{ stat.label }}</dt>
+										<div v-for="(stat, statIdx) in stats" :key="statIdx" class="flex flex-col-reverse gap-y-3 border-l border-tlight/70 pl-6">
+											<dt class="text-base leading-7 text-tlight">{{ stat.label }}</dt>
 											<dd class="text-3xl font-semibold tracking-tight text-tbase">{{ stat.value }}</dd>
 										</div>
 									</dl>
