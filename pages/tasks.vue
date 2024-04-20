@@ -217,7 +217,7 @@ const tasks = {
 	]
 };
 
-import { Auth } from '../assets/script/MidlewareAuth';
+import { Auth } from '../assets/script/MidlewareAuth.js';
 
 const authenticate = async () => {
 	try {
