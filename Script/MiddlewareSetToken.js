@@ -1,16 +1,11 @@
-export const setAuthorizationToken = () => {
-  return localStorage.getItem('token');
-};
+import axios from 'axios';
 
-axios.interceptors.request.use(
-  config => {
-    const token = getToken();
+export function setAuthorizationToken() {
+    const token = localStorage.getItem('token');
+
     if (token) {
-      config.headers.Authorization = `Bearer ${token}`;
+        axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+    } else {
+        delete axios.defaults.headers.common['Authorization'];
     }
-    return config;
-  },
-  error => {
-    return Promise.reject(error);
-  }
-);
+}
