@@ -1,6 +1,7 @@
 import axios from 'axios';
 
 export function setAuthorizationToken() {
+	console.log(token);
 	const token = localStorage.getItem('token');
 
 	if (token) {
