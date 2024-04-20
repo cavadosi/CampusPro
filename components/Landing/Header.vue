@@ -52,7 +52,8 @@
 				<NuxtLink href="/landing/about-us" class="text-sm font-semibold leading-6 text-tbase px-1">About us</NuxtLink>
 			</PopoverGroup>
 			<div class="hidden lg:flex lg:flex-1 lg:justify-end">
-				<NuxtLink href="/login" class="text-sm font-semibold leading-6 text-tbase">Log in <span aria-hidden="true">&rarr;</span></NuxtLink>
+				<ThemeSwitch />
+				<NuxtLink href="/login" class="text-sm font-semibold leading-6 text-tbase ml-6">Log in <span aria-hidden="true">&rarr;</span></NuxtLink>
 			</div>
 		</nav>
 		<Dialog as="div" class="lg:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">
