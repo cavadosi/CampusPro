@@ -220,12 +220,16 @@ const tasks = {
 import { Auth } from '../assets/script/MidlewareAuth.js';
 
 const authenticate = async () => {
-    const isAuthenticated = await Auth();
-    if (isAuthenticated) {
-      console.log('Autenticación exitosa');
-    } else {
-      console.error('La autenticación falló');
-    }
+	try {
+		const isAuthenticated = await Auth();
+		if (isAuthenticated) {
+			console.log('Autenticación exitosa');
+		} else {
+			console.error('La autenticación falló');
+		}
+	} catch (error) {
+		console.error('Error al autenticar:', error);
+	}
 };
 
 onBeforeMount(() => {
