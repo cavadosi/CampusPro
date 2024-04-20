@@ -6,7 +6,7 @@
 				<svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-tbase" viewBox="0 0 20 20"><path fill="currentColor" d="M17.293 13.293A8 8 0 0 1 6.707 2.707a8.001 8.001 0 1 0 10.586 10.586" /></svg>
 			</span>
 			<span :class="[enabled ? 'opacity-0 duration-100 ease-out' : 'opacity-100 duration-200 ease-in', 'absolute inset-0 flex h-full w-full items-center justify-center transition-opacity']" aria-hidden="true">
-				<svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-tbase" viewBox="0 0 20 20">
+				<svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-primary" viewBox="0 0 20 20">
 					<path
 						fill="currentColor"
 						fill-rule="evenodd"
@@ -20,8 +20,29 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted, watchEffect } from 'vue';
 import { Switch } from '@headlessui/vue';
 
 const enabled = ref(false);
+
+// Execute code after component is mounted
+onMounted(() => {
+	watchEffect(() => {
+		updateTheme(enabled.value);
+	});
+});
+
+// Function to update theme based on `enabled` state
+function updateTheme(isEnabled) {
+	const root = document.documentElement;
+	if (root) {
+		if (isEnabled) {
+			// Apply dark mode theme by setting data-theme attribute
+			root.setAttribute('data-theme', 'dark');
+		} else {
+			// Remove dark mode theme by removing data-theme attribute
+			root.removeAttribute('data-theme');
+		}
+	}
+}
 </script>
