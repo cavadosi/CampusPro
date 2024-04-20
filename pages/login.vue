@@ -92,11 +92,8 @@ const handleSubmit = async (event) => {
     const { redirectURL, token } = response.data;
 
     if (response.status === 200) {
-		console.log(document.cookie);
-
-
-		document.cookie = `token= ${token}; path=/; SameSite=None; Secure; HttpOnly=false`; // Asegurarse del httponly
-    // window.location.href = redirectURL;
+    	window.location.href = redirectURL;
+		localStorage.setItem('token', token);
     } else if (response.status === 401) {
       alert("Correo o contraseña incorrectos.");
     }
