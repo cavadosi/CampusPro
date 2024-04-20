@@ -155,11 +155,7 @@
 	</div>
 </template>
 
-<style scoped>
-.my-link.router-link-exact-active {
-	@apply border-l-8 hover:shadow-md border-y shadow-md border-darkaccent text-darkaccent;
-}
-</style>
+<style scoped></style>
 
 <script setup>
 import { ref } from 'vue';
