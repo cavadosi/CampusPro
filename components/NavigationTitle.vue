@@ -5,9 +5,13 @@
 	</NuxtLink>
 </template>
 
-<script setup>
-import { defineProps } from 'vue';
+<style scoped>
+.my-link.router-link-exact-active {
+	@apply border-l-8 hover:shadow-md border-y shadow-md border-darkaccent text-darkaccent;
+}
+</style>
 
+<script setup>
 const props = defineProps({
 	href: {
 		type: String,
@@ -24,16 +28,16 @@ const props = defineProps({
 		default: ''
 	}
 });
-import { Auth } from '../Script/MidlewareAuh'; 
+import { Auth } from '../assets/script/MidlewareAuth';
 
 const authenticate = async () => {
-  const isAuthenticated = await Auth();
-  if (isAuthenticated) {
-    console.log('Authentication successful');
-    // Proceed with other actions if authentication is successful
-  } else {
-    console.error('Authentication failed');
-    // Handle authentication failure
-  }
+	const isAuthenticated = await Auth();
+	if (isAuthenticated) {
+		console.log('Authentication successful');
+		// Proceed with other actions if authentication is successful
+	} else {
+		console.error('Authentication failed');
+		// Handle authentication failure
+	}
 };
 </script>

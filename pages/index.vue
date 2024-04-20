@@ -1,11 +1,9 @@
 <template>
-	<div >
-		This is the ./index or overview route test
-	</div>
+	<div>This is the ./index or overview route test</div>
 </template>
 
 <script setup>
-import { Auth } from '../Script/MidlewareAuh'; 
+import { Auth } from '../assets/script/MidlewareAuth.js';
 
 const authenticate = async () => {
     const isAuthenticated = await Auth();
@@ -17,10 +15,8 @@ const authenticate = async () => {
 };
 
 onBeforeMount(() => {
-  authenticate();
+	authenticate();
 });
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

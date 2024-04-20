@@ -7,6 +7,7 @@ export default defineNuxtConfig({
 	imports: {
 		dirs: ['stores']
 	},
+	css: ['~/assets/css/main.css'],
 	modules: ['@nuxtjs/tailwindcss', 'unplugin-icons/nuxt'],
 	vite: {
 		plugins: [

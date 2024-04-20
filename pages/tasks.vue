@@ -5,10 +5,6 @@
 	</div>
 </template>
 
-
-
-
-
 <script setup>
 const tasks = {
 	TODO: [
@@ -221,9 +217,7 @@ const tasks = {
 	]
 };
 
-
-
-import { Auth } from '../Script/MidlewareAuh'; 
+import { Auth } from '../assets/script/MidlewareAuth.js';
 
 const authenticate = async () => {
     const isAuthenticated = await Auth();
@@ -235,7 +229,7 @@ const authenticate = async () => {
 };
 
 onBeforeMount(() => {
-  authenticate();
+	authenticate();
 });
 </script>
 
