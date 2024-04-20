@@ -9,6 +9,7 @@ export async function Auth() {
 		if (response.status !== 201) {
 			window.location.href = 'https://campus-pro.vercel.app/login';
 		}
+		return true;
 	} catch (error) {
 		window.location.href = 'https://campus-pro.vercel.app/login'; 
 		return false;
