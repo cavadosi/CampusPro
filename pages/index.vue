@@ -3,7 +3,7 @@
 </template>
 
 <script setup>
-import { Auth } from '../assets/script/MidlewareAuh';
+import { Auth } from '../assets/script/MidlewareAuth';
 
 const authenticate = async () => {
 	try {

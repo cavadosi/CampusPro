@@ -7,7 +7,7 @@
 
 <style scoped>
 .my-link.router-link-exact-active {
-	@apply border-l-8 hover:shadow-md border-y shadow-md border-primary text-primary;
+	@apply border-l-8 hover:shadow-md border-y shadow-md border-darkaccent text-darkaccent;
 }
 </style>
 
@@ -28,7 +28,7 @@ const props = defineProps({
 		default: ''
 	}
 });
-import { Auth } from '../assets/script/MidlewareAuh';
+import { Auth } from '../assets/script/MidlewareAuth';
 
 const authenticate = async () => {
 	const isAuthenticated = await Auth();
