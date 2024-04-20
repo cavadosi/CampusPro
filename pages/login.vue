@@ -75,6 +75,7 @@
 
 <script setup>
 import axios from 'axios';
+import { getBaseUrl } from '../assets/Script/getBaseUrl';
 
 const handleSubmit = async (event) => {
   event.preventDefault();
@@ -89,10 +90,10 @@ const handleSubmit = async (event) => {
   try {
     const response = await axios.post('https://campusprob-43ea2325dc3f.herokuapp.com/api/login', userData);
 
-    const { redirectURL, token } = response.data;
+    const { token } = response.data;
 
     if (response.status === 200) {
-    	window.location.href = redirectURL;
+    	window.location.href = `${getBaseUrl()}`;
 		localStorage.setItem('token', token);
     } else if (response.status === 401) {
       alert("Correo o contraseña incorrectos.");
