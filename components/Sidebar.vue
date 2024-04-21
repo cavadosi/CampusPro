@@ -112,10 +112,7 @@
 						<!-- Separator -->
 						<div class="hidden lg:block lg:h-6 lg:w-px lg:bg-gray-900/10" aria-hidden="true" />
 
-						<button type="button" class="-m-2.5 p-2.5 text-gray-400 hover:text-gray-500">
-							<span class="sr-only">View notifications</span>
-							<IconMaterial-symbols:notifications-outline-rounded class="h-6 w-6" aria-hidden="true" />
-						</button>
+						<ThemeSwitch />
 						<!-- Profile dropdown -->
 						<Menu as="div" class="relative">
 							<MenuButton class="-m-1.5 flex items-center p-1.5">
@@ -146,7 +143,7 @@
 			</div>
 
 			<main class="flex max-w-full w-screen max-h-full h-[calc(100vh-64px)]">
-				<div class="px-2 max-w-full w-full max-h-full h-full overflow-x-auto overflow-y-clip scrollbar">
+				<div class="px-2 max-w-full w-full max-h-full h-full overflow-x-auto overflow-y-clip scrollbar bg-bgcover transition-colors duration-300">
 					<!-- Your content -->
 					<slot />
 				</div>
