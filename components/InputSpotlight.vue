@@ -11,7 +11,7 @@
 			placeholder="Search..."
 			type="email"
 			name="email"
-			class="h-10 w-full cursor-default rounded-full border p-3.5 text-slate-500 transition-colors duration-500 placeholder:select-none placeholder-text-slate-300 focus:border-accent focus:outline-none"
+			class="h-10 w-full cursor-default rounded-full border border-primary/30 p-3.5 text-tlight transition-colors duration-500 placeholder:select-none placeholder-text-tlight/80 bg-bg focus:border-accent focus:outline-none"
 		/>
 
 		<input
@@ -25,7 +25,7 @@
 			aria-hidden="true"
 			class="pointer-events-none absolute left-0 top-0 z-10 h-10 w-full cursor-default rounded-full border border-accent bg-[transparent] p-3.5 opacity-0 transition-opacity duration-500 placeholder:select-none"
 		/>
-		<IconHeroicons:magnifying-glass-20-solid class="pointer-events-none absolute mr-4 inset-y-0 right-0 h-full w-5 text-slate-300" aria-hidden="true" />
+		<IconHeroicons:magnifying-glass-20-solid class="pointer-events-none absolute mr-4 inset-y-0 right-0 h-full w-5 text-tlight" aria-hidden="true" />
 	</form>
 </template>
 

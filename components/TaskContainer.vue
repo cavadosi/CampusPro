@@ -1,10 +1,10 @@
 <template>
 	<!-- container -->
 
-	<div class="flex h-full rounded-md bg-accent/10 overflow-clip p-2">
+	<div class="flex h-full rounded-md bg-primary/10 hover:bg-primary/15 overflow-clip p-2">
 		<div class="flex flex-col items-center justify-center space-y-2 max-w-80 w-80 h-full rounded-md">
 			<!-- title -->
-			<div class="flex items-center justify-between w-full">
+			<div class="flex items-center justify-between w-full text-tlight">
 				<h1>{{ columnType }}</h1>
 				<h1>...</h1>
 			</div>
