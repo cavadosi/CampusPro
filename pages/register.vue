@@ -1,5 +1,5 @@
 <template>
-	<div class="flex relative items-center justify-center min-h-screen w-full bg-bgcover">
+	<div class="flex relative items-center justify-center min-h-screen w-full bg-bgcover transition-colors duration-300">
 		<div class="flex absolute top-4 right-4">
 			<ThemeSwitch />
 		</div>
