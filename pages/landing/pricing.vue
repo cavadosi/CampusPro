@@ -1,5 +1,5 @@
 <template>
-	<div class="isolate overflow-hidden">
+	<div class="isolate overflow-hidden bg-bgcover">
 		<div class="flow-root pb-16 pt-24 sm:pt-32 lg:pb-0">
 			<div class="mx-auto max-w-7xl px-6 lg:px-8">
 				<div class="relative z-10">

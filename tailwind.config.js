@@ -27,6 +27,7 @@ export default {
 				tbase: 'hsl(var(--color-tbase) / <alpha-value>)',
 				tlight: 'hsl(var(--color-tlight) / <alpha-value>)',
 				bg: 'hsl(var(--color-bg) / <alpha-value>)',
+				bgcover: 'hsl(var(--color-bgcover) / <alpha-value>)',
 				bglight: 'hsl(var(--color-bglight) / <alpha-value>)'
 			}
 		}

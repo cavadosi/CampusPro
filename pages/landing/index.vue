@@ -1,5 +1,5 @@
 <template>
-	<div class="bg-transparent dark:bg-bg">
+	<div class="bg-bgcover">
 		<div class="relative isolate pt-14">
 			<div class="absolute inset-x-0 -z-10 transform-gpu overflow-hidden blur-3xl" aria-hidden="true">
 				<div
