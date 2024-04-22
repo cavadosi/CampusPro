@@ -1,6 +1,6 @@
-import axios from 'axios';
-import { setAuthorizationToken } from './MiddlewareSetToken.js';
-import getBaseUrl from './getBaseUrl.js';
+// import axios from 'axios';
+// import { setAuthorizationToken } from './MiddlewareSetToken.js';
+// import getBaseUrl from './getBaseUrl.js';
 
 export async function Auth() {
 	setAuthorizationToken();
