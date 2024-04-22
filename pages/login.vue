@@ -75,7 +75,8 @@
 
 <script setup>
 import axios from 'axios';
-import { getBaseUrl } from '../assets/script/getBaseUrl';
+
+const frontendUrl = process.env.DOMAIN ? `https://${process.env.DOMAIN}` : 'http://localhost:3000';
 
 const handleSubmit = async (event) => {
 	event.preventDefault();
@@ -93,7 +94,7 @@ const handleSubmit = async (event) => {
 		const { token } = response.data;
 
 		if (response.status === 200) {
-			window.location.href = `${getBaseUrl()}`;
+			window.location.href = `${frontendUrl}/`;
 			localStorage.setItem('token', token);
 		} else if (response.status === 401) {
 			alert('Correo o contraseña incorrectos.');
