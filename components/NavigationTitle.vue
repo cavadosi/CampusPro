@@ -28,7 +28,7 @@ const props = defineProps({
 		default: ''
 	}
 });
-import { Auth } from '../assets/Script/MiddlewareAuth';
+import { Auth } from '../assets/script/MiddlewareAuth';
 
 const authenticate = async () => {
 	const isAuthenticated = await Auth();

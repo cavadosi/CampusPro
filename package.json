@@ -23,13 +23,14 @@
 		]
 	},
 	"devDependencies": {
+		"@formkit/nuxt": "^1.6.2",
 		"@headlessui/vue": "^1.7.19",
 		"@iconify/json": "^2.2.197",
-		"@formkit/nuxt": "^1.6.2",
 		"@nuxtjs/eslint-config-typescript": "^12.1.0",
 		"@nuxtjs/tailwindcss": "^6.11.4",
 		"@typescript-eslint/parser": "^6.13.2",
 		"axios": "^1.6.8",
+		"dotenv": "^16.4.5",
 		"eslint": "^8.55.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-prettier": "^5.0.1",
