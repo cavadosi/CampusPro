@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { setAuthorizationToken } from './MiddlewareSetToken.js';
 
-const frontendUrl = process.env.DOMAIN ? `https://${process.env.DOMAIN}` : 'http://localhost:3000';
+const frontendUrl = process.env.FRONTEND_URL ? `https://${process.env.FRONTEND_URL}` : 'http://localhost:3000';
 
 export async function Auth() {
 	setAuthorizationToken();
