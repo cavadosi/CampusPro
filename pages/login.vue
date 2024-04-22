@@ -76,8 +76,9 @@
 <script setup>
 import axios from 'axios';
 
+console.log('envURL' + process.env.DOMAIN);
 const frontendUrl = process.env.DOMAIN ? `https://${process.env.DOMAIN}` : 'http://localhost:3000';
-
+console.log('fronstendURL' + frontendUrl);
 const handleSubmit = async (event) => {
 	event.preventDefault();
 
