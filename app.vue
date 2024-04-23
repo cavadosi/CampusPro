@@ -1,5 +1,5 @@
 <template>
-	<Html class="h-full scrollbar overflow-x-auto">
+	<Html>
 		<NuxtLayout>
 			<NuxtPage />
 		</NuxtLayout>
@@ -37,11 +37,10 @@ body::before {
 	scrollbar-width: thin;
 }*/
 
-/* Scrollbar mejorado por el pro Andres */
 .scrollbar::-webkit-scrollbar {
 	height: 5px;
 	width: 5px;
-	background: rgb(255, 255, 255, 0);
+	background: rgba(255, 255, 255, 0);
 }
 
 .scrollbar::-webkit-scrollbar-thumb {

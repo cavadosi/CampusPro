@@ -1,7 +1,8 @@
 <template>
-	<LandingHeader />
-
-	<NuxtPage />
+	<div class="h-screen scrollbar overflow-y-auto">
+		<LandingHeader />
+		<NuxtPage />
+	</div>
 </template>
 
 <script setup></script>

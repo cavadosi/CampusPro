@@ -13,7 +13,7 @@ export async function Auth() {
 		}
 		return true;
 	} catch (error) {
-		window.location.href = `${frontendUrl}/`;
+		window.location.href = `${frontendUrl}/login`;
 		return false;
 	}
 }
