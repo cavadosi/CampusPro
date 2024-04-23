@@ -69,7 +69,7 @@
 									</div>
 								</div>
 								<div class="sm:px-6 lg:px-0">
-									<div class="relative isolate overflow-hidden bg-primary-300 px-6 pt-8 sm:mx-auto sm:max-w-2xl sm:rounded-3xl shadow-lg sm:pl-16 sm:pr-0 sm:pt-16 lg:mx-0 lg:max-w-none">
+									<div class="relative isolate overflow-hidden rounded-3xl bg-primary-300 px-6 pt-8 sm:mx-auto sm:max-w-2xl sm:rounded-3xl shadow-lg sm:pl-16 sm:pr-0 sm:pt-16 lg:mx-0 lg:max-w-none">
 										<div class="absolute -inset-y-px -left-3 -z-10 w-full origin-bottom-left skew-x-[-30deg] bg-priamry-100 opacity-20 ring-1 ring-inset ring-white" aria-hidden="true" />
 										<div class="mx-auto max-w-2xl sm:mx-0 sm:max-w-none">
 											<img src="https://tailwindui.com/img/component-images/project-app-screenshot.png" alt="Product screenshot" width="2432" height="1442" class="-mb-12 w-[57rem] max-w-none rounded-tl-xl bg-gray-800 ring-1 ring-white/10" />
