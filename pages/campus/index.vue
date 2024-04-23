@@ -1,9 +1,9 @@
 <template>
-	<div>This is the ./roadmap route test</div>
+	<div>This is the ./index or overview route test</div>
 </template>
 
 <script setup>
-import { Auth } from '../assets/script/MiddlewareAuth.js';
+import { Auth } from '../../assets/script/MiddlewareAuth.js';
 
 const authenticate = async () => {
 	try {

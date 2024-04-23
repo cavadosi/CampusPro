@@ -62,7 +62,10 @@
 			<!-- Sidebar component, swap this element with another sidebar if you like -->
 			<div class="flex grow flex-col gap-y-5 overflow-y-auto bg-bg pb-4 border-r border-primary transition-colors duration-300">
 				<div class="flex h-16 shrink-0 items-center px-4">
-					<Favicon class="h-10 w-auto" />
+					<NuxtLink href="/campus" class="-m-1.5 p-1.5">
+						<span class="sr-only">CampusPro</span>
+						<Favicon class="h-10 w-auto" />
+					</NuxtLink>
 				</div>
 				<nav class="flex flex-1 flex-col">
 					<ul role="list" class="flex flex-1 flex-col gap-y-7">

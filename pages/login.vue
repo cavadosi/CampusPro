@@ -95,7 +95,7 @@ const handleSubmit = async (event) => {
 		const { token } = response.data;
 
 		if (response.status === 200) {
-			window.location.href = `${frontendUrl}/`;
+			window.location.href = `${frontendUrl}/campus`;
 			localStorage.setItem('token', token);
 		} else if (response.status === 401) {
 			alert('Correo o contraseña incorrectos.');

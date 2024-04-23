@@ -9,7 +9,7 @@ export async function Auth() {
 		const response = await axios.post('https://campusprob-43ea2325dc3f.herokuapp.com/api/auth');
 
 		if (response.status !== 201) {
-			window.location.href = `${frontendUrl}/`;
+			window.location.href = `${frontendUrl}/campus`;
 		}
 		return true;
 	} catch (error) {

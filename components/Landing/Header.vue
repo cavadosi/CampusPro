@@ -2,7 +2,7 @@
 	<header>
 		<nav class="mx-auto inset-0 flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
 			<div class="flex lg:flex-1">
-				<NuxtLink href="/landing" class="-m-1.5 p-1.5">
+				<NuxtLink href="/" class="-m-1.5 p-1.5">
 					<span class="sr-only">CampusPro</span>
 					<Favicon class="h-10 w-auto" />
 				</NuxtLink>
@@ -48,8 +48,8 @@
 						</PopoverPanel>
 					</transition>
 				</Popover>
-				<NuxtLink href="/landing/pricing" class="text-sm font-semibold leading-6 text-tbase -ml-2 px-1">Pricing</NuxtLink>
-				<NuxtLink href="/landing/about-us" class="text-sm font-semibold leading-6 text-tbase px-1">About us</NuxtLink>
+				<NuxtLink href="/pricing" class="text-sm font-semibold leading-6 text-tbase -ml-2 px-1">Pricing</NuxtLink>
+				<NuxtLink href="/about-us" class="text-sm font-semibold leading-6 text-tbase px-1">About us</NuxtLink>
 			</PopoverGroup>
 			<div class="hidden lg:flex lg:flex-1 lg:justify-end">
 				<ThemeSwitch />
@@ -60,8 +60,8 @@
 			<div class="fixed inset-0 z-10" />
 			<DialogPanel class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-bg px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-tbase/10">
 				<div class="flex items-center justify-between">
-					<NuxtLink href="/landing" class="-m-1.5 p-1.5">
-						<span class="sr-only">Your Company</span>
+					<NuxtLink href="/" class="-m-1.5 p-1.5">
+						<span class="sr-only">CampusPro</span>
 						<Favicon class="h-10 w-auto" />
 					</NuxtLink>
 					<button type="button" class="-m-2.5 rounded-md p-2.5 text-tlight" @click="mobileMenuOpen = false">
@@ -81,8 +81,8 @@
 									<DisclosureButton v-for="item in [...product, ...callsToAction]" :key="item.name" as="a" :href="item.href" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-tbase hover:bg-bg">{{ item.name }}</DisclosureButton>
 								</DisclosurePanel>
 							</Disclosure>
-							<NuxtLink href="/landing/pricing" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-tbase hover:bg-bg">Pricing</NuxtLink>
-							<NuxtLink href="/landing/about-us" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-tbase hover:bg-bg">About us</NuxtLink>
+							<NuxtLink href="/pricing" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-tbase hover:bg-bg">Pricing</NuxtLink>
+							<NuxtLink href="/about-us" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-tbase hover:bg-bg">About us</NuxtLink>
 						</div>
 						<div class="py-6">
 							<NuxtLink href="/login" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-tbase hover:bg-bg">Log in</NuxtLink>
@@ -109,37 +109,37 @@ const product = [
 	{
 		name: 'Key features',
 		description: 'The essential traits of our product that set us apart from others',
-		href: '/landing#KeyFeatures',
+		href: '/#KeyFeatures',
 		icon: TipsIcon
 	},
 	{
 		name: 'How It Works',
 		description: 'Discover how our unique system works',
-		href: '/landing#HowItWorks',
+		href: '/#HowItWorks',
 		icon: SystemIcon
 	},
 	{
 		name: 'Benefits for Students/Teachers',
 		description: 'Find out how Campus Pro enhances efficiency and organization',
-		href: '/landing#Benefits',
+		href: '/#Benefits',
 		icon: GraphIcon
 	},
 	{
 		name: 'Showcase',
 		description: 'A visual demonstration of our software',
-		href: '/landing#Showcase',
+		href: '/#Showcase',
 		icon: PresentationIcon
 	},
 	{
 		name: 'FAQs (Frequently Asked Questions)',
 		description: 'Find quick answers in our FAQs',
-		href: '/landing#FAQ',
+		href: '/#FAQ',
 		icon: FAQsIcon
 	},
 	{
 		name: 'Contact us',
 		description: 'Get in touch for further details',
-		href: '/landing#CTA',
+		href: '/#CTA',
 		icon: ContactIcon
 	}
 ];

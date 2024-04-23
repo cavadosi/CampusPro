@@ -14,12 +14,12 @@ import ExamIcon from '~icons/ph/exam';
 import RoadmapIcon from '~icons/streamline/arrow-roadmap';
 
 const navigation = [
-	{ name: 'Overview', href: '/', icon: GridIcon },
-	{ name: 'Inbox', href: '/inbox', icon: InboxIcon },
-	{ name: 'Tasks', href: '/tasks', icon: ClipboardIcon },
-	{ name: 'Calendario', href: '/calendar', icon: CalendarIcon },
-	{ name: 'Grades', href: '/grades', icon: ExamIcon },
-	{ name: 'Roadmap', href: '/roadmap', icon: RoadmapIcon }
+	{ name: 'Overview', href: '/campus', icon: GridIcon },
+	{ name: 'Inbox', href: '/campus/inbox', icon: InboxIcon },
+	{ name: 'Tasks', href: '/campus/tasks', icon: ClipboardIcon },
+	{ name: 'Calendario', href: '/campus/calendar', icon: CalendarIcon },
+	{ name: 'Grades', href: '/campus/grades', icon: ExamIcon },
+	{ name: 'Roadmap', href: '/campus/roadmap', icon: RoadmapIcon }
 ];
 const classes = [
 	{ name: 'Clase uno', href: '#', initial: 'H' },
