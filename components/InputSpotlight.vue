@@ -11,7 +11,7 @@
 			placeholder="Search..."
 			type="email"
 			name="email"
-			class="h-10 w-full cursor-default rounded-full border border-primary/30 p-3.5 text-tlight transition-colors duration-500 placeholder:select-none placeholder-text-tlight/80 bg-bg focus:border-accent focus:outline-none"
+			class="h-10 w-full cursor-default rounded-full border border-primary/30 p-3.5 text-tlight transition-colors duration-300 placeholder:select-none placeholder-text-tlight/80 bg-bg focus:border-accent focus:outline-none"
 		/>
 
 		<input
