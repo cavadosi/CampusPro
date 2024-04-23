@@ -76,8 +76,8 @@
 <script setup>
 import axios from 'axios';
 
-console.log('envURL' + process.env.FRONTEND_URL);
-const frontendUrl = process.env.FRONTEND_URL ? `https://${process.env.FRONTEND_URL}` : 'http://localhost:3000';
+console.log('envURL' + process.env.NUXT_ENV_VERCEL_URL);
+const frontendUrl = process.env.NUXT_ENV_VERCEL_URL ? `https://${process.env.NUXT_ENV_VERCEL_URL}` : 'http://localhost:3000';
 console.log('frontendURL' + frontendUrl);
 const handleSubmit = async (event) => {
 	event.preventDefault();
