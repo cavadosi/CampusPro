@@ -1,5 +1,5 @@
 <template>
-	<div class="h-screen scrollbar overflow-y-auto">
+	<div class="bg-bgcover transition-colors duration-300">
 		<LandingHeader />
 		<NuxtPage />
 	</div>
@@ -14,8 +14,6 @@ html {
 }
 
 body {
-	background: url('/public/background.svg') no-repeat center center fixed;
-	background-size: cover;
 	min-height: 100%;
 	margin: 0;
 	position: relative;

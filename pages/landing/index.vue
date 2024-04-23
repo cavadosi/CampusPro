@@ -1,6 +1,6 @@
 <template>
-	<div class="bg-bgcover transition-colors duration-300">
-		<div class="relative isolate pt-14 overflow-clip">
+	<div>
+		<div class="relative isolate pt-14 overflow-hidden">
 			<div class="absolute inset-x-0 -z-10 transform-gpu overflow-hidden blur-3xl" aria-hidden="true">
 				<div
 					class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-accent to-lightaccent opacity-100 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
@@ -10,7 +10,7 @@
 			<div class="py-24 sm:py-32 lg:pb-40">
 				<div class="mx-auto max-w-7xl px-6 lg:px-8">
 					<div class="mx-auto max-w-2xl text-center">
-						<h1 class="text-4xl font-bold tracking-tight text-tbase sm:text-6xl">Taking <span class="text-accent">learning</span> to the next level</h1>
+						<h1 class="text-4xl font-bold tracking-tight text-tbase sm:text-6xl transition-colors duration-300">Taking <span class="text-accent transition-colors duration-300">learning</span> to the next level</h1>
 						<p class="mt-6 text-lg leading-8 text-tlight">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
 						<div class="mt-10 flex items-center justify-center gap-x-6">
 							<ButtonGradient link="#" text="Get started" />

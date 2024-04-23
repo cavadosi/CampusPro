@@ -1,5 +1,5 @@
 <template>
-	<Html>
+	<Html class="bg-bg scrollbar overflow-y-auto transition-colors duration-300">
 		<NuxtLayout>
 			<NuxtPage />
 		</NuxtLayout>
