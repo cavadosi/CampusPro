@@ -8,25 +8,25 @@ export default function useSteps() {
 
 	// NEW: watch our activeStep and store visited steps
 	// to know when to show errors
-	watch(activeStep, (newStep, oldStep) => {
-		if (oldStep && !visitedSteps.value.includes(oldStep)) {
-			visitedSteps.value.push(oldStep);
-		}
-		// NEW: trigger showing validation on fields
-		// within all visited steps
-		visitedSteps.value.forEach((step) => {
-			const node = getNode(step);
-			node.walk((n) => {
-				n.store.set(
-					createMessage({
-						key: 'submitted',
-						value: true,
-						visible: false
-					})
-				);
-			});
-		});
-	});
+	// watch(activeStep, (newStep, oldStep) => {
+	// 	if (oldStep && !visitedSteps.value.includes(oldStep)) {
+	// 		visitedSteps.value.push(oldStep);
+	// 	}
+	// 	// NEW: trigger showing validation on fields
+	// 	// within all visited steps
+	// 	visitedSteps.value.forEach((step) => {
+	// 		const node = getNode(step);
+	// 		node.walk((n) => {
+	// 			n.store.set(
+	// 				createMessage({
+	// 					key: 'submitted',
+	// 					value: true,
+	// 					visible: false
+	// 				})
+	// 			);
+	// 		});
+	// 	});
+	// });
 
 	const setStep = (delta) => {
 		const stepNames = Object.keys(steps);

@@ -1,13 +1,19 @@
 <template>
-	<div class="max-w-2xl mx-5 mt-10">
+	<div class="flex items-center justify-between border-b pb-2 px-2">
+		<h3
+			v-for="(step, stepName) in steps"
+			:class="[activeStep == stepName ? 'border-b border-tlight text-tbase scale-110  ' : 'text-tlight hover:scale-110 hover:border-b border-tlight', 'cursor-pointer transition-all duration-300', { 'has-errors': checkStepValidity(stepName) }]"
+			@click="activeStep = stepName"
+			:data-step-valid="step.valid && step.errorCount === 0"
+			:data-step-active="activeStep === stepName"
+		>
+			{{ camel2title(stepName) }}
+			<span v-if="checkStepValidity(stepName)" class="step--errors" v-text="step.errorCount + step.blockingCount" />
+		</h3>
+	</div>
+	<div class="max-w-2xl mx-5 mt-10 bg-bgcover py-4 px-6 rounded-lg border border-primary">
 		<FormKit type="form" #default="{ value, state: { valid } }" :plugins="[stepPlugin]" @submit="submitApp" :actions="false">
-			<div class="steps">
-				<li v-for="(step, stepName) in steps" :class="['step', { 'has-errors': checkStepValidity(stepName) }]" @click="activeStep = stepName" :data-step-valid="step.valid && step.errorCount === 0" :data-step-active="activeStep === stepName">
-					<span v-if="checkStepValidity(stepName)" class="step--errors" v-text="step.errorCount + step.blockingCount" />
-					{{ camel2title(stepName) }}
-				</li>
-			</div>
-			<div class="mt-6">
+			<div>
 				<section v-show="activeStep === 'choose-a-plan'">
 					<FormKit type="group" id="choose-a-plan" name="choose-a-plan">
 						<dl class="grid grid-cols-1 sm:grid-cols-2">
@@ -158,15 +164,15 @@
 					</FormKit>
 				</section>
 				<!-- NEW: Adds Next / Previous navigation buttons. -->
-				<div class="step-nav">
-					<FormKit type="button" :disabled="activeStep == 'choose-a-plan'" @click="setStep(-1)" v-text="'Previous step'" />
-					<FormKit type="button" class="next" :disabled="activeStep == 'application'" @click="setStep(1)" v-text="'Next step'" />
-				</div>
 
 				<details>
 					<summary>Form data</summary>
 					<pre>{{ value }}</pre>
 				</details>
+			</div>
+			<div class="step-nav">
+				<FormKit type="button" :disabled="activeStep === 'choose-a-plan'" @click="setStep(-1)" v-text="'Previous step'" />
+				<FormKit type="button" class="next" :disabled="activeStep === 'application'" @click="setStep(1)" v-text="'Next step'" />
 			</div>
 
 			<!-- NEW: Adds submit button. -->
@@ -193,25 +199,6 @@ const submitApp = async (formData, node) => {
 const checkStepValidity = (stepName) => {
 	return (steps[stepName].errorCount > 0 || steps[stepName].blockingCount > 0) && visitedSteps.value.includes(stepName);
 };
-
-// const elements = [
-// 	{
-// 		title: 'choose-a-plan',
-// 		description: 'Pick a plan that fits your organization.'
-// 	},
-// 	{
-// 		title: 'institution-info',
-// 		description: 'Fill with details about your organization.'
-// 	},
-// 	{
-// 		title: 'contact-info',
-// 		description: 'Show us how your students and us will contact you.'
-// 	},
-// 	{
-// 		title: 'application',
-// 		description: 'Which fields do you want to include in your app.'
-// 	}
-// ];
 
 const camel2title = (str) =>
 	str
