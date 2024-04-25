@@ -23,7 +23,6 @@
 		]
 	},
 	"devDependencies": {
-		"@formkit/nuxt": "^1.6.2",
 		"@headlessui/vue": "^1.7.19",
 		"@iconify/json": "^2.2.197",
 		"@nuxtjs/eslint-config-typescript": "^12.1.0",
