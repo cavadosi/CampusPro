@@ -1,5 +1,5 @@
 <template>
-	<div class="bg-bgcover transition-colors duration-300">
+	<div>
 		<main class="relative isolate">
 			<!-- Background -->
 			<div class="absolute inset-x-0 top-4 -z-10 flex transform-gpu justify-center overflow-hidden blur-3xl" aria-hidden="true">
