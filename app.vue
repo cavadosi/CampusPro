@@ -10,6 +10,7 @@
 html {
 	height: 100%;
 	overflow: clip;
+	font-family: Poppins;
 }
 
 body {

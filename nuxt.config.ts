@@ -19,7 +19,8 @@ export default defineNuxtConfig({
 				families: {
 					Poppins: true
 				},
-				download: true
+				download: true,
+				inject: true
 			}
 		]
 	],
