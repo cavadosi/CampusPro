@@ -1,5 +1,5 @@
 <template>
-	<Html class="bg-bg scrollbar overflow-y-auto transition-colors duration-300">
+	<Html class="bg-bgscrollbar scrollbar overflow-y-auto transition-colors duration-300">
 		<NuxtLayout>
 			<NuxtPage />
 		</NuxtLayout>
@@ -41,11 +41,11 @@ body::before {
 .scrollbar::-webkit-scrollbar {
 	height: 5px;
 	width: 5px;
-	background: rgba(255, 255, 255, 0);
+	background: transparent;
 }
 
 .scrollbar::-webkit-scrollbar-thumb {
-	background: #185987;
 	border-radius: 50px;
+	@apply bg-primary;
 }
 </style>

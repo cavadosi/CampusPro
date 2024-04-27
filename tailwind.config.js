@@ -28,7 +28,8 @@ export default {
 				tlight: 'hsl(var(--color-tlight) / <alpha-value>)',
 				bg: 'hsl(var(--color-bg) / <alpha-value>)',
 				bgcover: 'hsl(var(--color-bgcover) / <alpha-value>)',
-				bglight: 'hsl(var(--color-bglight) / <alpha-value>)'
+				bglight: 'hsl(var(--color-bglight) / <alpha-value>)',
+				bgscrollbar: 'hsl(var(--color-bgscrollbar) / <alpha-value>)'
 			}
 		}
 	}
