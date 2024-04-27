@@ -27,9 +27,9 @@ const enabled = ref(false);
 
 // Execute code after component is mounted
 onMounted(() => {
-	const preferedTheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+	// const preferedTheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-	enabled.value = preferedTheme;
+	// enabled.value = preferedTheme;
 
 	const savedTheme = localStorage.getItem('theme');
 	if (savedTheme) {
