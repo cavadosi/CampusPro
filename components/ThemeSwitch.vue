@@ -27,8 +27,18 @@ const enabled = ref(false);
 
 // Execute code after component is mounted
 onMounted(() => {
+	const preferedTheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+	enabled.value = preferedTheme;
+
+	const savedTheme = localStorage.getItem('theme');
+	if (savedTheme) {
+		enabled.value = savedTheme === 'dark';
+	}
+
 	watchEffect(() => {
 		updateTheme(enabled.value);
+		localStorage.setItem('theme', enabled.value ? 'dark' : 'light');
 	});
 });
 
