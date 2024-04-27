@@ -176,6 +176,11 @@
 				</dl>
 			</div>
 		</section>
+		<div class="flex items-center justify-between">
+			<NuxtLink class="text-tlight hover:text-tlight/80 hover:underline decoration-tlight/80 cursor-pointer" @click="previousStep()"> Previous step </NuxtLink>
+			<ButtonGradient v-if="activeStep.id != 3" :text="'Next Step →'" @click="nextStep()" />
+			<ButtonGradient v-if="activeStep.id === 3" :text="'Submit'" />
+		</div>
 	</div>
 </template>
 
@@ -202,5 +207,17 @@ const steps = [
 		description: 'add your institution contact info'
 	}
 ];
-const activeStep = ref(steps[3]);
+const activeStep = ref(steps[0]);
+
+function previousStep() {
+	if (activeStep.value.id > 0) {
+		activeStep.value = steps[activeStep.value.id - 1];
+	}
+}
+
+function nextStep() {
+	if (activeStep.value.id < 3) {
+		activeStep.value = steps[activeStep.value.id + 1];
+	}
+}
 </script>
