@@ -1,7 +1,7 @@
 // Define la base de la URL
 const baseUrl = 'https://example.com/api';
 
-let mode = 0;
+let mode = 1;
 
 
 if (mode === 1){
