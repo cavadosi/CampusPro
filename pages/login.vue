@@ -75,7 +75,8 @@
 
 <script setup>
 import axios from 'axios';
-import { baseUrl } from './baseUrl.js';
+//Url base
+import { baseUrl } from '../assets/script/url';
 
 
 const handleSubmit = async (event) => {
