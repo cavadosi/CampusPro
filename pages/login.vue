@@ -75,10 +75,9 @@
 
 <script setup>
 import axios from 'axios';
+import { baseUrl } from './baseUrl.js';
 
-console.log('envURL' + process.env.NUXT_ENV_VERCEL_URL);
-const frontendUrl = process.env.NUXT_ENV_VERCEL_URL ? `https://${process.env.NUXT_ENV_VERCEL_URL}` : 'http://localhost:3000';
-console.log('frontendURL' + frontendUrl);
+
 const handleSubmit = async (event) => {
 	event.preventDefault();
 
@@ -95,7 +94,7 @@ const handleSubmit = async (event) => {
 		const { token } = response.data;
 
 		if (response.status === 200) {
-			window.location.href = `${frontendUrl}/campus`;
+			window.location.href = `${baseUrl}/campus`;
 			localStorage.setItem('token', token);
 		} else if (response.status === 401) {
 			alert('Correo o contraseña incorrectos.');
