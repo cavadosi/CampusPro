@@ -1,7 +1,7 @@
 <template>
 	<div class="flex flex-row items-start justify-start gap-x-2 w-fit h-full overflow-x-auto overflow-clip m-2 pb-4">
 		<!-- Card container -->
-		<TaskContainer v-for="column in Object.keys(tasks)" :columnType="column" :tasks="tasks[column].tasks" :icon="tasks[column].icon" :color="tasks[column].color" />
+		<TaskContainer v-for="(tasksList, column) in tasks" :key="column" :columnType="column" :tasks="tasksList.tasks" :icon="tasksList.icon" :color="tasksList.color" />
 	</div>
 </template>
 

@@ -13,8 +13,8 @@
 			</div>
 			<!-- task container -->
 			<div class="flex-grow w-full overflow-y-auto scrollbar">
-				<div class="flex-col space-y-2 mr-2">
-					<draggable class="draggable-list" :list="tasks" group="tasks" itemKey="title">
+				<div class="flex-col mr-2">
+					<draggable class="draggable-list" :list="tasks" group="tasks" :key="columnType" itemKey="title">
 						<template #item="{ element }">
 							<TaskCard :title="element.title" :pills="element.pills" :columnType="columnType" />
 						</template>
@@ -49,6 +49,4 @@ const props = defineProps({
 });
 
 const { columnType, tasks, icon, color } = toRefs(props);
-
-console.log({ tasks });
 </script>
