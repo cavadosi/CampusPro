@@ -5,7 +5,10 @@
 		<div class="flex flex-col items-center justify-center space-y-2 max-w-80 w-80 h-full rounded-md">
 			<!-- title -->
 			<div class="flex items-center justify-between w-full text-tlight">
-				<h1>{{ columnType }}</h1>
+				<div class="flex gap-x-2 pointer-events-none">
+					<component :is="icon" :class="[color, 'w-5 h-auto']"></component>
+					<h1>{{ columnType }}</h1>
+				</div>
 				<h1>...</h1>
 			</div>
 			<!-- task container -->
@@ -19,6 +22,8 @@
 </template>
 
 <script setup>
+import circleIcon from '~icons/ic/outline-circle';
+
 const props = defineProps({
 	columnType: {
 		type: String,
@@ -27,8 +32,16 @@ const props = defineProps({
 	tasks: {
 		type: Object,
 		default: {}
+	},
+	icon: {
+		type: Object,
+		default: circleIcon
+	},
+	color: {
+		type: String,
+		default: 'text-white'
 	}
 });
 
-const { columnType, tasks } = toRefs(props);
+const { columnType, tasks, icon, color } = toRefs(props);
 </script>
