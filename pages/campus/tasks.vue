@@ -25,21 +25,21 @@ const tasks = {
 				}
 			},
 			{
-				title: 'Card1',
+				title: 'Card2',
 				pills: {
 					unit: 'UF1',
 					date: '20-5-2024'
 				}
 			},
 			{
-				title: 'Card1',
+				title: 'Card3',
 				pills: {
 					unit: 'UF1',
 					date: '20-5-2024'
 				}
 			},
 			{
-				title: 'Card1',
+				title: 'Card4',
 				pills: {
 					unit: 'UF1',
 					date: '20-5-2024'

@@ -14,7 +14,11 @@
 			<!-- task container -->
 			<div class="flex-grow w-full overflow-y-auto scrollbar">
 				<div class="flex-col space-y-2 mr-2">
-					<TaskCard v-for="task in tasks" :title="task.title" :pills="task.pills" :columnType="columnType" />
+					<draggable class="draggable-list" :list="tasks" group="tasks" itemKey="title">
+						<template #item="{ element }">
+							<TaskCard :title="element.title" :pills="element.pills" :columnType="columnType" />
+						</template>
+					</draggable>
 				</div>
 			</div>
 		</div>
@@ -23,6 +27,7 @@
 
 <script setup>
 import circleIcon from '~icons/ic/outline-circle';
+import draggable from 'vuedraggable';
 
 const props = defineProps({
 	columnType: {
@@ -44,4 +49,6 @@ const props = defineProps({
 });
 
 const { columnType, tasks, icon, color } = toRefs(props);
+
+console.log({ tasks });
 </script>
