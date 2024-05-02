@@ -1,6 +1,5 @@
 <template>
 	<!-- container -->
-
 	<div class="flex h-full rounded-md bg-primary/10 hover:bg-primary/15 overflow-clip p-2">
 		<div class="flex flex-col items-center justify-center space-y-2 max-w-80 w-80 h-full rounded-md">
 			<!-- title -->
@@ -14,7 +13,7 @@
 			<!-- task container -->
 			<div class="flex-grow w-full overflow-y-auto scrollbar">
 				<div class="flex-col mr-2">
-					<draggable class="draggable-list" :list="tasks" group="tasks" :key="columnType" itemKey="title">
+					<draggable class="draggable-list" :list="tasksRef" group="tasks" :key="columnType" itemKey="title">
 						<template #item="{ element }">
 							<TaskCard :title="element.title" :pills="element.pills" :columnType="columnType" />
 						</template>
@@ -28,6 +27,7 @@
 <script setup>
 import circleIcon from '~icons/ic/outline-circle';
 import draggable from 'vuedraggable';
+import { ref, toRefs, watch } from 'vue';
 
 const props = defineProps({
 	columnType: {
@@ -49,4 +49,5 @@ const props = defineProps({
 });
 
 const { columnType, tasks, icon, color } = toRefs(props);
+const tasksRef = ref(tasks.value);
 </script>

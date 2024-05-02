@@ -6,6 +6,7 @@
 </template>
 
 <script setup>
+import { Auth } from '../../assets/script/MiddlewareAuth.js';
 import checkIcon from '~icons/heroicons/check-circle-20-solid';
 import xIcon from '~icons/heroicons/x-circle-20-solid';
 
@@ -161,13 +162,11 @@ const tasks = {
 	}
 };
 
-import { Auth } from '../../assets/script/MiddlewareAuth.js';
-
 const authenticate = async () => {
 	try {
 		const isAuthenticated = await Auth();
 		if (isAuthenticated) {
-			console.log('Autenticación exitosa');
+			// console.log('Autenticación exitosa');
 		} else {
 			console.error('La autenticación falló');
 		}
