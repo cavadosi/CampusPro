@@ -1,6 +1,6 @@
 // Define la base de la URL
 let baseUrl;
-let mode = true;
+let mode = false;
 
 if (mode) {
     baseUrl = 'http://localhost:3000/';
