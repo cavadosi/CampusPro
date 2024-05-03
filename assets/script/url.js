@@ -3,10 +3,9 @@ let baseUrl;
 let mode = false;
 
 if (mode) {
-    baseUrl = 'http://localhost:3000/';
-
+	baseUrl = 'http://localhost:3000';
 } else {
-	baseUrl = 'https://campus-pro.vercel.app/';
+	baseUrl = 'https://campus-pro.vercel.app';
 }
 
 export { baseUrl };
