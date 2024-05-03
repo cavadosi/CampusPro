@@ -2,9 +2,10 @@
 	<header>
 		<nav class="mx-auto inset-0 flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
 			<div class="flex lg:flex-1">
-				<NuxtLink href="/" class="-m-1.5 p-1.5">
+				<NuxtLink href="/" class="-m-1.5 p-1.5 flex items-center">
 					<span class="sr-only">CampusPro</span>
 					<Favicon class="h-10 w-auto" />
+					<h1 class="text-lg sm:text-xl text-tbase font-bold ml-2 transition-colors duration-300">Campus<span class="text-primary italic transition-colors duration-300">Pro</span></h1>
 				</NuxtLink>
 			</div>
 			<div class="flex lg:hidden">

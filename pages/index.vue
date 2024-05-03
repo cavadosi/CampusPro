@@ -11,7 +11,7 @@
 				<div class="mx-auto max-w-7xl px-6 lg:px-8">
 					<div class="mx-auto max-w-2xl text-center">
 						<h1 class="text-4xl font-bold tracking-tight text-tbase sm:text-6xl transition-colors duration-300">Taking <span class="text-accent transition-colors duration-300">learning</span> to the next level</h1>
-						<p class="mt-6 text-lg leading-8 text-tlight">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
+						<p class="mt-6 text-lg leading-8 text-tlight">A fully customizable online learning tool designed to give teaching a more modern and flexible aproach and made for institutions of all sizes.</p>
 						<div class="mt-10 flex items-center justify-center gap-x-6">
 							<ButtonGradient link="#" text="Get started" />
 
