@@ -1,5 +1,5 @@
 <template>
-	<div class="relative flex h-full w-full items-center justify-center overflow-hidden rounded-xl transition-colors ease-in-out duration-300 border border-accent hover:border-primary bg-gradient-to-br from-bg/70 to-bg/80 hover:bg-bg/80 drop-shadow-sm">
+	<div class="mb-2 flex h-full w-full items-center justify-center overflow-hidden rounded-xl transition-colors ease-in-out duration-300 border border-accent hover:border-primary bg-gradient-to-br from-bg/70 to-bg/80 hover:bg-bg/80 drop-shadow-sm">
 		<!-- Card container -->
 		<div class="flex-col min-h-28 w-full p-2">
 			<div class="flex justify-between w-full">
