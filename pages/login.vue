@@ -93,9 +93,9 @@ const handleSubmit = async (event) => {
 		const response = await axios.post('https://campusprob-43ea2325dc3f.herokuapp.com/api/login', userData);
 
 		const { token } = response.data;
-
+		console.log("URL:" + baseUrl);
 		if (response.status === 200) {
-			window.location.href = `${baseUrl}/campus`;
+			// window.location.href = `${baseUrl}/campus`;
 			localStorage.setItem('token', token);
 		} else if (response.status === 401) {
 			alert('Correo o contraseña incorrectos.');

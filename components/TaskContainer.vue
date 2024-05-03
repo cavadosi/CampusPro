@@ -27,7 +27,6 @@
 <script setup>
 import circleIcon from '~icons/ic/outline-circle';
 import draggable from 'vuedraggable';
-import { ref, toRefs, watch } from 'vue';
 
 const props = defineProps({
 	columnType: {

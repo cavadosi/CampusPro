@@ -1,12 +1,11 @@
 // Define la base de la URL
 let baseUrl;
+let mode = true;
 
-let mode = 0;
-
-if (mode === 1) {
+if (mode) {
 	baseUrl = 'https://campus-pro.vercel.app/';
 } else {
-	baseUrl = 'http://localhost:3000';
+    baseUrl = 'http://localhost:3000';
 }
 
 export { baseUrl };
