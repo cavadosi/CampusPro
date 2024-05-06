@@ -20,7 +20,6 @@
 </template>
 
 <script setup>
-import { ref, onMounted, watchEffect } from 'vue';
 import { Switch } from '@headlessui/vue';
 
 const enabled = ref(false);
