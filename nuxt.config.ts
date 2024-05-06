@@ -35,13 +35,10 @@ export default defineNuxtConfig({
 				]
 			})
 		]
-		// server: {
-		// 	proxy: {
-		// 		'/api': {
-		// 			target: 'http://localhost:3001',
-		// 			changeOrigin: true
-		// 		}
-		// 	}
-		// }
+	},
+	runtimeConfig: {
+		public: {
+			baseUrl: 'http://localhost:3000' // can be overridden by NUXT_PUBLIC_BASE_URL environment variable
+		}
 	}
 });

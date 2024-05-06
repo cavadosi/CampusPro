@@ -75,9 +75,12 @@
 
 <script setup>
 import axios from 'axios';
-//Url base
-import { baseUrl } from '../assets/script/url';
 
+const runtimeConfig = useRuntimeConfig();
+
+console.log(runtimeConfig.public.baseUrl);
+
+const baseUrl = runtimeConfig.public.baseUrl;
 
 const handleSubmit = async (event) => {
 	event.preventDefault();
@@ -93,7 +96,6 @@ const handleSubmit = async (event) => {
 		const response = await axios.post(' https://campuspro-246a1b5a089a.herokuapp.com/api/login', userData);
 
 		const { token } = response.data;
-		console.log("URL:" + baseUrl);
 		if (response.status === 200) {
 			window.location.href = `${baseUrl}/campus`;
 			localStorage.setItem('token', token);
