@@ -157,14 +157,14 @@ export const useTaskStore = defineStore('task', {
 		}
 	}),
 	actions: {
-		loadTasks() {
-			const savedTasks = localStorage.getItem('tasks');
-			if (savedTasks) {
-				this.tasks = JSON.parse(savedTasks);
-			}
-		},
-		saveTasks() {
-			localStorage.setItem('tasks', JSON.stringify(this.tasks));
-		}
+		// loadTasks() {
+		// 	const savedTasks = localStorage.getItem('tasks');
+		// 	if (savedTasks) {
+		// 		this.tasks = JSON.parse(savedTasks);
+		// 	}
+		// },
+		// saveTasks() {
+		// 	localStorage.setItem('tasks', JSON.stringify(this.tasks));
+		// }
 	}
 });
