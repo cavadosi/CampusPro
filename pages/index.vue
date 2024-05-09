@@ -13,7 +13,7 @@
 						<h1 class="text-4xl font-bold tracking-tight text-tbase sm:text-6xl transition-colors duration-300">Taking <span class="text-accent transition-colors duration-300">learning</span> to the next level</h1>
 						<p class="mt-6 text-lg leading-8 text-tlight">A fully customizable online learning tool designed to give teaching a more modern and flexible aproach and made for institutions of all sizes.</p>
 						<div class="mt-10 flex items-center justify-center gap-x-6">
-							<ButtonGradient link="#" text="Get started" />
+							<ButtonGradient link="/register" text="Get started" />
 
 							<NuxtLink href="#" class="text-sm font-semibold leading-6 text-tbase">Learn more <span aria-hidden="true">→</span></NuxtLink>
 						</div>

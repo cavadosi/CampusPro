@@ -1,14 +1,18 @@
 <template>
-	<div class="flex min-h-full flex-1 h-screen">
+	<div class="flex min-h-full flex-1 h-screen bg-bgcover">
 		<div class="flex flex-1 flex-col justify-center px-4 py-12 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
 			<div class="mx-auto w-full max-w-sm lg:w-96">
 				<div>
-					<Favicon class="h-14 w-auto" />
-					<h2 class="mt-8 text-2xl font-bold leading-9 tracking-tight text-gray-900">Log in to your account</h2>
-					<p class="mt-2 text-sm leading-6 text-gray-500">
+					<NuxtLink href="/" class="-m-1.5 p-1.5 flex items-center">
+						<span class="sr-only">CampusPro</span>
+						<Favicon class="h-10 w-auto" />
+						<h1 class="text-lg sm:text-xl text-tbase font-bold ml-2 transition-colors duration-300">Campus<span class="text-primary italic transition-colors duration-300">Pro</span></h1>
+					</NuxtLink>
+					<h2 class="mt-8 text-2xl font-bold leading-9 tracking-tight text-tbase">Log in to your account</h2>
+					<p class="mt-2 text-sm leading-6 text-tlight">
 						Not a member?
 						{{ ' ' }}
-						<a href="#" class="font-semibold text-primary hover:text-primary-300">Sign up</a>
+						<a href="#" class="font-semibold text-primary hover:text-primary/80">Register your institution</a>
 					</p>
 				</div>
 
@@ -16,7 +20,7 @@
 					<div>
 						<form @submit.prevent="handleSubmit" class="space-y-6">
 							<div>
-								<label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
+								<label for="email" class="block text-sm font-medium leading-6 text-tbase">Email address</label>
 								<div class="mt-2">
 									<input
 										id="email"
@@ -30,7 +34,7 @@
 							</div>
 
 							<div>
-								<label for="password" class="block text-sm font-medium leading-6 text-gray-900">Password</label>
+								<label for="password" class="block text-sm font-medium leading-6 text-tbase">Password</label>
 								<div class="mt-2">
 									<input
 										id="password"
@@ -50,14 +54,14 @@
 								</div>
 
 								<div class="text-sm leading-6">
-									<a href="#" class="font-semibold text-primary hover:text-primary-300">Forgot password?</a>
+									<a href="#" class="font-semibold text-primary hover:text-primary/80">Forgot password?</a>
 								</div>
 							</div>
 
 							<div>
 								<button
 									type="submit"
-									class="flex w-full justify-center rounded-md bg-primary px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-primary-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+									class="flex w-full justify-center rounded-md bg-primary px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
 								>
 									Sign in
 								</button>
@@ -77,8 +81,6 @@
 import axios from 'axios';
 
 const runtimeConfig = useRuntimeConfig();
-
-console.log(runtimeConfig.public.baseUrl);
 
 const baseUrl = runtimeConfig.public.baseUrl;
 
