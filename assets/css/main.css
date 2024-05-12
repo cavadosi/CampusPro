@@ -2,6 +2,16 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+.scrollbar::-webkit-scrollbar {
+	height: 5px;
+	width: 5px;
+	background: transparent;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+	border-radius: 50px;
+	@apply bg-primary;
+}
 
 @layer base {
 	:root {
