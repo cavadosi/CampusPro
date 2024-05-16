@@ -108,21 +108,24 @@
 				<!-- Separator -->
 				<div class="h-6 w-px bg-tbase/10 lg:hidden" aria-hidden="true" />
 
-				<div class="flex flex-1 gap-x-4 items-center justify-end lg:gap-x-6 my-2">
+				<div class="flex flex-1 gap-x-4 items-center justify-end lg:gap-x-4 my-2">
 					<InputSpotlight />
 
 					<div class="flex items-center gap-x-2 lg:gap-x-4">
 						<!-- Separator -->
 						<div class="hidden lg:block lg:h-6 lg:w-px lg:bg-tbase/10" aria-hidden="true" />
-
 						<ThemeSwitch class="hidden lg:flex" />
+						<div class="group hidden lg:flex items-center">
+							<IconMaterial-symbols:notifications class="h-5 w-5 text-tlight group-hover:hidden" aria-hidden="true" />
+							<IconMaterial-symbols:notifications-active class="h-5 w-5 text-tbase hidden group-hover:block" aria-hidden="true" />
+						</div>
 						<!-- Profile dropdown -->
 						<Menu as="div" class="relative">
 							<MenuButton class="-m-1.5 flex items-center p-1.5">
 								<span class="sr-only">Open user menu</span>
-								<img class="h-8 w-8 rounded-full bg-bglight" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
-								<span class="hidden lg:flex lg:items-center">
-									<span class="ml-4 text-sm font-semibold leading-6 text-tbase" aria-hidden="true">Tom Cook</span>
+								<img class="h-10 w-10 rounded-full bg-bglight" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
+								<span class="flex items-center">
+									<span class="hidden lg:flex ml-4 text-sm font-semibold leading-6 text-tbase" aria-hidden="true">Tom Cook</span>
 									<IconHeroicons:chevron-down class="ml-2 h-5 w-5 text-tlight" aria-hidden="true" />
 								</span>
 							</MenuButton>
@@ -134,7 +137,15 @@
 								leave-from-class="transform opacity-100 scale-100"
 								leave-to-class="transform opacity-0 scale-95"
 							>
-								<MenuItems class="absolute right-0 z-10 mt-2.5 w-32 origin-top-right rounded-md bg-bg py-2 shadow-lg ring-1 ring-tbase/5 focus:outline-none">
+								<MenuItems class="absolute right-0 z-10 mt-2.5 w-36 origin-top-right rounded-md bg-bg py-2 shadow-lg ring-1 ring-primary/30 focus:outline-none">
+									<div class="lg:hidden flex flex-row items-center justify-between px-3 py-1">
+										<span class="text-sm font-semibold leading-6 text-tbase" aria-hidden="true">Tom Cook</span>
+										<div class="lg:hidden h-5 w-px bg-tbase/10" aria-hidden="true" />
+										<div class="group">
+											<IconMaterial-symbols:notifications class="h-5 w-5 text-tlight group-hover:hidden" aria-hidden="true" />
+											<IconMaterial-symbols:notifications-active class="h-5 w-5 text-tbase hidden group-hover:block" aria-hidden="true" />
+										</div>
+									</div>
 									<MenuItem v-for="item in userNavigation" :key="item.name" v-slot="{ active }">
 										<a :href="item.href" :class="[active ? 'bg-bglight' : '', 'block px-3 py-1 text-sm leading-6 text-tbase']">{{ item.name }}</a>
 									</MenuItem>
