@@ -85,10 +85,4 @@ const referenceMaterial = {
 };
 
 const active = ref('entregas');
-const backgroundStyle = computed(() => ({
-	backgroundImage: `url('${props.post.image}')`,
-	backgroundSize: 'cover',
-	backgroundPosition: 'center center',
-	backgroundRepeat: 'no-repeat'
-}));
 </script>

@@ -14,6 +14,7 @@ export default defineNuxtConfig({
 		'@nuxtjs/tailwindcss',
 		'@pinia/nuxt',
 		'unplugin-icons/nuxt',
+		'nuxt-aos',
 		[
 			'@nuxtjs/google-fonts',
 			{

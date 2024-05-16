@@ -29,13 +29,13 @@
 					<section id="KeyFeatures" class="py-24 sm:py-32">
 						<div class="mx-auto max-w-7xl px-6 lg:px-8">
 							<div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-								<div>
+								<div data-aos="fade-right">
 									<h2 class="text-base font-semibold leading-7 text-primary">Everything you need</h2>
 									<p class="mt-2 text-3xl font-bold tracking-tight text-tbase sm:text-4xl">All-in-one platform</p>
 									<p class="mt-6 text-base leading-7 text-tlight">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
 								</div>
 								<dl class="col-span-2 grid grid-cols-1 gap-x-8 gap-y-10 text-base leading-7 text-tlight sm:grid-cols-2 lg:gap-y-16">
-									<div v-for="feature in features" :key="feature.name" class="relative pl-9">
+									<div v-for="feature in features" :key="feature.name" class="relative pl-9" data-aos="fade-in">
 										<dt class="font-semibold text-tbase">
 											<IconHeroicons:check class="absolute left-0 top-1 h-5 w-5 text-primary-300" aria-hidden="true" />
 											{{ feature.name }}
@@ -51,7 +51,7 @@
 					<section id="HowItWorks" class="overflow-hidden py-24 sm:py-32">
 						<div class="mx-auto max-w-7xl md:px-6 lg:px-8">
 							<div class="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start">
-								<div class="px-6 lg:px-0 lg:pr-4 lg:pt-4">
+								<div class="px-6 lg:px-0 lg:pr-4 lg:pt-4" data-aos="fade-right">
 									<div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
 										<h2 class="text-base font-semibold leading-7 text-primary">Deploy faster</h2>
 										<p class="mt-2 text-3xl font-bold tracking-tight text-tbase sm:text-4xl">A better workflow</p>
@@ -68,7 +68,7 @@
 										</dl>
 									</div>
 								</div>
-								<div class="sm:px-6 lg:px-0">
+								<div class="sm:px-6 lg:px-0" data-aos="fade-left">
 									<div class="relative isolate overflow-hidden rounded-3xl bg-primary-300 px-6 pt-8 sm:mx-auto sm:max-w-2xl sm:rounded-3xl shadow-lg sm:pl-16 sm:pr-0 sm:pt-16 lg:mx-0 lg:max-w-none">
 										<div class="absolute -inset-y-px -left-3 -z-10 w-full origin-bottom-left skew-x-[-30deg] bg-priamry-100 opacity-20 ring-1 ring-inset ring-white" aria-hidden="true" />
 										<div class="mx-auto max-w-2xl sm:mx-0 sm:max-w-none">
@@ -96,11 +96,11 @@
 							/>
 						</div>
 						<div class="mx-auto max-w-7xl px-6 lg:px-8">
-							<div class="mx-auto max-w-xl text-center">
+							<div class="mx-auto max-w-xl text-center" data-aos="fade-down">
 								<h2 class="text-lg font-semibold leading-8 tracking-tight text-primary">Testimonials</h2>
 								<p class="mt-2 text-3xl font-bold tracking-tight text-tbase sm:text-4xl">We have worked with thousands of amazing people</p>
 							</div>
-							<div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-tbase sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
+							<div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-tbase sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4" data-aos="fade-in" data-aos-duration="300">
 								<figure class="rounded-2xl bg-bglight/30 shadow-lg ring-1 ring-tbase/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
 									<blockquote class="p-6 text-lg font-semibold leading-7 tracking-tight text-tbase sm:p-12 sm:text-xl sm:leading-8">
 										<p>{{ `“${featuredTestimonial.body}”` }}</p>
@@ -115,7 +115,13 @@
 									</figcaption>
 								</figure>
 								<div v-for="(columnGroup, columnGroupIdx) in testimonials" :key="columnGroupIdx" class="space-y-8 xl:contents xl:space-y-0">
-									<div v-for="(column, columnIdx) in columnGroup" :key="columnIdx" :class="[(columnGroupIdx === 0 && columnIdx === 0) || (columnGroupIdx === testimonials.length - 1 && columnIdx === columnGroup.length - 1) ? 'xl:row-span-2' : 'xl:row-start-1', 'space-y-8']">
+									<div
+										v-for="(column, columnIdx) in columnGroup"
+										:key="columnIdx"
+										:class="[(columnGroupIdx === 0 && columnIdx === 0) || (columnGroupIdx === testimonials.length - 1 && columnIdx === columnGroup.length - 1) ? 'xl:row-span-2' : 'xl:row-start-1', 'space-y-8']"
+										data-aos="fade-left"
+										:data-aos-offset="Math.floor(Math.random() * (300 - 100 + 1)) + 100"
+									>
 										<figure v-for="testimonial in column" :key="testimonial.author.handle" class="rounded-2xl bg-bglight/30 p-6 shadow-lg ring-1 ring-tbase/5">
 											<blockquote class="text-tbase">
 												<p>{{ `“${testimonial.body}”` }}</p>
@@ -137,7 +143,7 @@
 					<section id="Showcase">
 						<div class="pt-8 lg:pt-12">
 							<div class="mx-auto max-w-7xl px-6 lg:px-8">
-								<div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
+								<div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none" data-aos="fade-up">
 									<p class="text-base font-semibold leading-7 text-primary-300">Deploy faster</p>
 									<h1 class="mt-2 text-3xl font-bold tracking-tight text-tbase sm:text-4xl">A better workflow</h1>
 									<div class="mt-10 grid max-w-xl grid-cols-1 gap-8 text-base leading-7 text-tlight lg:max-w-none lg:grid-cols-2">
@@ -157,7 +163,7 @@
 										</div>
 									</div>
 									<dl class="mt-16 grid grid-cols-1 gap-x-8 gap-y-12 sm:mt-20 sm:grid-cols-2 sm:gap-y-16 lg:mt-28 lg:grid-cols-4">
-										<div v-for="(stat, statIdx) in stats" :key="statIdx" class="flex flex-col-reverse gap-y-3 border-l border-tlight/70 pl-6">
+										<div v-for="(stat, statIdx) in stats" :key="statIdx" class="flex flex-col-reverse gap-y-3 border-l border-tlight/70 pl-6" data-aos="fade-left" :data-aos-offset="statIdx * 75">
 											<dt class="text-base leading-7 text-tlight">{{ stat.label }}</dt>
 											<dd class="text-3xl font-semibold tracking-tight text-tbase">{{ stat.value }}</dd>
 										</div>
@@ -168,14 +174,14 @@
 
 						<div class="py-24 sm:py-32">
 							<div class="mx-auto max-w-7xl px-6 lg:px-8">
-								<div class="mx-auto max-w-2xl lg:max-w-none">
+								<div class="mx-auto max-w-2xl lg:max-w-none" data-aos="fade-right" data-aos-duration="500" data-aos-easing="linear">
 									<h2 class="text-lg font-semibold leading-8 text-tbase">Trusted by the world’s most innovative teams</h2>
 									<div class="mx-auto mt-10 grid grid-cols-4 items-start gap-x-8 gap-y-10 sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:grid-cols-5">
-										<img class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1" src="https://tailwindui.com/img/logos/transistor-logo-gray-900.svg" alt="Transistor" width="158" height="48" />
-										<img class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1" src="https://tailwindui.com/img/logos/reform-logo-gray-900.svg" alt="Reform" width="158" height="48" />
-										<img class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1" src="https://tailwindui.com/img/logos/tuple-logo-gray-900.svg" alt="Tuple" width="158" height="48" />
-										<img class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1" src="https://tailwindui.com/img/logos/savvycal-logo-gray-900.svg" alt="SavvyCal" width="158" height="48" />
-										<img class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1" src="https://tailwindui.com/img/logos/statamic-logo-gray-900.svg" alt="Statamic" width="158" height="48" />
+										<img class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1" src="https://tailwindui.com/img/logos/transistor-logo-cyan-600.svg" alt="Transistor" width="158" height="48" />
+										<img class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1" src="https://tailwindui.com/img/logos/reform-logo-cyan-600.svg" alt="Reform" width="158" height="48" />
+										<img class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1" src="https://tailwindui.com/img/logos/tuple-logo-cyan-600.svg" alt="Tuple" width="158" height="48" />
+										<img class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1" src="https://tailwindui.com/img/logos/savvycal-logo-cyan-600.svg" alt="SavvyCal" width="158" height="48" />
+										<img class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1" src="https://tailwindui.com/img/logos/statamic-logo-cyan-600.svg" alt="Statamic" width="158" height="48" />
 									</div>
 								</div>
 							</div>
@@ -185,9 +191,9 @@
 					<section id="FAQ">
 						<div class="mx-auto max-w-7xl px-6 py-12 sm:py-16 lg:px-8 lg:py-20">
 							<div class="mx-auto max-w-4xl divide-y divide-tbase/10">
-								<h2 class="text-2xl font-bold leading-10 tracking-tight text-tbase">Frequently asked questions</h2>
+								<h2 class="text-2xl font-bold leading-10 tracking-tight text-tbase" data-aos="fade-in">Frequently asked questions</h2>
 								<dl class="mt-10 space-y-6 divide-y divide-tbase/10">
-									<Disclosure as="div" v-for="faq in faqs" :key="faq.question" class="pt-6" v-slot="{ open }">
+									<Disclosure as="div" v-for="(faq, index) in faqs" :key="faq.question" class="pt-6" v-slot="{ open }" data-aos="fade-right" :data-aos-offset="index * 30">
 										<dt>
 											<DisclosureButton class="flex w-full items-start justify-between text-left text-tbase">
 												<span class="text-base font-semibold leading-7">{{ faq.question }}</span>
@@ -208,7 +214,7 @@
 
 					<!-- CTA section -->
 					<section id="CTA">
-						<div class="px-6 py-16 sm:px-6 sm:py-20 lg:px-8">
+						<div class="px-6 py-16 sm:px-6 sm:py-20 lg:px-8" data-aos="fade-in" data-aos-anchor-placement="top-center" data-aos-offset="50">
 							<div class="mx-auto max-w-2xl text-center">
 								<h2 class="text-3xl font-bold tracking-tight text-tbase sm:text-4xl">Boost your productivity.<br />Start using our app today.</h2>
 								<p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-tlight">Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim id veniam aliqua proident excepteur commodo do ea.</p>
