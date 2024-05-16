@@ -2,6 +2,7 @@
 	<div class="bg-bgcover transition-colors duration-300">
 		<LandingHeader />
 		<NuxtPage />
+		<LandingFooter />
 	</div>
 </template>
 
