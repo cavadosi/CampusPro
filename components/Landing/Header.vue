@@ -16,7 +16,7 @@
 			</div>
 			<PopoverGroup class="hidden lg:flex lg:gap-x-12">
 				<Popover class="relative">
-					<PopoverButton class="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 transition-colors duration-100 text-tbase pl-0.5">
+					<PopoverButton class="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 transition-colors duration-100 text-tbase pl-0.5" id="headless-popover-button-1">
 						<span>Product</span>
 						<IconHeroicons:chevron-down class="h-5 w-5" aria-hidden="true" />
 					</PopoverButton>

@@ -1,19 +1,21 @@
 <template>
-	<!doctype html>
-	<Head>
-		<Title>CampusPro</Title>
-		<Meta name="description" content="CampusPro" />
-		<Meta charset="UTF-8" />
-		<Meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	</Head>
-	<Html class="bg-bgscrollbar scrollbar overflow-y-auto transition-colors duration-300" lang="en">
-		<body>
-			<NuxtLayout>
-				<NuxtPage />
-			</NuxtLayout>
-		</body>
-	</Html>
+	<div class="bg-bgscrollbar scrollbar overflow-y-auto transition-colors duration-300">
+		<NuxtLayout>
+			<NuxtPage />
+		</NuxtLayout>
+	</div>
 </template>
+
+<script>
+export default {
+	head() {
+		return {
+			title: 'CampusPro',
+			meta: [{ charset: 'UTF-8' }, { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }, { hid: 'description', name: 'description', content: 'CampusPro' }]
+		};
+	}
+};
+</script>
 
 <style>
 html {

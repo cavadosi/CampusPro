@@ -192,20 +192,22 @@
 							<div class="mx-auto max-w-4xl divide-y divide-tbase/10">
 								<h2 class="text-2xl font-bold leading-10 tracking-tight text-tbase" data-aos="fade-in">Frequently asked questions</h2>
 								<dl class="mt-10 space-y-6 divide-y divide-tbase/10">
-									<Disclosure as="div" v-for="(faq, index) in faqs" :key="faq.question" class="pt-6" v-slot="{ open }" data-aos="fade-right" :data-aos-offset="index * 30">
-										<dt>
-											<DisclosureButton class="flex w-full items-start justify-between text-left text-tbase">
-												<span class="text-base font-semibold leading-7">{{ faq.question }}</span>
-												<span class="ml-6 flex h-7 items-center">
-													<IconHeroicons:plus-20-solid v-if="!open" class="h-6 w-6" aria-hidden="true" />
-													<IconHeroicons:minus-20-solid v-else class="h-6 w-6" aria-hidden="true" />
-												</span>
-											</DisclosureButton>
-										</dt>
-										<DisclosurePanel as="dd" class="mt-2 pr-12">
-											<p class="text-base leading-7 text-tlight">{{ faq.answer }}</p>
-										</DisclosurePanel>
-									</Disclosure>
+									<ClientOnly>
+										<Disclosure as="div" v-for="(faq, index) in faqs" :key="faq.question" class="pt-6" v-slot="{ open }" data-aos="fade-right" :data-aos-offset="index * 30">
+											<dt>
+												<DisclosureButton :id="`headlessui-disclosure-button-${index}`" class="flex w-full items-start justify-between text-left text-tbase">
+													<span class="text-base font-semibold leading-7">{{ faq.question }}</span>
+													<span class="ml-6 flex h-7 items-center">
+														<IconHeroicons:plus-20-solid v-if="!open" class="h-6 w-6" aria-hidden="true" />
+														<IconHeroicons:minus-20-solid v-else class="h-6 w-6" aria-hidden="true" />
+													</span>
+												</DisclosureButton>
+											</dt>
+											<DisclosurePanel as="dd" class="mt-2 pr-12">
+												<p class="text-base leading-7 text-tlight">{{ faq.answer }}</p>
+											</DisclosurePanel>
+										</Disclosure>
+									</ClientOnly>
 								</dl>
 							</div>
 						</div>
@@ -241,6 +243,12 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue';
 import CloudArrowUpIcon from '~icons/fluent/grid-24-filled';
 import LockClosedIcon from '~icons/fluent/grid-24-filled';
 import ServerIcon from '~icons/fluent/grid-24-filled';
+
+function getId(index) {
+	const id = `headlessui-disclosure-button-${index}`;
+	console.log(`Generated ID for index ${index}: ${id}`);
+	return id;
+}
 const usage = [
 	{
 		name: 'Push to deploy.',
