@@ -8,7 +8,10 @@ export default defineNuxtConfig({
 			charset: 'utf-8',
 			viewport: 'width=device-width, initial-scale=1',
 			meta: [{ charset: 'UTF-8' }, { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }, { hid: 'description', name: 'description', content: 'The better way to learn' }],
-			title: 'CampusPro'
+			title: 'CampusPro',
+			htmlAttrs: {
+				lang: 'en'
+			}
 		}
 	},
 	ssr: true,
