@@ -14,13 +14,12 @@
 						<p class="mt-6 text-lg leading-8 text-tlight">A fully customizable online learning tool designed to give teaching a more modern and flexible aproach and made for institutions of all sizes.</p>
 						<div class="mt-10 flex items-center justify-center gap-x-6">
 							<ButtonGradient link="/register" text="Get started" />
-
 							<NuxtLink href="#" class="text-sm font-semibold leading-6 text-tbase">Learn more <span aria-hidden="true">→</span></NuxtLink>
 						</div>
 					</div>
 					<div class="mt-16 flow-root sm:mt-24">
 						<div class="-m-2 rounded-xl bg-tbase/5 p-2 ring-1 ring-inset ring-tbase/10 lg:-m-4 lg:rounded-2xl lg:p-4">
-							<NuxtImg src="https://tailwindui.com/img/component-images/project-app-screenshot.png" alt="App screenshot" width="2432" height="1442" class="rounded-md shadow-2xl ring-1 ring-tbase/10" format="webp" loading="lazy" />
+							<NuxtImg src="https://tailwindui.com/img/component-images/project-app-screenshot.png" alt="App screenshot" width="2432" height="1442" class="rounded-md shadow-2xl ring-1 ring-tbase/10" format="webp" />
 						</div>
 					</div>
 				</div>
