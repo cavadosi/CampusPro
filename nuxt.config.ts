@@ -3,7 +3,13 @@ import UnpluginComponentsVite from 'unplugin-vue-components/vite';
 import IconsResolver from 'unplugin-icons/resolver';
 
 export default defineNuxtConfig({
-	// TODO: fix .env
+	app: {
+		head: {
+			charset: 'utf-8',
+			viewport: 'width=device-width, initial-scale=1',
+			title: 'CampusPro'
+		}
+	},
 	ssr: true,
 	devtools: { enabled: true },
 	imports: {
