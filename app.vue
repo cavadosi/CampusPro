@@ -1,11 +1,9 @@
 <template>
-	<div class="bg-bgscrollbar scrollbar overflow-y-auto transition-colors duration-300" lang="en">
-		<body>
-			<NuxtLayout>
-				<NuxtPage />
-			</NuxtLayout>
-		</body>
-	</div>
+	<Html class="bg-bgscrollbar scrollbar overflow-y-auto transition-colors duration-300">
+		<NuxtLayout>
+			<NuxtPage />
+		</NuxtLayout>
+	</Html>
 </template>
 
 <style>
