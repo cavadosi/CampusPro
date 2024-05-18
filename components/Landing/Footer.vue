@@ -20,7 +20,7 @@
 				<div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
 					<div class="md:grid md:grid-cols-2 md:gap-8">
 						<div>
-							<h3 class="text-sm font-semibold leading-6 text-tbase">Solutions</h3>
+							<h2 class="text-sm font-semibold leading-6 text-tbase">Solutions</h2>
 							<ul role="list" class="mt-6 space-y-4">
 								<li v-for="item in navigation.solutions" :key="item.name">
 									<a :href="item.href" class="text-sm leading-6 text-tlight hover:text-primary">{{ item.name }}</a>
@@ -28,7 +28,7 @@
 							</ul>
 						</div>
 						<div class="mt-10 md:mt-0">
-							<h3 class="text-sm font-semibold leading-6 text-tbase">Support</h3>
+							<h2 class="text-sm font-semibold leading-6 text-tbase">Support</h2>
 							<ul role="list" class="mt-6 space-y-4">
 								<li v-for="item in navigation.support" :key="item.name">
 									<a :href="item.href" class="text-sm leading-6 text-tlight hover:text-primary">{{ item.name }}</a>
@@ -38,7 +38,7 @@
 					</div>
 					<div class="md:grid md:grid-cols-2 md:gap-8">
 						<div>
-							<h3 class="text-sm font-semibold leading-6 text-tbase">Company</h3>
+							<h2 class="text-sm font-semibold leading-6 text-tbase">Company</h2>
 							<ul role="list" class="mt-6 space-y-4">
 								<li v-for="item in navigation.company" :key="item.name">
 									<a :href="item.href" class="text-sm leading-6 text-tlight hover:text-primary">{{ item.name }}</a>
@@ -46,7 +46,7 @@
 							</ul>
 						</div>
 						<div class="mt-10 md:mt-0">
-							<h3 class="text-sm font-semibold leading-6 text-tbase">Legal</h3>
+							<h2 class="text-sm font-semibold leading-6 text-tbase">Legal</h2>
 							<ul role="list" class="mt-6 space-y-4">
 								<li v-for="item in navigation.legal" :key="item.name">
 									<a :href="item.href" class="text-sm leading-6 text-tlight hover:text-primary">{{ item.name }}</a>
@@ -57,7 +57,7 @@
 				</div>
 			</div>
 			<div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
-				<p class="text-xs leading-5 text-gray-400">&copy; 2020 Your Company, Inc. All rights reserved.</p>
+				<p class="text-xs leading-5 text-tlight">&copy; 2020 Your Company, Inc. All rights reserved.</p>
 			</div>
 		</div>
 	</footer>

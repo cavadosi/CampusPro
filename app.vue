@@ -1,8 +1,15 @@
 <template>
-	<Html class="bg-bgscrollbar scrollbar overflow-y-auto transition-colors duration-300">
-		<NuxtLayout>
-			<NuxtPage />
-		</NuxtLayout>
+	<Html class="bg-bgscrollbar scrollbar overflow-y-auto transition-colors duration-300" lang="en">
+		<head>
+			<meta charset="UTF-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			<title>CampusPro</title>
+		</head>
+		<body>
+			<NuxtLayout>
+				<NuxtPage />
+			</NuxtLayout>
+		</body>
 	</Html>
 </template>
 
