@@ -13,7 +13,21 @@
 			<!-- task container -->
 			<div class="flex-grow w-full overflow-y-auto scrollbar">
 				<div class="flex-col mr-2">
-					<draggable class="draggable-list" :list="tasksRef" group="tasks" :key="columnType" itemKey="title">
+					<draggable
+						class="draggable-list"
+						tag="ul"
+						:component-data="{
+							type: 'transition-group',
+							name: !drag ? 'flip-list' : null
+						}"
+						v-bind="dragOptions"
+						@start="drag = true"
+						@end="drag = false"
+						:list="tasksRef"
+						group="tasks"
+						:key="columnType"
+						itemKey="title"
+					>
 						<template #item="{ element }">
 							<TaskCard :title="element.title" :pills="element.pills" :columnType="columnType" />
 						</template>
@@ -49,4 +63,35 @@ const props = defineProps({
 
 const { columnType, tasks, icon, color } = toRefs(props);
 const tasksRef = ref(tasks.value);
+const drag = ref(false);
 </script>
+
+<script>
+export default {
+	computed: {
+		dragOptions() {
+			return {
+				animation: 200,
+				group: 'description',
+				disabled: false,
+				ghostClass: 'ghost'
+			};
+		}
+	}
+};
+</script>
+
+<style scoped>
+.flip-list-move {
+	transition: transform 0.5s;
+}
+
+.no-move {
+	transition: transform 0s;
+}
+
+.ghost {
+	opacity: 0.5;
+	background: #c8ebfb;
+}
+</style>
