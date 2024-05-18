@@ -1,10 +1,12 @@
 <template>
+	<!doctype html>
+	<Head>
+		<Title>CampusPro</Title>
+		<Meta name="description" content="CampusPro" />
+		<Meta charset="UTF-8" />
+		<Meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</Head>
 	<Html class="bg-bgscrollbar scrollbar overflow-y-auto transition-colors duration-300" lang="en">
-		<head>
-			<meta charset="UTF-8" />
-			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-			<title>CampusPro</title>
-		</head>
 		<body>
 			<NuxtLayout>
 				<NuxtPage />

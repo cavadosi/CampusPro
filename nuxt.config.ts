@@ -24,7 +24,8 @@ export default defineNuxtConfig({
 				download: true,
 				inject: true
 			}
-		]
+		],
+		'@nuxt/image'
 	],
 	vite: {
 		plugins: [

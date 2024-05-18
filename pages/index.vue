@@ -20,7 +20,7 @@
 					</div>
 					<div class="mt-16 flow-root sm:mt-24">
 						<div class="-m-2 rounded-xl bg-tbase/5 p-2 ring-1 ring-inset ring-tbase/10 lg:-m-4 lg:rounded-2xl lg:p-4">
-							<img src="https://tailwindui.com/img/component-images/project-app-screenshot.png" alt="App screenshot" width="2432" height="1442" class="rounded-md shadow-2xl ring-1 ring-tbase/10" />
+							<NuxtImg src="https://tailwindui.com/img/component-images/project-app-screenshot.png" alt="App screenshot" width="2432" height="1442" class="rounded-md shadow-2xl ring-1 ring-tbase/10" format="webp" loading="lazy" />
 						</div>
 					</div>
 				</div>
@@ -72,7 +72,7 @@
 									<div class="relative isolate overflow-hidden rounded-3xl bg-primary-300 px-6 pt-8 sm:mx-auto sm:max-w-2xl sm:rounded-3xl shadow-lg sm:pl-16 sm:pr-0 sm:pt-16 lg:mx-0 lg:max-w-none">
 										<div class="absolute -inset-y-px -left-3 -z-10 w-full origin-bottom-left skew-x-[-30deg] bg-priamry-100 opacity-20 ring-1 ring-inset ring-white" aria-hidden="true" />
 										<div class="mx-auto max-w-2xl sm:mx-0 sm:max-w-none">
-											<img src="https://tailwindui.com/img/component-images/project-app-screenshot.png" alt="Product screenshot" width="2432" height="1442" class="-mb-12 w-[57rem] max-w-none rounded-tl-xl bg-gray-800 ring-1 ring-white/10" />
+											<NuxtImg src="https://tailwindui.com/img/component-images/project-app-screenshot.png" alt="Product screenshot" width="2432" height="1442" format="webp" loading="lazy" class="-mb-12 w-[57rem] max-w-none rounded-tl-xl bg-gray-800 ring-1 ring-white/10" />
 										</div>
 										<div class="pointer-events-none absolute inset-0 ring-1 ring-inset ring-tbase/10 sm:rounded-3xl" aria-hidden="true" />
 									</div>
@@ -106,12 +106,12 @@
 										<p>{{ `“${featuredTestimonial.body}”` }}</p>
 									</blockquote>
 									<figcaption class="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-tbase/10 px-6 py-4 sm:flex-nowrap">
-										<img class="h-10 w-10 flex-none rounded-full bg-bg" :src="featuredTestimonial.author.imageUrl" alt="" />
+										<NuxtImg format="webp" loading="lazy" class="h-10 w-10 flex-none rounded-full bg-bg" :src="featuredTestimonial.author.imageUrl" alt="" />
 										<div class="flex-auto">
 											<div class="font-semibold">{{ featuredTestimonial.author.name }}</div>
 											<div class="text-tlight">{{ `@${featuredTestimonial.author.handle}` }}</div>
 										</div>
-										<img class="h-10 w-auto flex-none" :src="featuredTestimonial.author.logoUrl" alt="" />
+										<NuxtImg format="webp" loading="lazy" class="h-10 w-auto flex-none" :src="featuredTestimonial.author.logoUrl" alt="" />
 									</figcaption>
 								</figure>
 								<div v-for="(columnGroup, columnGroupIdx) in testimonials" :key="columnGroupIdx" class="space-y-8 xl:contents xl:space-y-0">
@@ -127,7 +127,7 @@
 												<p>{{ `“${testimonial.body}”` }}</p>
 											</blockquote>
 											<figcaption class="mt-6 flex items-center gap-x-4">
-												<img class="h-10 w-10 rounded-full bg-bg" :src="testimonial.author.imageUrl" alt="" />
+												<NuxtImg format="webp" loading="lazy" class="h-10 w-10 rounded-full bg-bg" :src="testimonial.author.imageUrl" alt="" />
 												<div>
 													<div class="font-semibold">{{ testimonial.author.name }}</div>
 													<div class="text-tlight">{{ `@${testimonial.author.handle}` }}</div>
@@ -177,11 +177,11 @@
 								<div class="mx-auto max-w-2xl lg:max-w-none" data-aos="fade-right" data-aos-duration="500" data-aos-easing="linear">
 									<h2 class="text-lg font-semibold leading-8 text-tbase">Trusted by the world’s most innovative teams</h2>
 									<div class="mx-auto mt-10 grid grid-cols-4 items-start gap-x-8 gap-y-10 sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:grid-cols-5">
-										<img class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1" src="https://tailwindui.com/img/logos/transistor-logo-cyan-600.svg" alt="Transistor" width="158" height="48" />
-										<img class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1" src="https://tailwindui.com/img/logos/reform-logo-cyan-600.svg" alt="Reform" width="158" height="48" />
-										<img class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1" src="https://tailwindui.com/img/logos/tuple-logo-cyan-600.svg" alt="Tuple" width="158" height="48" />
-										<img class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1" src="https://tailwindui.com/img/logos/savvycal-logo-cyan-600.svg" alt="SavvyCal" width="158" height="48" />
-										<img class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1" src="https://tailwindui.com/img/logos/statamic-logo-cyan-600.svg" alt="Statamic" width="158" height="48" />
+										<NuxtImg format="webp" loading="lazy" class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1" src="https://tailwindui.com/img/logos/transistor-logo-gray-600.svg" alt="Transistor" width="158" height="48" />
+										<NuxtImg format="webp" loading="lazy" class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1" src="https://tailwindui.com/img/logos/reform-logo-gray-600.svg" alt="Reform" width="158" height="48" />
+										<NuxtImg format="webp" loading="lazy" class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1" src="https://tailwindui.com/img/logos/tuple-logo-gray-600.svg" alt="Tuple" width="158" height="48" />
+										<NuxtImg format="webp" loading="lazy" class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1" src="https://tailwindui.com/img/logos/savvycal-logo-gray-600.svg" alt="SavvyCal" width="158" height="48" />
+										<NuxtImg format="webp" loading="lazy" class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1" src="https://tailwindui.com/img/logos/statamic-logo-gray-600.svg" alt="Statamic" width="158" height="48" />
 									</div>
 								</div>
 							</div>
