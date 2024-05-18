@@ -19,7 +19,7 @@
 					</div>
 					<div class="mt-16 flow-root sm:mt-24">
 						<div class="-m-2 rounded-xl bg-tbase/5 p-2 ring-1 ring-inset ring-tbase/10 lg:-m-4 lg:rounded-2xl lg:p-4">
-							<NuxtImg src="https://tailwindui.com/img/component-images/project-app-screenshot.png" alt="App screenshot" width="2432" height="1442" class="rounded-md shadow-2xl ring-1 ring-tbase/10" format="webp" />
+							<NuxtImg src="https://tailwindui.com/img/component-images/project-app-screenshot.png" alt="App screenshot" width="2432" height="1442" sizes="100vw" class="rounded-md shadow-2xl ring-1 ring-tbase/10" format="webp" />
 						</div>
 					</div>
 				</div>
@@ -105,7 +105,7 @@
 										<p>{{ `“${featuredTestimonial.body}”` }}</p>
 									</blockquote>
 									<figcaption class="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-tbase/10 px-6 py-4 sm:flex-nowrap">
-										<NuxtImg format="webp" loading="lazy" class="h-10 w-10 flex-none rounded-full bg-bg" :src="featuredTestimonial.author.imageUrl" alt="" />
+										<NuxtImg format="webp" loading="lazy" sizes="40px" class="h-10 w-10 flex-none rounded-full bg-bg" :src="featuredTestimonial.author.imageUrl" alt="" />
 										<div class="flex-auto">
 											<div class="font-semibold">{{ featuredTestimonial.author.name }}</div>
 											<div class="text-tlight">{{ `@${featuredTestimonial.author.handle}` }}</div>
@@ -126,7 +126,7 @@
 												<p>{{ `“${testimonial.body}”` }}</p>
 											</blockquote>
 											<figcaption class="mt-6 flex items-center gap-x-4">
-												<NuxtImg format="webp" loading="lazy" class="h-10 w-10 rounded-full bg-bg" :src="testimonial.author.imageUrl" alt="" />
+												<NuxtImg format="webp" loading="lazy" sizes="40px" class="h-10 w-10 rounded-full bg-bg" :src="testimonial.author.imageUrl" alt="" />
 												<div>
 													<div class="font-semibold">{{ testimonial.author.name }}</div>
 													<div class="text-tlight">{{ `@${testimonial.author.handle}` }}</div>
