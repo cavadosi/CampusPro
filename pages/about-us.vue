@@ -47,7 +47,7 @@
 
 			<!-- Image section -->
 			<div class="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
-				<img src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2894&q=80" alt="" class="aspect-[9/4] w-full object-cover xl:rounded-3xl" />
+				<NuxtImg src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2894&q=80" alt="" format="webp" loading="lazy" class="aspect-[9/4] w-full object-cover xl:rounded-3xl" />
 			</div>
 
 			<!-- Values section -->
@@ -76,7 +76,7 @@
 				</div>
 				<ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4">
 					<li v-for="person in team" :key="person.name">
-						<img class="aspect-[14/13] w-full rounded-2xl object-cover" :src="person.imageUrl" alt="" />
+						<NuxtImg class="aspect-[14/13] w-full rounded-2xl object-cover" :src="person.imageUrl" alt="" format="webp" sizes="100vw md:400px" loading="lazy" />
 						<h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-tbase">{{ person.name }}</h3>
 						<p class="text-base leading-7 text-tlight">{{ person.role }}</p>
 						<p class="text-sm leading-6 text-tlight">{{ person.location }}</p>
@@ -88,6 +88,7 @@
 </template>
 
 <script setup>
+import { NuxtImg } from '#build/components';
 import { defineComponent, h, ref } from 'vue';
 
 const navigation = [
