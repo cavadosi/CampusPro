@@ -26,10 +26,10 @@
 							</radialGradient>
 						</defs>
 					</svg>
-					<div class="hidden lg:absolute lg:inset-x-px lg:bottom-10 lg:top-4 lg:block lg:rounded-2xl lg:bg-primary/50 lg:ring-1 lg:ring-white/10" aria-hidden="true" />
-					<div v-for="tier in tiers" :key="tier.id" :class="[tier.featured ? 'z-10 bg-bg shadow-xl ring-1 ring-tlight/10' : 'bg-primary/50 lg:bg-transparent ', 'relative rounded-2xl']">
+					<div class="hidden lg:absolute lg:inset-x-px lg:bottom-10 lg:top-4 lg:block lg:rounded-2xl lg:bg-primary/20 lg:ring-1 lg:ring-white/10" aria-hidden="true" />
+					<div v-for="tier in tiers" :key="tier.id" :class="[tier.featured ? 'z-10 bg-bg shadow-xl ring-1 ring-tlight/10' : 'bg-primary lg:bg-transparent ', 'relative rounded-2xl']">
 						<div class="p-8 lg:pt-12 xl:p-10 xl:pt-14">
-							<h3 :id="tier.id" :class="[tier.featured ? 'text-tbase' : 'text-tbase', 'text-sm font-semibold leading-6']">{{ tier.name }}</h3>
+							<h3 :id="tier.id" :class="[tier.featured ? 'text-tlight' : 'text-white', 'text-sm font-semibold leading-6']">{{ tier.name }}</h3>
 							<div class="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between lg:flex-col lg:items-stretch">
 								<div class="mt-2 flex items-center gap-x-4">
 									<p :class="[tier.featured ? 'text-tbase' : 'text-white', 'text-4xl font-bold tracking-tight']">{{ tier.price[frequency.value] }}</p>
