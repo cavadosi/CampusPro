@@ -88,7 +88,6 @@
 </template>
 
 <script setup>
-import { NuxtImg } from '#build/components';
 import { defineComponent, h, ref } from 'vue';
 
 const navigation = [
