@@ -18,7 +18,8 @@
 						tag="ul"
 						:component-data="{
 							type: 'transition-group',
-							name: !drag ? 'flip-list' : null
+							name: !drag ? 'flip-list' : null,
+							tag: 'ul'
 						}"
 						v-bind="dragOptions"
 						@start="drag = true"
@@ -28,8 +29,8 @@
 						:key="columnType"
 						itemKey="title"
 					>
-						<template #item="{ element }">
-							<li>
+						<template #item="{ element, index }">
+							<li :key="element.title">
 								<TaskCard :title="element.title" :pills="element.pills" :columnType="columnType" />
 							</li>
 						</template>
