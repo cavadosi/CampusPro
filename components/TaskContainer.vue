@@ -29,7 +29,9 @@
 						itemKey="title"
 					>
 						<template #item="{ element }">
-							<TaskCard :title="element.title" :pills="element.pills" :columnType="columnType" />
+							<li>
+								<TaskCard :title="element.title" :pills="element.pills" :columnType="columnType" />
+							</li>
 						</template>
 					</draggable>
 				</div>

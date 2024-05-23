@@ -7,7 +7,7 @@
 					<p class="mx-auto mt-4 max-w-2xl text-center text-lg leading-8 text-tlight">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam eligendi quos odit doloribus molestiae voluptatum quos odit doloribus.</p>
 					<div class="mt-16 flex justify-center">
 						<RadioGroup v-model="frequency" class="grid grid-cols-2 gap-x-1 rounded-full bg-bg p-1 text-center text-xs font-semibold leading-5 text-tlight">
-							<RadioGroupLabel class="sr-only" role="radio">Payment frequency</RadioGroupLabel>
+							<RadioGroupLabel class="sr-only">Payment frequency</RadioGroupLabel>
 							<RadioGroupOption as="template" v-for="option in frequencies" :key="option.value" :value="option" v-slot="{ checked }">
 								<div :class="[checked ? 'bg-primary text-white' : '', 'cursor-pointer rounded-full px-2.5 py-1']">
 									<span>{{ option.label }}</span>
