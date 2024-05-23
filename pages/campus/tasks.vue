@@ -27,10 +27,10 @@ const authenticate = async () => {
 		if (isAuthenticated) {
 			// console.log('Autenticación exitosa');
 		} else {
-			console.error('La autenticación falló');
+			// console.error('La autenticación falló');
 		}
 	} catch (error) {
-		console.error('Error al autenticar:', error);
+		// console.error('Error al autenticar:', error);
 	}
 };
 
