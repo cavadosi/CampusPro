@@ -147,7 +147,7 @@
 										</div>
 									</div>
 									<MenuItem v-for="item in userNavigation" :key="item.name" v-slot="{ active }">
-										<a :href="item.href" :class="[active ? 'bg-bglight' : '', 'block px-3 py-1 text-sm leading-6 text-tbase']">{{ item.name }}</a>
+										<NuxtLink :to="item.href" :class="[active ? 'bg-bglight' : '', 'block px-3 py-1 text-sm leading-6 text-tbase']">{{ item.name }}</NuxtLink>
 									</MenuItem>
 								</MenuItems>
 							</transition>

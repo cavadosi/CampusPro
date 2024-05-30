@@ -59,12 +59,14 @@
 							</div>
 
 							<div>
-								<button
-									type="submit"
-									class="flex w-full justify-center rounded-md bg-primary px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-								>
-									Sign in
-								</button>
+								<NuxtLink to="/campus">
+									<button
+										type="submit"
+										class="flex w-full justify-center rounded-md bg-primary px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+									>
+										Sign in
+									</button>
+								</NuxtLink>
 							</div>
 						</form>
 					</div>
@@ -84,30 +86,30 @@ const runtimeConfig = useRuntimeConfig();
 
 const baseUrl = runtimeConfig.public.baseUrl;
 
-const handleSubmit = async (event) => {
-	event.preventDefault();
+// const handleSubmit = async (event) => {
+// event.preventDefault();
 
-	const formData = new FormData(event.target);
+// const formData = new FormData(event.target);
 
-	const userData = {
-		email: formData.get('email'),
-		password: formData.get('password')
-	};
+// const userData = {
+// 	email: formData.get('email'),
+// 	password: formData.get('password')
+// };
 
-	try {
-		const response = await axios.post(' https://campuspro-246a1b5a089a.herokuapp.com/api/login', userData);
+// try {
+// 	const response = await axios.post(' https://campuspro-246a1b5a089a.herokuapp.com/api/login', userData);
 
-		const { token } = response.data;
-		if (response.status === 200) {
-			window.location.href = `${baseUrl}/campus`;
-			localStorage.setItem('token', token);
-		} else if (response.status === 401) {
-			alert('Correo o contraseña incorrectos.');
-		}
-	} catch (error) {
-		alert(`Error en la solicitud: (${error})`);
-	}
-};
+// 	const { token } = response.data;
+// 	if (response.status === 200) {
+// 		window.location.href = `${baseUrl}/campus`;
+// 		localStorage.setItem('token', token);
+// 	} else if (response.status === 401) {
+// 		alert('Correo o contraseña incorrectos.');
+// 	}
+// } catch (error) {
+// 	alert(`Error en la solicitud: (${error})`);
+// }
+// };
 
 definePageMeta({ layout: 'blank' });
 </script>
