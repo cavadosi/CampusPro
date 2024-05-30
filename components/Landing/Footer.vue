@@ -57,7 +57,7 @@
 				</div>
 			</div>
 			<div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
-				<p class="text-xs leading-5 text-tlight">&copy; 2020 Your Company, Inc. All rights reserved.</p>
+				<p class="text-xs leading-5 text-tlight">&copy; CampusPro 2024 | Creative Commons Attribution-NonCommercial-ShareAlike 4.0</p>
 			</div>
 		</div>
 	</footer>
