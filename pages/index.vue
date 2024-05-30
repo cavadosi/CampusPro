@@ -170,21 +170,6 @@
 								</div>
 							</div>
 						</div>
-
-						<div class="py-24 sm:py-32">
-							<div class="mx-auto max-w-7xl px-6 lg:px-8">
-								<div class="mx-auto max-w-2xl lg:max-w-none" data-aos="fade-right" data-aos-duration="500" data-aos-easing="linear">
-									<h2 class="text-lg font-semibold leading-8 text-tbase">Trusted by the world’s most innovative teams</h2>
-									<div class="mx-auto mt-10 grid grid-cols-4 items-start gap-x-8 gap-y-10 sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:grid-cols-5">
-										<NuxtImg format="webp" loading="lazy" class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1" src="https://tailwindui.com/img/logos/transistor-logo-gray-900.svg" alt="Transistor" width="158" height="48" />
-										<NuxtImg format="webp" loading="lazy" class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1" src="https://tailwindui.com/img/logos/reform-logo-gray-900.svg" alt="Reform" width="158" height="48" />
-										<NuxtImg format="webp" loading="lazy" class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1" src="https://tailwindui.com/img/logos/tuple-logo-gray-900.svg" alt="Tuple" width="158" height="48" />
-										<NuxtImg format="webp" loading="lazy" class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1" src="https://tailwindui.com/img/logos/savvycal-logo-gray-900.svg" alt="SavvyCal" width="158" height="48" />
-										<NuxtImg format="webp" loading="lazy" class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1" src="https://tailwindui.com/img/logos/statamic-logo-gray-900.svg" alt="Statamic" width="158" height="48" />
-									</div>
-								</div>
-							</div>
-						</div>
 					</section>
 					<!-- FAQ section -->
 					<section id="FAQ">
@@ -248,6 +233,20 @@ function getId(index) {
 	const id = `headlessui-disclosure-button-${index}`;
 	console.log(`Generated ID for index ${index}: ${id}`);
 	return id;
+}
+let darkmode = ref(false);
+
+onMounted(() => {
+	darkmode = isDarkMode();
+	console.log(darkmode);
+});
+
+console.log(darkmode);
+function isDarkMode() {
+	const root = document.documentElement;
+	if (root) {
+		return root.getAttribute('data-theme') === 'dark';
+	}
 }
 const usage = [
 	{
