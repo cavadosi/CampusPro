@@ -11,7 +11,7 @@
 					</NuxtLink>
 					<p class="text-sm leading-6 text-primary">Making the world a better place through constructing elegant hierarchies.</p>
 					<div class="flex space-x-6">
-						<a v-for="item in navigation.social" :key="item.name" :href="item.href" class="text-gray-500 hover:text-gray-400">
+						<a v-for="item in navigation.social" :key="item.name" :href="item.href" class="text-tbase hover:text-tbase">
 							<span class="sr-only">{{ item.name }}</span>
 							<component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
 						</a>
@@ -23,7 +23,7 @@
 							<h2 class="text-sm font-semibold leading-6 text-tbase">Solutions</h2>
 							<ul role="list" class="mt-6 space-y-4">
 								<li v-for="item in navigation.solutions" :key="item.name">
-									<a :href="item.href" class="text-sm leading-6 text-tlight hover:text-primary">{{ item.name }}</a>
+									<a :href="item.href" class="text-sm leading-6 text-tbase hover:text-primary">{{ item.name }}</a>
 								</li>
 							</ul>
 						</div>
@@ -31,7 +31,7 @@
 							<h2 class="text-sm font-semibold leading-6 text-tbase">Support</h2>
 							<ul role="list" class="mt-6 space-y-4">
 								<li v-for="item in navigation.support" :key="item.name">
-									<a :href="item.href" class="text-sm leading-6 text-tlight hover:text-primary">{{ item.name }}</a>
+									<a :href="item.href" class="text-sm leading-6 text-tbase hover:text-primary">{{ item.name }}</a>
 								</li>
 							</ul>
 						</div>
@@ -41,7 +41,7 @@
 							<h2 class="text-sm font-semibold leading-6 text-tbase">Company</h2>
 							<ul role="list" class="mt-6 space-y-4">
 								<li v-for="item in navigation.company" :key="item.name">
-									<a :href="item.href" class="text-sm leading-6 text-tlight hover:text-primary">{{ item.name }}</a>
+									<a :href="item.href" class="text-sm leading-6 text-tbase hover:text-primary">{{ item.name }}</a>
 								</li>
 							</ul>
 						</div>
@@ -49,7 +49,7 @@
 							<h2 class="text-sm font-semibold leading-6 text-tbase">Legal</h2>
 							<ul role="list" class="mt-6 space-y-4">
 								<li v-for="item in navigation.legal" :key="item.name">
-									<a :href="item.href" class="text-sm leading-6 text-tlight hover:text-primary">{{ item.name }}</a>
+									<a :href="item.href" class="text-sm leading-6 text-tbase hover:text-primary">{{ item.name }}</a>
 								</li>
 							</ul>
 						</div>
@@ -57,7 +57,7 @@
 				</div>
 			</div>
 			<div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
-				<p class="text-xs leading-5 text-tlight">&copy; CampusPro 2024 | Creative Commons Attribution-NonCommercial-ShareAlike 4.0</p>
+				<p class="text-xs leading-5 text-tbase">&copy; CampusPro 2024 | Creative Commons Attribution-NonCommercial-ShareAlike 4.0</p>
 			</div>
 		</div>
 	</footer>

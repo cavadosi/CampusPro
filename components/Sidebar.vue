@@ -13,7 +13,7 @@
 								<div class="absolute left-full top-0 flex w-16 justify-center pt-5">
 									<button type="button" class="-m-2.5 p-2.5" @click="sidebarOpen = false">
 										<span class="sr-only">Close sidebar</span>
-										<IconHeroicons:x-mark-solid class="h-8 w-8 text-tlight" aria-hidden="true" />
+										<IconHeroicons:x-mark-solid class="h-8 w-8 text-tbase" aria-hidden="true" />
 									</button>
 								</div>
 							</TransitionChild>
@@ -32,18 +32,18 @@
 											</ul>
 										</li>
 										<li class="px-4">
-											<div class="text-xs font-semibold leading-6 text-primary">Tus Clases</div>
+											<div class="text-xs font-semibold leading-6 text-tbase">Tus Clases</div>
 											<ul role="list" class="-mx-2 mt-2 space-y-1">
 												<li v-for="element in elements" :key="elements.name" class>
-													<a :href="element.href" class="my-link text-darkaccent hover:text-secondary hover:bg-primary-300 flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
-														<span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-darkaccent bg-primary text-[0.625rem] font-medium text-secondary">{{ element.initial }}</span>
+													<a :href="element.href" class="my-link text-secondary hover:text-bg hover:bg-secondary flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+														<span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-accent bg-secondary text-[0.625rem] font-medium text-bg">{{ element.initial }}</span>
 														<span class="truncate">{{ element.name }}</span>
 													</a>
 												</li>
 											</ul>
 										</li>
 										<li class="mt-auto px-4">
-											<a href="#" class="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 my-link text-darkaccent hover:text-secondary hover:bg-accent">
+											<a href="#" class="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 my-link text-primary hover:text-bg hover:bg-primary">
 												<IconHeroicons:cog-6-tooth-20-solid class="h-6 w-6 shrink-0" aria-hidden="true" />
 												Settings
 											</a>
@@ -77,18 +77,18 @@
 							</ul>
 						</li>
 						<li class="px-4">
-							<div class="text-xs font-semibold leading-6 text-primary">Tus Clases</div>
+							<div class="text-xs font-semibold leading-6 text-tbase">Tus Clases</div>
 							<ul role="list" class="-mx-2 mt-2 space-y-1">
 								<li v-for="element in elements" :key="elements.name" class>
-									<a :href="element.href" class="my-link text-darkaccent hover:text-secondary hover:bg-accent flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
-										<span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-darkaccent bg-primary text-[0.625rem] font-medium text-secondary">{{ element.initial }}</span>
+									<a :href="element.href" class="my-link text-secondary hover:text-bg hover:bg-secondary flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+										<span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-accent bg-secondary text-[0.625rem] font-medium text-bg">{{ element.initial }}</span>
 										<span class="truncate">{{ element.name }}</span>
 									</a>
 								</li>
 							</ul>
 						</li>
 						<li class="mt-auto px-4">
-							<a href="#" class="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 my-link text-darkaccent hover:text-secondary hover:bg-accent">
+							<a href="#" class="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 my-link text-primary hover:text-bg hover:bg-primary">
 								<IconHeroicons:cog-6-tooth-20-solid class="h-6 w-6 shrink-0" aria-hidden="true" />
 								Settings
 							</a>
@@ -100,7 +100,7 @@
 
 		<div class="lg:pl-72">
 			<div class="sticky top-0 z-40 flex h-16 shrink-0 items-center gap-x-4 bg-bg border-b border-primary/30 shadow-sm px-4 sm:gap-x-6 sm:px-6 lg:px-8 transition-colors duration-300">
-				<button type="button" class="-m-2.5 p-2.5 text-tlight lg:hidden" @click="sidebarOpen = true">
+				<button type="button" class="-m-2.5 p-2.5 text-tbase lg:hidden" @click="sidebarOpen = true">
 					<span class="sr-only">Open sidebar</span>
 					<IconHeroicons:bars-3 class="h-6 w-6" aria-hidden="true" />
 				</button>
@@ -116,17 +116,17 @@
 						<div class="hidden lg:block lg:h-6 lg:w-px lg:bg-tbase/10" aria-hidden="true" />
 						<ThemeSwitch class="hidden lg:flex" />
 						<div class="group hidden lg:flex items-center">
-							<IconMaterial-symbols:notifications class="h-5 w-5 text-tlight group-hover:hidden" aria-hidden="true" />
+							<IconMaterial-symbols:notifications class="h-5 w-5 text-tbase group-hover:hidden" aria-hidden="true" />
 							<IconMaterial-symbols:notifications-active class="h-5 w-5 text-tbase hidden group-hover:block" aria-hidden="true" />
 						</div>
 						<!-- Profile dropdown -->
 						<Menu as="div" class="relative">
 							<MenuButton class="-m-1.5 flex items-center p-1.5">
 								<span class="sr-only">Open user menu</span>
-								<img class="h-10 w-10 rounded-full bg-bglight" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
+								<img class="h-10 w-10 rounded-full bg-bg" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
 								<span class="flex items-center">
 									<span class="hidden lg:flex ml-4 text-sm font-semibold leading-6 text-tbase" aria-hidden="true">Tom Cook</span>
-									<IconHeroicons:chevron-down class="ml-2 h-5 w-5 text-tlight" aria-hidden="true" />
+									<IconHeroicons:chevron-down class="ml-2 h-5 w-5 text-tbase" aria-hidden="true" />
 								</span>
 							</MenuButton>
 							<transition
@@ -142,12 +142,12 @@
 										<span class="text-sm font-semibold leading-6 text-tbase" aria-hidden="true">Tom Cook</span>
 										<div class="lg:hidden h-5 w-px bg-tbase/10" aria-hidden="true" />
 										<div class="group">
-											<IconMaterial-symbols:notifications class="h-5 w-5 text-tlight group-hover:hidden" aria-hidden="true" />
+											<IconMaterial-symbols:notifications class="h-5 w-5 text-tbase group-hover:hidden" aria-hidden="true" />
 											<IconMaterial-symbols:notifications-active class="h-5 w-5 text-tbase hidden group-hover:block" aria-hidden="true" />
 										</div>
 									</div>
 									<MenuItem v-for="item in userNavigation" :key="item.name" v-slot="{ active }">
-										<NuxtLink :to="item.href" :class="[active ? 'bg-bglight' : '', 'block px-3 py-1 text-sm leading-6 text-tbase']">{{ item.name }}</NuxtLink>
+										<NuxtLink :to="item.href" :class="[active ? 'bg-bg' : '', 'block px-3 py-1 text-sm leading-6 text-tbase']">{{ item.name }}</NuxtLink>
 									</MenuItem>
 								</MenuItems>
 							</transition>
@@ -157,7 +157,7 @@
 			</div>
 
 			<main class="flex max-w-full w-screen max-h-full h-[calc(100vh-64px)]">
-				<div class="px-2 max-w-full w-full max-h-full h-full overflow-x-auto overflow-y-clip scrollbar bg-bgcover transition-colors duration-300">
+				<div class="px-2 max-w-full w-full max-h-full h-full overflow-x-auto overflow-y-clip scrollbar bg-bg transition-colors duration-300">
 					<!-- Your content -->
 					<slot />
 				</div>

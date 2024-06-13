@@ -1,5 +1,5 @@
 <template>
-	<div class="flex min-h-full flex-1 h-screen bg-bgcover">
+	<div class="flex min-h-full flex-1 h-screen bg-bg">
 		<div class="flex flex-1 flex-col justify-center px-4 py-12 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
 			<div class="mx-auto w-full max-w-sm lg:w-96">
 				<div>
@@ -9,7 +9,7 @@
 						<h1 class="text-lg sm:text-xl text-tbase font-bold ml-2 transition-colors duration-300">Campus<span class="text-primary italic transition-colors duration-300">Pro</span></h1>
 					</NuxtLink>
 					<h2 class="mt-8 text-2xl font-bold leading-9 tracking-tight text-tbase">Log in to your account</h2>
-					<p class="mt-2 text-sm leading-6 text-tlight">
+					<p class="mt-2 text-sm leading-6 text-tbase">
 						Not a member?
 						{{ ' ' }}
 						<a href="#" class="font-semibold text-primary hover:text-primary/80">Register your institution</a>
@@ -28,7 +28,7 @@
 										type="email"
 										autocomplete="email"
 										required="true"
-										class="block w-full rounded-md border-0 py-1.5 px-2 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-lightaccent focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6"
+										class="block w-full rounded-md border-0 py-1.5 px-2 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-accent_300 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6"
 									/>
 								</div>
 							</div>
@@ -42,7 +42,7 @@
 										type="password"
 										autocomplete="current-password"
 										required="true"
-										class="block w-full rounded-md border-0 py-1.5 px-2 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-lightaccent focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6"
+										class="block w-full rounded-md border-0 py-1.5 px-2 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-accent_300 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6"
 									/>
 								</div>
 							</div>

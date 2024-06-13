@@ -1,7 +1,7 @@
 <template>
 	<Switch v-model="enabled" :class="[enabled ? 'bg-primary' : 'bg-primary', 'relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-primary transition-colors duration-200 ease-in-out ']" id="headlessui-theme-switch">
 		<span class="sr-only">Use setting</span>
-		<span :class="[enabled ? 'translate-x-5 ' : 'translate-x-0 ', 'pointer-events-none relative inline-block h-5 w-5 transform rounded-full bg-bglight shadow transition duration-200 ease-in-out']">
+		<span :class="[enabled ? 'translate-x-5 ' : 'translate-x-0 ', 'pointer-events-none relative inline-block h-5 w-5 transform rounded-full bg-bg shadow transition duration-200 ease-in-out']">
 			<span :class="[enabled ? 'opacity-100 duration-200 ease-in' : 'opacity-0 duration-100 ease-out', 'absolute inset-0 flex h-full w-full items-center justify-center transition-opacity']" aria-hidden="true">
 				<svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-tbase" viewBox="0 0 20 20"><path fill="currentColor" d="M17.293 13.293A8 8 0 0 1 6.707 2.707a8.001 8.001 0 1 0 10.586 10.586" /></svg>
 			</span>
