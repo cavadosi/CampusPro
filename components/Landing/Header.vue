@@ -9,7 +9,7 @@
 				</NuxtLink>
 			</div>
 			<div class="flex lg:hidden">
-				<button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-tlight" @click="mobileMenuOpen = true">
+				<button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-tbase" @click="mobileMenuOpen = true">
 					<span class="sr-only">Open main menu</span>
 					<IconHeroicons:bars-3 class="h-6 w-6" aria-hidden="true" />
 				</button>
@@ -32,16 +32,16 @@
 						<PopoverPanel class="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4">
 							<div class="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-bg text-sm leading-6 shadow-lg ring-1 ring-tbase/5 lg:max-w-3xl">
 								<div class="grid grid-cols-1 gap-x-6 gap-y-1 p-4 lg:grid-cols-2">
-									<div v-for="item in product" :key="item.name" class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-bglight">
-										<div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-bg group-hover:bg-bg-light">
-											<component :is="item.icon" class="h-6 w-6 text-tlight group-hover:text-primary" aria-hidden="true" />
+									<div v-for="item in product" :key="item.name" class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-primary_300/50">
+										<div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-bg group-hover:bg-bg">
+											<component :is="item.icon" class="h-6 w-6 text-tbase group-hover:text-primary_300" aria-hidden="true" />
 										</div>
 										<div>
 											<NuxtLink :href="item.href" class="font-semibold text-tbase">
 												{{ item.name }}
 												<span class="absolute inset-0" />
 											</NuxtLink>
-											<p class="mt-1 text-tlight">{{ item.description }}</p>
+											<p class="mt-1 text-tbase">{{ item.description }}</p>
 										</div>
 									</div>
 								</div>
@@ -65,7 +65,7 @@
 						<span class="sr-only">CampusPro</span>
 						<Favicon class="h-10 w-auto" />
 					</NuxtLink>
-					<button type="button" class="-m-2.5 rounded-md p-2.5 text-tlight" @click="mobileMenuOpen = false">
+					<button type="button" class="-m-2.5 rounded-md p-2.5 text-tbase-300" @click="mobileMenuOpen = false">
 						<span class="sr-only">Close menu</span>
 						<IconHeroicons:x-mark-solid class="h-6 w-6" aria-hidden="true" />
 					</button>

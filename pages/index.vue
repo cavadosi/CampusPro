@@ -3,7 +3,7 @@
 		<div class="relative isolate pt-14 overflow-hidden">
 			<div class="absolute inset-x-0 -z-10 transform-gpu overflow-hidden blur-3xl" aria-hidden="true">
 				<div
-					class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-accent to-lightaccent opacity-100 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+					class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-primary_700 to-secondary opacity-100 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
 					style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
 				/>
 			</div>
@@ -11,7 +11,7 @@
 				<div class="mx-auto max-w-7xl px-6 lg:px-8">
 					<div class="mx-auto max-w-2xl text-center">
 						<h1 class="text-4xl font-bold tracking-tight text-tbase sm:text-6xl transition-colors duration-300">Taking <span class="text-accent transition-colors duration-300">learning</span> to the next level</h1>
-						<p class="mt-6 text-lg leading-8 text-tlight">A fully customizable online learning tool designed to give teaching a more modern and flexible aproach and made for institutions of all sizes.</p>
+						<p class="mt-6 text-lg leading-8 text-tbase">A fully customizable online learning tool designed to give teaching a more modern and flexible aproach and made for institutions of all sizes.</p>
 						<div class="mt-10 flex items-center justify-center gap-x-6">
 							<ButtonGradient link="/register" text="Get started" />
 							<NuxtLink href="#" class="text-sm font-semibold leading-6 text-tbase">Learn more <span aria-hidden="true">→</span></NuxtLink>
@@ -31,12 +31,12 @@
 								<div data-aos="fade-right">
 									<h2 class="text-base font-semibold leading-7 text-primary">Everything you need</h2>
 									<p class="mt-2 text-3xl font-bold tracking-tight text-tbase sm:text-4xl">All-in-one platform</p>
-									<p class="mt-6 text-base leading-7 text-tlight">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
+									<p class="mt-6 text-base leading-7 text-tbase">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
 								</div>
-								<dl class="col-span-2 grid grid-cols-1 gap-x-8 gap-y-10 text-base leading-7 text-tlight sm:grid-cols-2 lg:gap-y-16">
+								<dl class="col-span-2 grid grid-cols-1 gap-x-8 gap-y-10 text-base leading-7 text-tbase sm:grid-cols-2 lg:gap-y-16">
 									<div v-for="feature in features" :key="feature.name" class="relative pl-9" data-aos="fade-in">
 										<dt class="font-semibold text-tbase">
-											<IconHeroicons:check class="absolute left-0 top-1 h-5 w-5 text-primary-300" aria-hidden="true" />
+											<IconHeroicons:check class="absolute left-0 top-1 h-5 w-5 text-primary" aria-hidden="true" />
 											{{ feature.name }}
 										</dt>
 										<dd class="mt-2">{{ feature.description }}</dd>
@@ -54,8 +54,8 @@
 									<div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
 										<h2 class="text-base font-semibold leading-7 text-primary">Deploy faster</h2>
 										<p class="mt-2 text-3xl font-bold tracking-tight text-tbase sm:text-4xl">A better workflow</p>
-										<p class="mt-6 text-lg leading-8 text-tlight">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
-										<dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-tlight lg:max-w-none">
+										<p class="mt-6 text-lg leading-8 text-tbase">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
+										<dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-tbase lg:max-w-none">
 											<div v-for="feature in usage" :key="feature.name" class="relative pl-9">
 												<dt class="inline font-semibold text-tbase">
 													<component :is="feature.icon" class="absolute left-1 top-1 h-5 w-5 text-accent" aria-hidden="true" />
@@ -68,8 +68,8 @@
 									</div>
 								</div>
 								<div class="sm:px-6 lg:px-0" data-aos="fade-left">
-									<div class="relative isolate overflow-hidden rounded-3xl bg-primary-300 px-6 pt-8 sm:mx-auto sm:max-w-2xl sm:rounded-3xl shadow-lg sm:pl-16 sm:pr-0 sm:pt-16 lg:mx-0 lg:max-w-none">
-										<div class="absolute -inset-y-px -left-3 -z-10 w-full origin-bottom-left skew-x-[-30deg] bg-priamry-100 opacity-20 ring-1 ring-inset ring-white" aria-hidden="true" />
+									<div class="relative isolate overflow-hidden rounded-3xl bg-primary px-6 pt-8 sm:mx-auto sm:max-w-2xl sm:rounded-3xl shadow-lg sm:pl-16 sm:pr-0 sm:pt-16 lg:mx-0 lg:max-w-none">
+										<div class="absolute -inset-y-px -left-3 -z-10 w-full origin-bottom-left skew-x-[-30deg] bg-priamry_100 opacity-20 ring-1 ring-inset ring-white" aria-hidden="true" />
 										<div class="mx-auto max-w-2xl sm:mx-0 sm:max-w-none">
 											<NuxtImg src="https://tailwindui.com/img/component-images/project-app-screenshot.png" alt="Product screenshot" width="2432" height="1442" format="webp" loading="lazy" class="-mb-12 w-[57rem] max-w-none rounded-tl-xl bg-gray-800 ring-1 ring-white/10" />
 										</div>
@@ -90,7 +90,7 @@
 						</div>
 						<div class="absolute inset-x-0 top-0 -z-10 flex transform-gpu overflow-hidden pt-32 opacity-25 blur-3xl sm:pt-40 xl:justify-end" aria-hidden="true">
 							<div
-								class="ml-[-22rem] aspect-[1313/771] w-[82.0625rem] flex-none origin-top-right rotate-[30deg] bg-gradient-to-tr from-accent to-darkaccent xl:ml-0 xl:mr-[calc(50%-12rem)]"
+								class="ml-[-22rem] aspect-[1313/771] w-[82.0625rem] flex-none origin-top-right rotate-[30deg] bg-gradient-to-tr from-accent to-primary_300 xl:ml-0 xl:mr-[calc(50%-12rem)]"
 								style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
 							/>
 						</div>
@@ -100,7 +100,7 @@
 								<p class="mt-2 text-3xl font-bold tracking-tight text-tbase sm:text-4xl">We have worked with thousands of amazing people</p>
 							</div>
 							<div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-tbase sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4" data-aos="fade-in" data-aos-duration="300">
-								<figure class="rounded-2xl bg-bglight/30 shadow-lg ring-1 ring-tbasse/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
+								<figure class="rounded-2xl bg-bg/30 shadow-lg ring-1 ring-tbasse/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
 									<blockquote class="p-6 text-lg font-semibold leading-7 tracking-tight text-tbase sm:p-12 sm:text-xl sm:leading-8">
 										<p>{{ `“${featuredTestimonial.body}”` }}</p>
 									</blockquote>
@@ -108,7 +108,7 @@
 										<NuxtImg format="webp" loading="lazy" sizes="40px" class="h-10 w-10 flex-none rounded-full bg-bg" :src="featuredTestimonial.author.imageUrl" alt="" />
 										<div class="flex-auto">
 											<div class="font-semibold">{{ featuredTestimonial.author.name }}</div>
-											<div class="text-tlight">{{ `@${featuredTestimonial.author.handle}` }}</div>
+											<div class="text-tbase">{{ `@${featuredTestimonial.author.handle}` }}</div>
 										</div>
 										<NuxtImg format="webp" loading="lazy" class="h-10 w-auto flex-none" :src="featuredTestimonial.author.logoUrl" alt="" />
 									</figcaption>
@@ -121,7 +121,7 @@
 										data-aos="fade-left"
 										:data-aos-offset="Math.floor(Math.random() * (300 - 100 + 1)) + 100"
 									>
-										<figure v-for="testimonial in column" :key="testimonial.author.handle" class="rounded-2xl bg-bglight/30 p-6 shadow-lg ring-1 ring-tbase/5">
+										<figure v-for="testimonial in column" :key="testimonial.author.handle" class="rounded-2xl bg-bg/30 p-6 shadow-lg ring-1 ring-tbase/5">
 											<blockquote class="text-tbase">
 												<p>{{ `“${testimonial.body}”` }}</p>
 											</blockquote>
@@ -129,7 +129,7 @@
 												<NuxtImg format="webp" loading="lazy" sizes="40px" class="h-10 w-10 rounded-full bg-bg" :src="testimonial.author.imageUrl" alt="" />
 												<div>
 													<div class="font-semibold">{{ testimonial.author.name }}</div>
-													<div class="text-tlight">{{ `@${testimonial.author.handle}` }}</div>
+													<div class="text-tbase">{{ `@${testimonial.author.handle}` }}</div>
 												</div>
 											</figcaption>
 										</figure>
@@ -143,9 +143,9 @@
 						<div class="pt-8 lg:pt-12">
 							<div class="mx-auto max-w-7xl px-6 lg:px-8">
 								<div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none" data-aos="fade-up">
-									<p class="text-base font-semibold leading-7 text-primary-300">Deploy faster</p>
+									<p class="text-base font-semibold leading-7 text-primary">Deploy faster</p>
 									<h1 class="mt-2 text-3xl font-bold tracking-tight text-tbase sm:text-4xl">A better workflow</h1>
-									<div class="mt-10 grid max-w-xl grid-cols-1 gap-8 text-base leading-7 text-tlight lg:max-w-none lg:grid-cols-2">
+									<div class="mt-10 grid max-w-xl grid-cols-1 gap-8 text-base leading-7 text-tbase lg:max-w-none lg:grid-cols-2">
 										<div>
 											<p>
 												Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit. Faucibus commodo massa rhoncus,
@@ -162,8 +162,8 @@
 										</div>
 									</div>
 									<dl class="mt-16 grid grid-cols-1 gap-x-8 gap-y-12 sm:mt-20 sm:grid-cols-2 sm:gap-y-16 lg:mt-28 lg:grid-cols-4">
-										<div v-for="(stat, statIdx) in stats" :key="statIdx" class="flex flex-col-reverse gap-y-3 border-l border-tlight/70 pl-6" data-aos="fade-left" :data-aos-offset="statIdx * 75">
-											<dt class="text-base leading-7 text-tlight">{{ stat.label }}</dt>
+										<div v-for="(stat, statIdx) in stats" :key="statIdx" class="flex flex-col-reverse gap-y-3 border-l border-tbase/70 pl-6" data-aos="fade-left" :data-aos-offset="statIdx * 75">
+											<dt class="text-base leading-7 text-tbase">{{ stat.label }}</dt>
 											<dd class="text-3xl font-semibold tracking-tight text-tbase">{{ stat.value }}</dd>
 										</div>
 									</dl>
@@ -180,7 +180,7 @@
 									<ClientOnly>
 										<Disclosure as="div" v-for="(faq, index) in faqs" :key="faq.question" class="pt-6" v-slot="{ open }" data-aos="fade-right" :data-aos-offset="index * 30">
 											<dt>
-												<DisclosureButton :id="`headlessui-disclosure-button-${index}`" class="flex w-full items-start justify-between text-left text-tbase">
+												<DisclosureButton :id="`headlessui-disclosure-button-${index}`" class="flex w-full items-start justify-between text-left text-tbase hover:text-primary">
 													<span class="text-base font-semibold leading-7">{{ faq.question }}</span>
 													<span class="ml-6 flex h-7 items-center">
 														<IconHeroicons:plus-20-solid v-if="!open" class="h-6 w-6" aria-hidden="true" />
@@ -189,7 +189,7 @@
 												</DisclosureButton>
 											</dt>
 											<DisclosurePanel as="dd" class="mt-2 pr-12">
-												<p class="text-base leading-7 text-tlight">{{ faq.answer }}</p>
+												<p class="text-base leading-7 text-tbase">{{ faq.answer }}</p>
 											</DisclosurePanel>
 										</Disclosure>
 									</ClientOnly>
@@ -203,7 +203,7 @@
 						<div class="px-6 py-16 sm:px-6 sm:py-20 lg:px-8" data-aos="fade-in" data-aos-anchor-placement="top-center" data-aos-offset="50">
 							<div class="mx-auto max-w-2xl text-center">
 								<h2 class="text-3xl font-bold tracking-tight text-tbase sm:text-4xl">Boost your productivity.<br />Start using our app today.</h2>
-								<p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-tlight">Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim id veniam aliqua proident excepteur commodo do ea.</p>
+								<p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-tbase">Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim id veniam aliqua proident excepteur commodo do ea.</p>
 								<div class="mt-10 flex items-center justify-center gap-x-6">
 									<ButtonGradient link="#" text="Get started" />
 								</div>
@@ -214,7 +214,7 @@
 			</div>
 			<div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
 				<div
-					class="relative left-[calc(50%)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-accent to-lightaccent opacity-100 sm:left-[calc(50%)] sm:w-[72.1875rem]"
+					class="relative left-[calc(50%)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-accent to-secondary opacity-100 sm:left-[calc(50%)] sm:w-[72.1875rem]"
 					style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
 				/>
 			</div>

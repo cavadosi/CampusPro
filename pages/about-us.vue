@@ -13,14 +13,14 @@
 			<div class="px-6 pt-14 lg:px-8">
 				<div class="mx-auto max-w-2xl pt-24 text-center sm:pt-40">
 					<h2 class="text-4xl font-bold tracking-tight text-tbase sm:text-6xl">We love creators</h2>
-					<p class="mt-6 text-lg leading-8 text-tlight">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
+					<p class="mt-6 text-lg leading-8 text-tbase">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
 				</div>
 			</div>
 
 			<!-- Content section -->
 			<div class="mx-auto mt-20 max-w-7xl px-6 lg:px-8">
 				<div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
-					<div class="grid max-w-xl grid-cols-1 gap-8 text-base leading-7 text-tlight lg:max-w-none lg:grid-cols-2">
+					<div class="grid max-w-xl grid-cols-1 gap-8 text-base leading-7 text-tbase lg:max-w-none lg:grid-cols-2">
 						<div>
 							<p>
 								Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit. Faucibus commodo massa rhoncus, volutpat.
@@ -38,7 +38,7 @@
 					</div>
 					<dl class="mt-16 grid grid-cols-1 gap-x-8 gap-y-12 sm:mt-20 sm:grid-cols-2 sm:gap-y-16 lg:mt-28 lg:grid-cols-4">
 						<div v-for="(stat, statIdx) in stats" :key="statIdx" class="flex flex-col-reverse gap-y-3 border-l border-tbase/20 pl-6">
-							<dt class="text-base leading-7 text-tlight">{{ stat.label }}</dt>
+							<dt class="text-base leading-7 text-tbase">{{ stat.label }}</dt>
 							<dd class="text-3xl font-semibold tracking-tight text-tbase">{{ stat.value }}</dd>
 						</div>
 					</dl>
@@ -54,9 +54,9 @@
 			<div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
 				<div class="mx-auto max-w-2xl lg:mx-0">
 					<h2 class="text-3xl font-bold tracking-tight text-tbase sm:text-4xl">Our values</h2>
-					<p class="mt-6 text-lg leading-8 text-tlight">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis.</p>
+					<p class="mt-6 text-lg leading-8 text-tbase">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis.</p>
 				</div>
-				<dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 text-base leading-7 text-tlight sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:gap-x-16">
+				<dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 text-base leading-7 text-tbase sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:gap-x-16">
 					<div v-for="value in values" :key="value.name" class="relative pl-9">
 						<dt class="inline font-semibold text-tbase">
 							<component :is="value.icon" class="absolute left-1 top-1 h-5 w-5 text-indigo-500" aria-hidden="true" />
@@ -72,14 +72,14 @@
 			<div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
 				<div class="mx-auto max-w-2xl lg:mx-0">
 					<h2 class="text-3xl font-bold tracking-tight text-tbase sm:text-4xl">Our team</h2>
-					<p class="mt-6 text-lg leading-8 text-tlight">Excepturi repudiandae alias ut. Totam aut facilis. Praesentium in neque vel omnis. Eos error odio. Qui fugit voluptatibus eum culpa.</p>
+					<p class="mt-6 text-lg leading-8 text-tbase">Excepturi repudiandae alias ut. Totam aut facilis. Praesentium in neque vel omnis. Eos error odio. Qui fugit voluptatibus eum culpa.</p>
 				</div>
 				<ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4">
 					<li v-for="person in team" :key="person.name">
 						<NuxtImg class="aspect-[14/13] w-full rounded-2xl object-cover" :src="person.imageUrl" alt="" format="webp" sizes="100vw md:400px" loading="lazy" />
 						<h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-tbase">{{ person.name }}</h3>
-						<p class="text-base leading-7 text-tlight">{{ person.role }}</p>
-						<p class="text-sm leading-6 text-tlight">{{ person.location }}</p>
+						<p class="text-base leading-7 text-tbase">{{ person.role }}</p>
+						<p class="text-sm leading-6 text-tbase">{{ person.location }}</p>
 					</li>
 				</ul>
 			</div>

@@ -1,7 +1,7 @@
 <template>
 	<div class="flex flex-col items-start justify-start gap-y-2 max-w-full h-full overflow-x-auto overflow-clip m-2 pb-4">
 		<h1 class="text-xl text-tbase">Task details</h1>
-		<div class="grid grid-cols-12 w-full h-full bg-bg divide-x divide-tlight overflow-hidden">
+		<div class="grid grid-cols-12 w-full h-full bg-bg divide-x divide-tbase overflow-hidden">
 			<div class="flex flex-col relative gap-y-6 col-span-9 py-6 px-8 pr-20 overflow-y-auto scrollbar">
 				<!-- task title -->
 				<div>
@@ -10,7 +10,7 @@
 				<!-- task description -->
 				<div class="flex flex-col gap-y-4">
 					<h2 class="font-semibold text-tbase">Task description</h2>
-					<p class="text-tlight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis unde repudiandae eum ratione quod tenetur in ea exercitationem molestias dolorum temporibus, repellat, officia consequatur cumque suscipit praesentium nihil est veniam.</p>
+					<p class="text-tbase">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis unde repudiandae eum ratione quod tenetur in ea exercitationem molestias dolorum temporibus, repellat, officia consequatur cumque suscipit praesentium nihil est veniam.</p>
 				</div>
 				<!-- reference material -->
 				<div class="flex flex-col gap-y-4">
@@ -21,8 +21,8 @@
 					</div>
 					<!-- Links and pdfs, etc. -->
 					<div class="grid grid-cols-2 gap-2">
-						<NuxtLink v-for="element in referenceMaterial.links" :key="element.name" :to="element.link" class="flex flex-row grow items-center border border-tlight/20 rounded-full group py-2 px-4">
-							<IconHeroicons:link-20-solid class="h-6 w-auto mr-4 text-tlight group-hover:text-tbase" />
+						<NuxtLink v-for="element in referenceMaterial.links" :key="element.name" :to="element.link" class="flex flex-row grow items-center border border-tbase/20 rounded-full group py-2 px-4">
+							<IconHeroicons:link-20-solid class="h-6 w-auto mr-4 text-tbase group-hover:text-tbase" />
 							<h3 class="text-sm text-accent group-hover:text-primary">{{ element.name }}</h3>
 						</NuxtLink>
 					</div>
@@ -44,9 +44,9 @@
 							</div>
 							<div class="min-w-0 flex-1">
 								<form action="#" class="relative">
-									<div class="overflow-hidden rounded-lg shadow-sm ring-1 ring-inset ring-tlight focus-within:ring-2 focus-within:ring-accent">
+									<div class="overflow-hidden rounded-lg shadow-sm ring-1 ring-inset ring-tbase focus-within:ring-2 focus-within:ring-accent">
 										<label for="comment" class="sr-only">Add your comment</label>
-										<textarea rows="3" name="comment" id="comment" class="block w-full resize-none bg-transparent py-1.5 text-tbase placeholder:text-tlight sm:text-sm sm:leading-6" placeholder="Add your comment..." />
+										<textarea rows="3" name="comment" id="comment" class="block w-full resize-none bg-transparent py-1.5 text-tbase placeholder:text-tbase sm:text-sm sm:leading-6" placeholder="Add your comment..." />
 										<!-- Spacer element to match the height of the toolbar -->
 										<div class="py-2" aria-hidden="true">
 											<!-- Matches height of button in toolbar (1px border + 36px content height) -->
@@ -80,41 +80,41 @@
 					</div>
 				</div>
 			</div>
-			<div class="flex flex-col col-span-3 gap-y-4 w-full pt-4 divide-y divide-tlight text-tbase">
+			<div class="flex flex-col col-span-3 gap-y-4 w-full pt-4 divide-y divide-tbase text-tbase">
 				<div class="flex flex-col space-y-4 px-2">
 					<div class="flex flex-row grow items-center gap-x-4 rounded-md">
 						<IconHeroicons:information-circle-16-solid class="h-8 w-auto text-accent" />
 						<h2 class="text-xl font-bold text-tbase">Task info</h2>
 					</div>
-					<div v-for="(item, index) in taskInfo" :key="index" class="flex flex-row grow items-center gap-x-4 rounded-md p-2 bg-bglight/30">
+					<div v-for="(item, index) in taskInfo" :key="index" class="flex flex-row grow items-center gap-x-4 rounded-md p-2 bg-bg/30">
 						<IconHeroicons:rectangle-group-16-solid class="h-5 ml-2 w-auto text-accent" />
 						<h2 class=" ">{{ item }}</h2>
 					</div>
-					<div class="flex flex-row grow items-center gap-x-4 rounded-md p-2 bg-bglight/30">
+					<div class="flex flex-row grow items-center gap-x-4 rounded-md p-2 bg-bg/30">
 						<IconTeenyicons:tick-circle-solid v-if="entrega" class="h-5 ml-2 w-auto text-accent" />
 						<IconGridicons:cross-circle v-else class="h-5 ml-2 w-auto text-accent" />
 						<h2 class=" ">Entregada: {{ entrega }}</h2>
 					</div>
-					<div class="flex flex-row grow items-center gap-x-4 rounded-md p-2 bg-bglight/30">
+					<div class="flex flex-row grow items-center gap-x-4 rounded-md p-2 bg-bg/30">
 						<IconMaterial-symbols:event-available class="h-5 ml-2 w-auto text-accent" />
 						{{ startDate }}
 					</div>
-					<div class="flex flex-row grow items-center gap-x-4 rounded-md p-2 bg-bglight/30">
+					<div class="flex flex-row grow items-center gap-x-4 rounded-md p-2 bg-bg/30">
 						<IconMaterial-symbols:event-busy class="h-5 ml-2 w-auto text-accent" />
 						{{ dueDate }}
 					</div>
 				</div>
 				<!-- <div class="flex flex-col space-y-4 p-2">
-					<div v-if="reminder" class="flex flex-row grow items-center gap-x-4 rounded-md p-2 bg-bglight/30">
+					<div v-if="reminder" class="flex flex-row grow items-center gap-x-4 rounded-md p-2 bg-bg/30">
 						
 						<IconIc:outline-alarm-on class="h-5 ml-2 w-auto text-accent "/>
 						{{ reminder }}
 					</div>
-					<div v-else class="flex flex-row grow items-center gap-x-4 rounded-md p-2 bg-bglight/30">
+					<div v-else class="flex flex-row grow items-center gap-x-4 rounded-md p-2 bg-bg/30">
 						<IconIc:outline-alarm-add class="h-5 ml-2 w-auto text-accent "/>
 						<h2>DD/MM/YYYY</h2>
 					</div>
-					<div class="flex flex-row grow items-center gap-x-4 rounded-md p-2 bg-bglight/30">
+					<div class="flex flex-row grow items-center gap-x-4 rounded-md p-2 bg-bg/30">
 						<IconIc:outline-alarm class="h-5 ml-2 w-auto text-accent "/>
 						<input type="button" value="123123">
 					</div>

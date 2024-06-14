@@ -4,9 +4,9 @@
 			<div class="mx-auto max-w-7xl px-6 lg:px-8">
 				<div class="relative z-10">
 					<h2 class="mx-auto max-w-4xl text-center text-5xl font-bold tracking-tight text-tbase">Simple pricing, no commitment</h2>
-					<p class="mx-auto mt-4 max-w-2xl text-center text-lg leading-8 text-tlight">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam eligendi quos odit doloribus molestiae voluptatum quos odit doloribus.</p>
+					<p class="mx-auto mt-4 max-w-2xl text-center text-lg leading-8 text-tbase">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam eligendi quos odit doloribus molestiae voluptatum quos odit doloribus.</p>
 					<div class="mt-16 flex justify-center">
-						<RadioGroup v-model="frequency" class="grid grid-cols-2 gap-x-1 rounded-full bg-bg p-1 text-center text-xs font-semibold leading-5 text-tlight">
+						<RadioGroup v-model="frequency" class="grid grid-cols-2 gap-x-1 rounded-full bg-bg p-1 text-center text-xs font-semibold leading-5 text-tbase">
 							<RadioGroupLabel class="sr-only">Payment frequency</RadioGroupLabel>
 							<RadioGroupOption as="template" v-for="option in frequencies" :key="option.value" :value="option" v-slot="{ checked }">
 								<div :class="[checked ? 'bg-primary text-white' : '', 'cursor-pointer rounded-full px-2.5 py-1']">
@@ -26,32 +26,32 @@
 							</radialGradient>
 						</defs>
 					</svg>
-					<div class="hidden lg:absolute lg:inset-x-px lg:bottom-10 lg:top-4 lg:block lg:rounded-2xl lg:bg-primary/20 lg:ring-1 lg:ring-white/10" aria-hidden="true" />
-					<div v-for="tier in tiers" :key="tier.id" :class="[tier.featured ? 'z-10 bg-bg shadow-xl ring-1 ring-tlight/10' : 'bg-primary lg:bg-transparent ', 'relative rounded-2xl']">
+					<div class="hidden lg:absolute lg:inset-x-px lg:bottom-10 lg:top-4 lg:block lg:rounded-2xl lg:bg-primary/40 lg:ring-1 lg:ring-white/10" aria-hidden="true" />
+					<div v-for="tier in tiers" :key="tier.id" :class="[tier.featured ? 'z-10 bg-bg shadow-xl ring-1 ring-tbase/10' : 'bg-primary lg:bg-transparent ', 'relative rounded-2xl']">
 						<div class="p-8 lg:pt-12 xl:p-10 xl:pt-14">
-							<h3 :id="tier.id" :class="[tier.featured ? 'text-tlight' : 'text-white', 'text-sm font-semibold leading-6']">{{ tier.name }}</h3>
+							<h3 :id="tier.id" :class="[tier.featured ? 'text-tbase' : 'text-tbase', 'text-sm font-semibold leading-6']">{{ tier.name }}</h3>
 							<div class="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between lg:flex-col lg:items-stretch">
 								<div class="mt-2 flex items-center gap-x-4">
-									<p :class="[tier.featured ? 'text-tbase' : 'text-white', 'text-4xl font-bold tracking-tight']">{{ tier.price[frequency.value] }}</p>
+									<p :class="[tier.featured ? 'text-tbase' : 'text-tbase', 'text-4xl font-bold tracking-tight']">{{ tier.price[frequency.value] }}</p>
 									<div class="text-sm leading-5">
-										<p :class="tier.featured ? 'text-tbase' : 'text-white'">USD</p>
-										<p :class="tier.featured ? 'text-tlight' : 'text-gray-300'">{{ `Billed ${frequency.value}` }}</p>
+										<p :class="tier.featured ? 'text-tbase' : 'text-tbase'">USD</p>
+										<p :class="tier.featured ? 'text-tbase' : 'text-tbase'">{{ `Billed ${frequency.value}` }}</p>
 									</div>
 								</div>
 								<a
 									:href="tier.href"
 									:aria-describedby="tier.id"
 									:class="[
-										tier.featured ? 'bg-primary shadow-sm hover:bg-primary-300 focus-visible:outline-primary' : 'bg-bg/10 hover:bg-bg/20 focus-visible:outline-bg',
-										'rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2'
+										tier.featured ? 'bg-primary shadow-sm hover:bg-primary_300 focus-visible:outline-primary' : 'bg-bg/20 hover:bg-bg/30 focus-visible:outline-bg',
+										'rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 text-tbase focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2'
 									]"
 									>Buy this plan</a
 								>
 							</div>
 							<div class="mt-8 flow-root sm:mt-10">
-								<ul role="list" :class="[tier.featured ? 'divide-tbase/5 border-tbase/5 text-tlight' : 'divide-bg/20 border-bg/5 text-white', '-my-2 divide-y border-t text-sm leading-6 lg:border-t-0']">
+								<ul role="list" :class="[tier.featured ? 'divide-tbase/5 border-tbase/5 text-tbase' : 'divide-bg/20 border-bg/5 text-tbase', '-my-2 divide-y border-t text-sm leading-6 lg:border-t-0']">
 									<li v-for="mainFeature in tier.mainFeatures" :key="mainFeature" class="flex gap-x-3 py-2">
-										<IconHeroicons:check-20-solid :class="[tier.featured ? 'text-accent' : 'text-secondary', 'h-6 w-5 flex-none']" aria-hidden="true" />
+										<IconHeroicons:check-20-solid :class="[tier.featured ? 'text-accent' : 'text-secondary_700', 'h-6 w-5 flex-none']" aria-hidden="true" />
 										{{ mainFeature }}
 									</li>
 								</ul>
@@ -71,7 +71,7 @@
 						<div v-for="tier in tiers" :key="tier.id" class="border-t border-tbase/10">
 							<div :class="[tier.featured ? 'border-primary' : 'border-transparent', '-mt-px w-72 border-t-2 pt-10 md:w-80']">
 								<h3 :class="[tier.featured ? 'text-primary' : 'text-tbase', 'text-sm font-semibold leading-6']">{{ tier.name }}</h3>
-								<p class="mt-1 text-sm leading-6 text-tlight">{{ tier.description }}</p>
+								<p class="mt-1 text-sm leading-6 text-tbase">{{ tier.description }}</p>
 							</div>
 
 							<div class="mt-10 space-y-10">
@@ -84,12 +84,12 @@
 										<div :class="[tier.featured ? 'ring-2 ring-primary' : 'ring-1 ring-tbase/10', 'relative rounded-lg bg-white shadow-sm sm:rounded-none sm:bg-transparent sm:shadow-none sm:ring-0']">
 											<dl class="divide-y divide-gray-200 text-sm leading-6">
 												<div v-for="feature in section.features" :key="feature.name" class="flex items-center justify-between px-4 py-3 sm:grid sm:grid-cols-2 sm:px-0">
-													<dt class="pr-4 text-tlight">{{ feature.name }}</dt>
+													<dt class="pr-4 text-tbase">{{ feature.name }}</dt>
 													<dd class="flex items-center justify-end sm:justify-center sm:px-4">
-														<span v-if="typeof feature.tiers[tier.name] === 'string'" :class="tier.featured ? 'font-semibold text-primary-300' : 'text-gray-900'">{{ feature.tiers[tier.name] }}</span>
+														<span v-if="typeof feature.tiers[tier.name] === 'string'" :class="tier.featured ? 'font-semibold text-primary_300' : 'text-gray-900'">{{ feature.tiers[tier.name] }}</span>
 														<template v-else>
 															<IconHeroicons:check-20-solid v-if="feature.tiers[tier.name] === true" class="mx-auto h-5 w-5 text-accent" aria-hidden="true" />
-															<IconHeroicons:x-mark-20-solid v-else class="mx-auto h-5 w-5 text-tlight" aria-hidden="true" />
+															<IconHeroicons:x-mark-20-solid v-else class="mx-auto h-5 w-5 text-tbase" aria-hidden="true" />
 															<span class="sr-only">{{ feature.tiers[tier.name] === true ? 'Yes' : 'No' }}</span>
 														</template>
 													</dd>
@@ -114,7 +114,7 @@
 						<div v-for="tier in tiers" :key="tier.id" aria-hidden="true" class="-mt-px">
 							<div :class="[tier.featured ? 'border-primary' : 'border-transparent', 'border-t-2 pt-10']">
 								<p :class="[tier.featured ? 'text-primary' : 'text-tbase', 'text-sm font-semibold leading-6']">{{ tier.name }}</p>
-								<p class="mt-1 text-sm leading-6 text-tlight">{{ tier.description }}</p>
+								<p class="mt-1 text-sm leading-6 text-tbase">{{ tier.description }}</p>
 							</div>
 						</div>
 					</div>
@@ -145,14 +145,14 @@
 										<tr v-for="(feature, featureIdx) in section.features" :key="feature.name">
 											<th scope="row" class="w-1/4 py-3 pr-4 text-left text-sm font-normal leading-6 text-tbase">
 												{{ feature.name }}
-												<div v-if="featureIdx !== section.features.length - 1" class="absolute inset-x-8 mt-3 h-px bg-tlight" />
+												<div v-if="featureIdx !== section.features.length - 1" class="absolute inset-x-8 mt-3 h-px bg-tbase" />
 											</th>
 											<td v-for="tier in tiers" :key="tier.id" class="relative w-1/4 px-4 py-0 text-center">
 												<span class="relative h-full w-full py-3">
-													<span v-if="typeof feature.tiers[tier.name] === 'string'" :class="[tier.featured ? 'font-semibold text-primary' : 'text-tlight', 'text-sm leading-6']">{{ feature.tiers[tier.name] }}</span>
+													<span v-if="typeof feature.tiers[tier.name] === 'string'" :class="[tier.featured ? 'font-semibold text-primary' : 'text-tbase', 'text-sm leading-6']">{{ feature.tiers[tier.name] }}</span>
 													<template v-else>
 														<IconHeroicons:check-20-solid v-if="feature.tiers[tier.name] === true" class="mx-auto h-5 w-5 text-accent" aria-hidden="true" />
-														<IconHeroicons:x-mark-20-solid v-else class="mx-auto h-5 w-5 text-tlight" aria-hidden="true" />
+														<IconHeroicons:x-mark-20-solid v-else class="mx-auto h-5 w-5 text-tbase" aria-hidden="true" />
 														<span class="sr-only">{{ feature.tiers[tier.name] === true ? 'Yes' : 'No' }}</span>
 													</template>
 												</span>

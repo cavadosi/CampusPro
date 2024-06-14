@@ -1,5 +1,5 @@
 <template>
-	<div class="bg-bgcover transition-colors duration-300">
+	<div class="bg-bg transition-colors duration-300">
 		<LandingHeader />
 		<NuxtPage />
 		<LandingFooter />

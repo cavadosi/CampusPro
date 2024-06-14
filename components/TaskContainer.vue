@@ -3,7 +3,7 @@
 	<div class="flex h-full rounded-md bg-primary/10 hover:bg-primary/15 overflow-clip p-2">
 		<div class="flex flex-col items-center justify-center space-y-2 max-w-80 w-80 h-full rounded-md">
 			<!-- title -->
-			<div class="flex items-center justify-between w-full text-tlight">
+			<div class="flex items-center justify-between w-full text-tbase">
 				<div class="flex gap-x-2 pointer-events-none">
 					<component :is="icon" :class="[color, 'w-5 h-auto']"></component>
 					<h1>{{ columnType }}</h1>
