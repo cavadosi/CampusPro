@@ -39,9 +39,11 @@
 		--color-accent-700: 212.57deg 42.86% 48.04%;
 		--color-accent-800: 214.07deg 39.51% 40.2%;
 
-		--color-bg: 165deg 40% 98.04%;
+		--color-bg: 210deg 40% 98%;
 
 		--color-tbase: 170deg 50% 7.06%;
+;
+
 	}
 	:root[data-theme='dark'] {
 		--color-primary: 175.08deg 52.14% 45.88%;
@@ -68,7 +70,7 @@
 		--color-accent-700: 205.45deg 47.14% 27.45%;
 		--color-accent-800: 206.54deg 42.62% 23.92%;
 
-		--color-bg: 165deg 40% 1.96%;
+		--color-bg: 215.3deg 25% 26.7%;
 
 		--color-tbase: 170deg 50% 92.94%;
 	}

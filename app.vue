@@ -14,12 +14,11 @@ html {
 }
 
 body {
-	background: url('/public/background.svg') no-repeat center center fixed;
-	background-size: cover;
 	min-height: 100%;
 	margin: 0;
 	position: relative;
 	z-index: 1;
+	@apply h-screen bg-gradient-to-bl from-accent-800 to-slate-900;
 }
 
 body::before {

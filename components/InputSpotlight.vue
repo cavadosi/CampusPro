@@ -11,21 +11,21 @@
 			placeholder="Search..."
 			type="email"
 			name="email"
-			class="h-10 w-full cursor-default rounded-full border border-primary/30 p-3.5 text-tbase transition-colors duration-300 placeholder:select-none placeholder-text-tbase/80 bg-bg focus:border-accent focus:outline-none"
+			class="h-10 w-full cursor-default rounded-full border border-accent-800 p-3.5 text-tbase transition-colors duration-300 placeholder:select-none placeholder-text-tbase/80 bg-transparent focus:border-accent focus:outline-none"
 		/>
 
 		<input
 			ref="divRef"
 			disabled
 			:style="{
-				border: '1px solid #71B0DC',
+				border: '1px solid hsl(175.08,52.14%,54.12%)',
 				opacity,
 				WebkitMaskImage: `radial-gradient(30% 30px at ${position.x}px ${position.y}px, black 45%, transparent)`
 			}"
 			aria-hidden="true"
 			class="pointer-events-none absolute left-0 top-0 z-10 h-10 w-full cursor-default rounded-full border border-accent bg-[transparent] p-3.5 opacity-0 transition-opacity duration-500 placeholder:select-none"
 		/>
-		<IconHeroicons:magnifying-glass-20-solid class="pointer-events-none absolute mr-4 inset-y-0 right-0 h-full w-5 text-tbase" aria-hidden="true" />
+		<IconHeroicons:magnifying-glass-20-solid class="pointer-events-none absolute mr-4 inset-y-0 right-0 h-full w-5 text-zinc-400" aria-hidden="true" />
 	</form>
 </template>
 
