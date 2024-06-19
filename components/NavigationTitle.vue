@@ -1,13 +1,15 @@
 <template>
-	<NuxtLink @click="authenticate" :to="props.href" class="my-link text-primary/80 border-l-8 border-transparent hover:shadow-md border-y hover:border-primary/80 hover:text-primary/80 flex gap-x-4 p-2 pl-4 text-sm leading-6 font-semibold transition-colors duration-300">
-		<component :is="props.icon" class="h-6 w-6 shrink-0" aria-hidden="true" />
-		{{ props.name }}
+	<NuxtLink @click="authenticate" :to="props.href" class="my-link text-zinc-400 hover:text-zinc-50 hover:shadow-md hover:bg-accent/10 flex items-center rounded-full gap-x-4 p-1 text-sm leading-6 transition-colors duration-300">
+		<div class="bg-accent/15 p-2 rounded-full">
+			<component :is="props.icon" class="h-5 w-5 shrink-0" aria-hidden="true" />
+		</div>
+		<h2 class="text-zinc-50">{{ props.name }}</h2>
 	</NuxtLink>
 </template>
 
 <style scoped>
 .my-link.router-link-exact-active {
-	@apply border-l-8 hover:shadow-md border-y shadow-md border-primary text-primary font-bold transition-colors duration-300;
+	@apply text-zinc-50 shadow-md bg-accent/15;
 }
 </style>
 
